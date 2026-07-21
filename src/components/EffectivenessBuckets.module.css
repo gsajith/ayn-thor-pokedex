@@ -1,0 +1,56 @@
+/*
+ * No overflow:hidden here on purpose. Clipping hides row overflow instead of
+ * preventing it, which previously let a wrapped second line of chips paint
+ * into the next bucket's band while the page still reported zero scroll.
+ * Letting it overflow means any regression shows up as a real page scroll.
+ */
+.buckets {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 3px;
+  min-height: 0;
+}
+
+/*
+ * Rows size to their content rather than sharing the space equally. At most
+ * one bucket can ever hold more than half the 18 types, so at most one row
+ * wraps to a second line and the six rows still fit the height budget.
+ *
+ * This deliberately leaves dead space at the taller standalone height instead
+ * of stretching to fill it: bucket positions then sit identically with and
+ * without the browser address bar, which is what muscle memory depends on.
+ */
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 0 0 auto;
+  min-height: 24px;
+  padding: 2px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.multiplier {
+  flex: 0 0 26px;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  color: var(--muted);
+}
+
+.row[data-empty="false"] .multiplier {
+  color: var(--foreground);
+}
+
+.types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  min-width: 0;
+}

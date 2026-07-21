@@ -1,0 +1,70 @@
+.chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  /* Avoids the double-tap-to-zoom delay on touch. */
+  touch-action: manipulation;
+}
+
+/*
+ * Unselected chips are dimmed rather than greyed, so the type colour stays
+ * recognisable while selection remains unmistakable at a glance.
+ */
+.grid {
+  width: 100%;
+  height: 100%;
+  /* 44px is the minimum comfortable touch target. */
+  min-height: 44px;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition:
+    opacity 90ms linear,
+    box-shadow 90ms linear,
+    transform 90ms ease-out;
+}
+
+/*
+ * The ring is a fixed light colour rather than currentColor: chip text is
+ * dark on roughly half the types, and a dark ring is invisible against the
+ * black background, leaving those chips with no selection affordance.
+ */
+.grid.selected {
+  opacity: 1;
+  box-shadow:
+    0 0 0 2px var(--background),
+    0 0 0 4px var(--foreground);
+}
+
+.grid:active {
+  transform: scale(0.96);
+  opacity: 0.85;
+}
+
+.grid:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 2px;
+}
+
+.bucket {
+  padding: 2px 6px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grid {
+    transition: none;
+  }
+
+  .grid:active {
+    transform: none;
+  }
+}

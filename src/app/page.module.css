@@ -1,113 +1,61 @@
+/*
+ * The vertical budget from SPEC.md expressed directly: search row sized to
+ * content, grid fixed, buckets taking whatever remains. Measured viewport is
+ * 537x412; standalone install returns ~58px, which the 1fr bucket row absorbs.
+ */
 .page {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  gap: 12px;
-  padding: 16px;
-  padding-top: max(16px, env(safe-area-inset-top));
-  padding-bottom: max(16px, env(safe-area-inset-bottom));
-}
-
-.measuring {
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.heading {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.headline {
-  font-family: var(--font-geist-mono), ui-monospace, monospace;
-  font-size: clamp(30px, 12vw, 46px);
-  font-weight: 600;
-  line-height: 1;
-  color: var(--accent);
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
+  display: grid;
+  /* 148px = three 44px touch rows plus two 8px gaps. */
+  grid-template-rows: auto 148px 1fr;
   gap: 8px;
+  flex: 1;
+  min-height: 0;
+  padding: 8px;
+  padding-top: max(8px, env(safe-area-inset-top));
+  padding-bottom: max(8px, env(safe-area-inset-bottom));
 }
 
-.times {
-  color: var(--muted);
-  font-weight: 400;
-}
-
-.unit {
-  font-family: var(--font-geist-sans), system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.rows {
+.searchRow {
   display: flex;
-  flex-direction: column;
-  border-top: 1px solid var(--line);
+  gap: 6px;
+  align-items: center;
 }
 
-.row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 9px 0;
-  border-bottom: 1px solid var(--line);
+.search {
+  flex: 1;
+  min-width: 0;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #0d0d0d;
+  color: var(--foreground);
+  font-family: inherit;
+  /* Below 16px, mobile browsers zoom the viewport on focus. */
+  font-size: 16px;
 }
 
-.label {
-  font-size: 12px;
+.search::placeholder {
   color: var(--muted);
 }
 
-.value {
-  font-family: var(--font-geist-mono), ui-monospace, monospace;
+.search:disabled {
+  opacity: 0.6;
+}
+
+.clear {
+  height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--foreground);
+  font-family: inherit;
   font-size: 13px;
-  font-weight: 500;
-  text-align: right;
+  cursor: pointer;
 }
 
-.verdictMatch,
-.verdictDiffer {
-  margin-top: auto;
-  border-radius: 8px;
-  padding: 10px 12px;
-  border: 1px solid;
-}
-
-.verdictMatch {
-  border-color: #1d5c36;
-  background: #0b1d13;
-}
-
-.verdictDiffer {
-  border-color: #6b5320;
-  background: #1d1608;
-}
-
-.verdictTitle {
-  font-size: 12px;
-  font-weight: 600;
-  margin-bottom: 3px;
-}
-
-.verdictMatch .verdictTitle {
-  color: var(--accent);
-}
-
-.verdictDiffer .verdictTitle {
-  color: #e0b64d;
-}
-
-.verdictBody {
-  font-size: 12px;
-  line-height: 1.45;
+.clear:disabled {
   color: var(--muted);
+  cursor: default;
 }

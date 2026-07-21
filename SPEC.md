@@ -64,9 +64,9 @@ rather than side-by-side, despite the landscape screen.
 ┌───────────────────────────────┐
 │ ⌕ search                  ✕  │  ~44px
 ├───────────────────────────────┤
-│ NOR  FIR  WAT  ELE  GRA  ICE  │
-│ FIG [PSN] GRD  FLY  PSY  BUG  │  ~144px   6 cols × 3 rows
-│ ROC  GHO  DRA  DAR  STE  FAI  │
+│ NRM  FIR  WTR  ELE  GRS  ICE  │
+│ FGT [PSN] GRN  FLY  PSY  BUG  │  ~148px   6 cols × 3 rows
+│ RCK  GHO  DRA  DRK  STL  FRY  │
 ├───────────────────────────────┤
 │4×                             │
 │2× FIR ICE PSY FLY             │
@@ -77,10 +77,12 @@ rather than side-by-side, despite the landscape screen.
 └───────────────────────────────┘
 ```
 
-Vertical budget at the measured 412px: 44 search + 144 grid + 224 buckets. In
+Vertical budget at the measured 412px: 44 search + 148 grid + rest to buckets. In
 standalone mode the buckets gain the ~58px reclaimed from browser chrome.
 
-- **Grid**: all 18 types, 3–4 letter abbreviations on type-coloured chips,
+- **Grid**: all 18 types, three-letter abbreviations on type-coloured chips,
+  following the GameFAQs Crystal type-affinity guide convention (NRM, WTR, FGT,
+  GRN, RCK, DRK, STL), with FRY filled in for Fairy,
   6 columns × 3 rows at roughly 89×48px. The extra width over the original
   estimate goes into larger, easier-to-hit chips rather than more columns.
 - **Selection**: max 2 types. Selected chips light up in place. A third tap is
