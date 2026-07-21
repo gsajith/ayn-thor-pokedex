@@ -36,6 +36,41 @@ describe("species data", () => {
     expect(SPECIES.every((s) => s.id < 10000)).toBe(true);
     expect(SPECIES.some((s) => s.name.includes("-mega"))).toBe(false);
   });
+
+  it("uses species names, not form names", () => {
+    // The type endpoints key on forms, so names arrive as "deoxys-normal",
+    // "aegislash-shield", "maushold-family-of-four". The build script resolves
+    // them against the species endpoint; this guards that from regressing.
+    const expected: Record<number, string> = {
+      386: "deoxys",
+      413: "wormadam",
+      487: "giratina",
+      492: "shaymin",
+      550: "basculin",
+      555: "darmanitan",
+      641: "tornadus",
+      681: "aegislash",
+      741: "oricorio",
+      745: "lycanroc",
+      849: "toxtricity",
+      877: "morpeko",
+      892: "urshifu",
+      925: "maushold",
+    };
+    for (const [id, name] of Object.entries(expected)) {
+      expect(SPECIES.find((s) => s.id === Number(id))!.name).toBe(name);
+    }
+  });
+
+  it("renders awkward names readably", () => {
+    const label = (name: string) =>
+      SPECIES.find((s) => s.name === name)?.label;
+    expect(label("ho-oh")).toBe("Ho-Oh");
+    expect(label("mr-mime")).toBe("Mr. Mime");
+    expect(label("nidoran-f")).toBe("Nidoran♀");
+    expect(label("farfetchd")).toBe("Farfetch'd");
+    expect(label("type-null")).toBe("Type: Null");
+  });
 });
 
 describe("searchSpecies", () => {

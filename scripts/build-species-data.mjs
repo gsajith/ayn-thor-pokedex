@@ -80,14 +80,38 @@ async function fetchType(typeName) {
   return res.json();
 }
 
+/**
+ * The type endpoints key on *forms*, not species, so their names carry form
+ * suffixes — "deoxys-normal", "aegislash-shield", "maushold-family-of-four".
+ * The species endpoint gives the clean name for each dex number, so one extra
+ * request buys correct names for the whole dex.
+ */
+async function fetchSpeciesNames() {
+  const res = await fetch(`${API}/pokemon-species?limit=100000`);
+  if (!res.ok) {
+    throw new Error(`pokemon-species: HTTP ${res.status} ${res.statusText}`);
+  }
+  const payload = await res.json();
+  const names = new Map();
+  for (const entry of payload.results) {
+    names.set(idFromUrl(entry.url), entry.name);
+  }
+  return names;
+}
+
 async function main() {
   const outArg = process.argv.indexOf("--out");
   const outPath = resolve(
     outArg !== -1 ? process.argv[outArg + 1] : "src/data/species.json",
   );
 
-  process.stderr.write(`Fetching ${TYPE_NAMES.length} type endpoints…\n`);
-  const responses = await Promise.all(TYPE_NAMES.map(fetchType));
+  process.stderr.write(
+    `Fetching ${TYPE_NAMES.length} type endpoints + species names…\n`,
+  );
+  const [responses, speciesNames] = await Promise.all([
+    Promise.all(TYPE_NAMES.map(fetchType)),
+    fetchSpeciesNames(),
+  ]);
 
   /** @type {Map<number, {name: string, slots: Array<[number, string]>}>} */
   const species = new Map();
@@ -106,16 +130,28 @@ async function main() {
     }
   }
 
+  const missingNames = [];
   const rows = [...species.entries()]
     .sort((a, b) => a[0] - b[0])
-    .map(([id, record]) => ({
-      id,
-      name: record.name,
-      label: toLabel(record.name),
-      types: record.slots
-        .sort((a, b) => a[0] - b[0])
-        .map(([, typeName]) => typeName),
-    }));
+    .map(([id, record]) => {
+      const speciesName = speciesNames.get(id);
+      if (!speciesName) missingNames.push(id);
+      const name = speciesName ?? record.name;
+      return {
+        id,
+        name,
+        label: toLabel(name),
+        types: record.slots
+          .sort((a, b) => a[0] - b[0])
+          .map(([, typeName]) => typeName),
+      };
+    });
+
+  if (missingNames.length > 0) {
+    throw new Error(
+      `No species name for ${missingNames.length} ids, e.g. ${missingNames[0]}`,
+    );
+  }
 
   const problems = rows.filter((r) => r.types.length < 1 || r.types.length > 2);
   if (problems.length > 0) {

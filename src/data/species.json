@@ -3263,8 +3263,8 @@
   },
   {
     "id": 386,
-    "name": "deoxys-normal",
-    "label": "Deoxys Normal",
+    "name": "deoxys",
+    "label": "Deoxys",
     "types": [
       "psychic"
     ]
@@ -3491,8 +3491,8 @@
   },
   {
     "id": 413,
-    "name": "wormadam-plant",
-    "label": "Wormadam Plant",
+    "name": "wormadam",
+    "label": "Wormadam",
     "types": [
       "bug",
       "grass"
@@ -4123,8 +4123,8 @@
   },
   {
     "id": 487,
-    "name": "giratina-altered",
-    "label": "Giratina Altered",
+    "name": "giratina",
+    "label": "Giratina",
     "types": [
       "ghost",
       "dragon"
@@ -4164,8 +4164,8 @@
   },
   {
     "id": 492,
-    "name": "shaymin-land",
-    "label": "Shaymin Land",
+    "name": "shaymin",
+    "label": "Shaymin",
     "types": [
       "grass"
     ]
@@ -4647,8 +4647,8 @@
   },
   {
     "id": 550,
-    "name": "basculin-red-striped",
-    "label": "Basculin Red Striped",
+    "name": "basculin",
+    "label": "Basculin",
     "types": [
       "water"
     ]
@@ -4690,8 +4690,8 @@
   },
   {
     "id": 555,
-    "name": "darmanitan-standard",
-    "label": "Darmanitan Standard",
+    "name": "darmanitan",
+    "label": "Darmanitan",
     "types": [
       "fire"
     ]
@@ -5003,8 +5003,8 @@
   },
   {
     "id": 592,
-    "name": "frillish-male",
-    "label": "Frillish Male",
+    "name": "frillish",
+    "label": "Frillish",
     "types": [
       "water",
       "ghost"
@@ -5012,8 +5012,8 @@
   },
   {
     "id": 593,
-    "name": "jellicent-male",
-    "label": "Jellicent Male",
+    "name": "jellicent",
+    "label": "Jellicent",
     "types": [
       "water",
       "ghost"
@@ -5422,16 +5422,16 @@
   },
   {
     "id": 641,
-    "name": "tornadus-incarnate",
-    "label": "Tornadus Incarnate",
+    "name": "tornadus",
+    "label": "Tornadus",
     "types": [
       "flying"
     ]
   },
   {
     "id": 642,
-    "name": "thundurus-incarnate",
-    "label": "Thundurus Incarnate",
+    "name": "thundurus",
+    "label": "Thundurus",
     "types": [
       "electric",
       "flying"
@@ -5457,8 +5457,8 @@
   },
   {
     "id": 645,
-    "name": "landorus-incarnate",
-    "label": "Landorus Incarnate",
+    "name": "landorus",
+    "label": "Landorus",
     "types": [
       "ground",
       "flying"
@@ -5475,8 +5475,8 @@
   },
   {
     "id": 647,
-    "name": "keldeo-ordinary",
-    "label": "Keldeo Ordinary",
+    "name": "keldeo",
+    "label": "Keldeo",
     "types": [
       "water",
       "fighting"
@@ -5484,8 +5484,8 @@
   },
   {
     "id": 648,
-    "name": "meloetta-aria",
-    "label": "Meloetta Aria",
+    "name": "meloetta",
+    "label": "Meloetta",
     "types": [
       "normal",
       "psychic"
@@ -5655,8 +5655,8 @@
   },
   {
     "id": 668,
-    "name": "pyroar-male",
-    "label": "Pyroar Male",
+    "name": "pyroar",
+    "label": "Pyroar",
     "types": [
       "fire",
       "normal"
@@ -5737,8 +5737,8 @@
   },
   {
     "id": 678,
-    "name": "meowstic-male",
-    "label": "Meowstic Male",
+    "name": "meowstic",
+    "label": "Meowstic",
     "types": [
       "psychic"
     ]
@@ -5763,8 +5763,8 @@
   },
   {
     "id": 681,
-    "name": "aegislash-shield",
-    "label": "Aegislash Shield",
+    "name": "aegislash",
+    "label": "Aegislash",
     "types": [
       "steel",
       "ghost"
@@ -6014,8 +6014,8 @@
   },
   {
     "id": 710,
-    "name": "pumpkaboo-average",
-    "label": "Pumpkaboo Average",
+    "name": "pumpkaboo",
+    "label": "Pumpkaboo",
     "types": [
       "ghost",
       "grass"
@@ -6023,8 +6023,8 @@
   },
   {
     "id": 711,
-    "name": "gourgeist-average",
-    "label": "Gourgeist Average",
+    "name": "gourgeist",
+    "label": "Gourgeist",
     "types": [
       "ghost",
       "grass"
@@ -6083,8 +6083,8 @@
   },
   {
     "id": 718,
-    "name": "zygarde-50",
-    "label": "Zygarde 50",
+    "name": "zygarde",
+    "label": "Zygarde",
     "types": [
       "dragon",
       "ground"
@@ -6282,8 +6282,8 @@
   },
   {
     "id": 741,
-    "name": "oricorio-baile",
-    "label": "Oricorio Baile",
+    "name": "oricorio",
+    "label": "Oricorio",
     "types": [
       "fire",
       "flying"
@@ -6317,16 +6317,16 @@
   },
   {
     "id": 745,
-    "name": "lycanroc-midday",
-    "label": "Lycanroc Midday",
+    "name": "lycanroc",
+    "label": "Lycanroc",
     "types": [
       "rock"
     ]
   },
   {
     "id": 746,
-    "name": "wishiwashi-solo",
-    "label": "Wishiwashi Solo",
+    "name": "wishiwashi",
+    "label": "Wishiwashi",
     "types": [
       "water"
     ]
@@ -6564,8 +6564,8 @@
   },
   {
     "id": 774,
-    "name": "minior-red-meteor",
-    "label": "Minior Red Meteor",
+    "name": "minior",
+    "label": "Minior",
     "types": [
       "rock",
       "flying"
@@ -6599,8 +6599,8 @@
   },
   {
     "id": 778,
-    "name": "mimikyu-disguised",
-    "label": "Mimikyu Disguised",
+    "name": "mimikyu",
+    "label": "Mimikyu",
     "types": [
       "ghost",
       "fairy"
@@ -7201,8 +7201,8 @@
   },
   {
     "id": 849,
-    "name": "toxtricity-amped",
-    "label": "Toxtricity Amped",
+    "name": "toxtricity",
+    "label": "Toxtricity",
     "types": [
       "electric",
       "poison"
@@ -7421,16 +7421,16 @@
   },
   {
     "id": 875,
-    "name": "eiscue-ice",
-    "label": "Eiscue Ice",
+    "name": "eiscue",
+    "label": "Eiscue",
     "types": [
       "ice"
     ]
   },
   {
     "id": 876,
-    "name": "indeedee-male",
-    "label": "Indeedee Male",
+    "name": "indeedee",
+    "label": "Indeedee",
     "types": [
       "psychic",
       "normal"
@@ -7438,8 +7438,8 @@
   },
   {
     "id": 877,
-    "name": "morpeko-full-belly",
-    "label": "Morpeko Full Belly",
+    "name": "morpeko",
+    "label": "Morpeko",
     "types": [
       "electric",
       "dark"
@@ -7568,8 +7568,8 @@
   },
   {
     "id": 892,
-    "name": "urshifu-single-strike",
-    "label": "Urshifu Single Strike",
+    "name": "urshifu",
+    "label": "Urshifu",
     "types": [
       "fighting",
       "dark"
@@ -7654,8 +7654,8 @@
   },
   {
     "id": 902,
-    "name": "basculegion-male",
-    "label": "Basculegion Male",
+    "name": "basculegion",
+    "label": "Basculegion",
     "types": [
       "water",
       "ghost"
@@ -7681,8 +7681,8 @@
   },
   {
     "id": 905,
-    "name": "enamorus-incarnate",
-    "label": "Enamorus Incarnate",
+    "name": "enamorus",
+    "label": "Enamorus",
     "types": [
       "fairy",
       "flying"
@@ -7773,8 +7773,8 @@
   },
   {
     "id": 916,
-    "name": "oinkologne-male",
-    "label": "Oinkologne Male",
+    "name": "oinkologne",
+    "label": "Oinkologne",
     "types": [
       "normal"
     ]
@@ -7848,8 +7848,8 @@
   },
   {
     "id": 925,
-    "name": "maushold-family-of-four",
-    "label": "Maushold Family Of Four",
+    "name": "maushold",
+    "label": "Maushold",
     "types": [
       "normal"
     ]
@@ -7899,8 +7899,8 @@
   },
   {
     "id": 931,
-    "name": "squawkabilly-green-plumage",
-    "label": "Squawkabilly Green Plumage",
+    "name": "squawkabilly",
+    "label": "Squawkabilly",
     "types": [
       "normal",
       "flying"
@@ -8180,8 +8180,8 @@
   },
   {
     "id": 964,
-    "name": "palafin-zero",
-    "label": "Palafin Zero",
+    "name": "palafin",
+    "label": "Palafin",
     "types": [
       "water"
     ]
@@ -8299,8 +8299,8 @@
   },
   {
     "id": 978,
-    "name": "tatsugiri-curly",
-    "label": "Tatsugiri Curly",
+    "name": "tatsugiri",
+    "label": "Tatsugiri",
     "types": [
       "dragon",
       "water"
@@ -8335,8 +8335,8 @@
   },
   {
     "id": 982,
-    "name": "dudunsparce-two-segment",
-    "label": "Dudunsparce Two Segment",
+    "name": "dudunsparce",
+    "label": "Dudunsparce",
     "types": [
       "normal"
     ]

@@ -61,6 +61,21 @@
   color: var(--muted);
 }
 
+/* The custom ✕ button already clears the query; two clear affordances confuse. */
+.search::-webkit-search-cancel-button {
+  display: none;
+}
+
+/*
+ * The shared home row has only ~20px of vertical headroom, so it stays compact.
+ * The search view has hundreds of pixels spare, so the clear button gets a
+ * proper 44px touch target there.
+ */
+.pageSearch .clear {
+  min-height: 44px;
+  min-width: 44px;
+}
+
 .search:disabled {
   opacity: 0.6;
 }

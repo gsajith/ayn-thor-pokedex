@@ -28,12 +28,15 @@ body {
  * With min-height the body grows to fit its content, so `flex: 1` on <main>
  * never bounds it and inner scroll regions (the search results list) push the
  * whole page taller instead of scrolling within themselves.
+ *
+ * Deliberately no `overflow: hidden` here. That would also hide unintended
+ * overflow, and the bucket layout relies on overflow surfacing as a real page
+ * scroll so a regression is detectable rather than silently clipped.
  */
 body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
