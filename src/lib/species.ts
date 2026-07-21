@@ -18,7 +18,3 @@ export interface Species {
  * alter typings, and issue #5 adds per-species overrides on top.
  */
 export const SPECIES = speciesData as Species[];
-
-export function findSpeciesById(id: number): Species | undefined {
-  return SPECIES.find((s) => s.id === id);
-}

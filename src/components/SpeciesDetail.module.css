@@ -10,13 +10,14 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  min-height: 34px;
+  min-height: 44px;
 }
 
+/* Primary navigation control, so it gets the full 44px touch target. */
 .back {
   flex: 0 0 auto;
-  min-height: 34px;
-  padding: 0 10px;
+  min-height: 44px;
+  padding: 0 12px;
   border: 1px solid var(--line);
   border-radius: 6px;
   background: transparent;
