@@ -5,9 +5,18 @@ A bottom-screen companion Pokédex for playing Pokémon ROM hacks and fangames
 
 ## Context & constraints
 
-- **Device**: AYN Thor secondary screen — 3.92" AMOLED, 1080×1240 physical px,
-  ~419 PPI. Browser sees roughly **360×413 to 411×472 CSS px** depending on the
-  density Android reports. Layout targets the conservative end and is fluid.
+- **Device**: AYN Thor secondary screen — 3.92" AMOLED, 1080×1240 physical px.
+  **Measured on device (issue #1): 537×412 CSS px in Chrome.** The panel is used
+  rotated, so it is landscape — 1240 wide by 1080 tall physically — at a device
+  pixel ratio of roughly 2.3.
+
+  An earlier estimate of 360×413 assumed portrait and a higher pixel ratio. It
+  was wrong in the width direction by about 49%. Do not reintroduce it.
+
+  The measured 412px height was taken in Chrome with the address bar visible.
+  1080 ÷ 2.3 is roughly 470, so about 58px is browser chrome and should return
+  once the app installs standalone. **Design against 412px height** so the layout
+  holds in both cases, and treat the extra ~58px as headroom rather than budget.
 - **Games**: user-made ROM hacks and Essentials fangames, not official titles.
 - **Use**: glanced at mid-battle, in a dark room, while looking at the top screen.
 
@@ -47,27 +56,33 @@ populated. Adding Gen 2–5 and Gen 1 later is a data change, not a refactor.
 
 ## Home screen
 
-Everything visible at once — no scrolling, no collapsing, no modes.
+Everything visible at once — no scrolling, no collapsing, no modes. Stacked
+rather than side-by-side, despite the landscape screen.
 
 ```
-┌───────────────────────┐
-│ ⌕ search          ✕  │  ~44px
-├───────────────────────┤
-│NOR FIR WAT ELE GRA ICE│
-│FIG[PSN]GRD FLY PSY BUG│  ~130px   6 cols × 3 rows
-│ROC GHO DRA DAR STE FAI│
-├───────────────────────┤
-│4×                     │
-│2× FIR ICE PSY FLY     │
-│1× NOR WAT ELE ROC ... │  ~230px
-│½× GRA FIG PSN         │
-│¼×                     │
-│0×                     │
-└───────────────────────┘
+537 × 412
+┌───────────────────────────────┐
+│ ⌕ search                  ✕  │  ~44px
+├───────────────────────────────┤
+│ NOR  FIR  WAT  ELE  GRA  ICE  │
+│ FIG [PSN] GRD  FLY  PSY  BUG  │  ~144px   6 cols × 3 rows
+│ ROC  GHO  DRA  DAR  STE  FAI  │
+├───────────────────────────────┤
+│4×                             │
+│2× FIR ICE PSY FLY             │
+│1× NOR WAT ELE ROC DRA         │  ~224px
+│½× GRA FIG PSN                 │
+│¼×                             │
+│0×                             │
+└───────────────────────────────┘
 ```
+
+Vertical budget at the measured 412px: 44 search + 144 grid + 224 buckets. In
+standalone mode the buckets gain the ~58px reclaimed from browser chrome.
 
 - **Grid**: all 18 types, 3–4 letter abbreviations on type-coloured chips,
-  6 columns × 3 rows at ~60×40px.
+  6 columns × 3 rows at roughly 89×48px. The extra width over the original
+  estimate goes into larger, easier-to-hit chips rather than more columns.
 - **Selection**: max 2 types. Selected chips light up in place. A third tap is
   ignored until you deselect. Tap a lit chip to unset; clear-all button by the
   search bar.
