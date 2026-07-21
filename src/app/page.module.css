@@ -5,7 +5,8 @@
  */
 .page {
   display: grid;
-  grid-template-rows: auto 138px 1fr;
+  /* 148px = three 44px touch rows plus two 8px gaps. */
+  grid-template-rows: auto 148px 1fr;
   gap: 8px;
   flex: 1;
   min-height: 0;
@@ -30,7 +31,8 @@
   background: #0d0d0d;
   color: var(--foreground);
   font-family: inherit;
-  font-size: 14px;
+  /* Below 16px, mobile browsers zoom the viewport on focus. */
+  font-size: 16px;
 }
 
 .search::placeholder {

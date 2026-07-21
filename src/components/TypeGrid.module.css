@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: 1fr;
-  gap: 6px;
+  /* 8px keeps adjacent touch targets far enough apart to avoid mis-taps. */
+  gap: 8px;
   min-height: 0;
 }

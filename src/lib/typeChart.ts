@@ -164,9 +164,10 @@ export function effectivenessAgainst(
   const unique = Array.from(new Set(defending));
   const result = {} as Record<PokemonType, number>;
   for (const attacking of chart.types) {
+    const row = chart.matchups[attacking];
     let multiplier = 1;
     for (const target of unique) {
-      multiplier *= chart.matchups[attacking][target] ?? 1;
+      multiplier *= row[target] ?? 1;
     }
     result[attacking] = multiplier;
   }

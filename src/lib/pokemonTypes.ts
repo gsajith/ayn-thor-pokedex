@@ -103,15 +103,35 @@ export const TYPE_COLOR: Record<PokemonType, string> = {
   fairy: "#D685AD",
 };
 
-/** Type colours span a wide luminance range; pick a foreground that stays legible. */
-export function readableTextOn(hex: string): string {
+export const CHIP_TEXT_DARK = "#101010";
+export const CHIP_TEXT_LIGHT = "#ffffff";
+
+/** WCAG relative luminance. */
+export function relativeLuminance(hex: string): number {
   const n = parseInt(hex.slice(1), 16);
   const [r, g, b] = [(n >> 16) & 255, (n >> 8) & 255, n & 255];
   const channel = (c: number) => {
     const s = c / 255;
     return s <= 0.03928 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4;
   };
-  const luminance =
-    0.2126 * channel(r) + 0.7152 * channel(g) + 0.0722 * channel(b);
-  return luminance > 0.4 ? "#101010" : "#ffffff";
+  return 0.2126 * channel(r) + 0.7152 * channel(g) + 0.0722 * channel(b);
+}
+
+/** WCAG contrast ratio between two luminances, 1:1 to 21:1. */
+export function contrastRatio(a: number, b: number): number {
+  return (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+}
+
+/**
+ * Type colours span a wide luminance range, and several sit near the midpoint
+ * where neither foreground is obviously right. Comparing actual contrast beats
+ * a fixed luminance threshold: a threshold picked by eye put white text on
+ * Normal, Fire, Water, Flying, Psychic, Rock and Fairy at ratios as low as
+ * 2.48:1, all of which fail WCAG AA.
+ */
+export function readableTextOn(hex: string): string {
+  const background = relativeLuminance(hex);
+  const onDark = contrastRatio(background, relativeLuminance(CHIP_TEXT_DARK));
+  const onLight = contrastRatio(background, relativeLuminance(CHIP_TEXT_LIGHT));
+  return onDark >= onLight ? CHIP_TEXT_DARK : CHIP_TEXT_LIGHT;
 }
