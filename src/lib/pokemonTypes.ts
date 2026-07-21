@@ -40,25 +40,32 @@ export const TYPE_ORDER: readonly PokemonType[] = [
   "fairy",
 ];
 
+/**
+ * Abbreviations follow the long-standing GameFAQs Pokemon Crystal type
+ * affinity guide, which drops vowels rather than truncating. That guide is
+ * Gen 2 and so has no Fairy; FRY is filled in to match the same convention.
+ *
+ * Note GRS (Grass) and GRN (Ground) are deliberately distinct.
+ */
 export const TYPE_ABBREV: Record<PokemonType, string> = {
-  normal: "NOR",
+  normal: "NRM",
   fire: "FIR",
-  water: "WAT",
+  water: "WTR",
   electric: "ELE",
-  grass: "GRA",
+  grass: "GRS",
   ice: "ICE",
-  fighting: "FIG",
+  fighting: "FGT",
   poison: "PSN",
-  ground: "GRD",
+  ground: "GRN",
   flying: "FLY",
   psychic: "PSY",
   bug: "BUG",
-  rock: "ROC",
+  rock: "RCK",
   ghost: "GHO",
   dragon: "DRA",
-  dark: "DAR",
-  steel: "STE",
-  fairy: "FAI",
+  dark: "DRK",
+  steel: "STL",
+  fairy: "FRY",
 };
 
 export const TYPE_LABEL: Record<PokemonType, string> = {
