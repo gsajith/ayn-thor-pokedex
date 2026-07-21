@@ -15,6 +15,28 @@
   padding-bottom: max(8px, env(safe-area-inset-bottom));
 }
 
+/* Searching: no grid, so the results list takes everything below the input. */
+.pageSearch {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 8px;
+  flex: 1;
+  min-height: 0;
+  padding: 8px;
+  padding-top: max(8px, env(safe-area-inset-top));
+  padding-bottom: max(8px, env(safe-area-inset-bottom));
+}
+
+.pageDetail {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  padding: 8px;
+  padding-top: max(8px, env(safe-area-inset-top));
+  padding-bottom: max(8px, env(safe-area-inset-bottom));
+}
+
 .searchRow {
   display: flex;
   gap: 6px;

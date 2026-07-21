@@ -23,10 +23,17 @@ body {
   overflow-x: hidden;
 }
 
+/*
+ * A definite height, not min-height: this is an app shell, not a document.
+ * With min-height the body grows to fit its content, so `flex: 1` on <main>
+ * never bounds it and inner scroll regions (the search results list) push the
+ * whole page taller instead of scrolling within themselves.
+ */
 body {
-  min-height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
