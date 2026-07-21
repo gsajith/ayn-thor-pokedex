@@ -10,6 +10,9 @@ export default defineConfig({
   },
   test: {
     environment: "node",
-    include: ["src/**/*.test.ts"],
+    // Build scripts are plain .mjs and stay there: pngjs is a devDependency, so
+    // moving the extraction under src/ would put production code on a dev-only
+    // package. Widening the glob is the cheaper way to make them testable.
+    include: ["src/**/*.test.ts", "scripts/**/*.test.mjs"],
   },
 });

@@ -13,8 +13,16 @@
  *   node scripts/build-species-data.mjs [--out path]
  */
 
-import { writeFile, mkdir, readFile, access, rename } from "node:fs/promises";
+import {
+  writeFile,
+  mkdir,
+  readFile,
+  access,
+  rename,
+  rm,
+} from "node:fs/promises";
 import { dirname, resolve, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import { PNG } from "pngjs";
 
 const API = "https://pokeapi.co/api/v2";
@@ -112,20 +120,25 @@ async function fetchSpeciesNames() {
  * than an edge case, and a whole-run abort on one blip is a bad trade. Retries
  * with backoff; a persistent failure still throws.
  */
-async function fetchWithRetry(url, attempts = 4) {
+export async function fetchWithRetry(url, attempts = 4) {
   let lastError;
   for (let attempt = 0; attempt < attempts; attempt++) {
+    let response;
+    // Transport failures and HTTP error statuses are handled separately. Doing
+    // both inside one try meant the fast-fail throw was caught by its own catch,
+    // so 404s burned all four attempts and ~4.6s before giving up.
     try {
-      const res = await fetch(url);
-      if (res.ok) return res;
-      // 4xx other than rate limiting will not improve on retry.
-      if (res.status < 500 && res.status !== 429) {
-        throw new Error(`HTTP ${res.status} ${res.statusText}`);
-      }
-      lastError = new Error(`HTTP ${res.status} ${res.statusText}`);
+      response = await fetch(url);
     } catch (error) {
       lastError = error;
+      await new Promise((r) => setTimeout(r, 300 * 2 ** attempt));
+      continue;
     }
+
+    if (response.ok) return response;
+    lastError = new Error(`HTTP ${response.status} ${response.statusText}`);
+    // 4xx other than rate limiting will not improve on retry.
+    if (response.status < 500 && response.status !== 429) break;
     await new Promise((r) => setTimeout(r, 300 * 2 ** attempt));
   }
   throw new Error(`${url}: ${lastError?.message ?? "unknown error"}`);
@@ -179,7 +192,7 @@ function saturationOf(r, g, b) {
  * Greyscale sprites have no saturated pixels at all, so the filters relax in
  * stages rather than failing.
  */
-function extractAccent(pngBytes, describe = "sprite") {
+export function extractAccent(pngBytes, describe = "sprite") {
   let png;
   try {
     png = PNG.sync.read(pngBytes);
@@ -347,7 +360,14 @@ async function main() {
       try {
         const bytes = await loadSprite(row.id, spriteDir);
         if (!cached) downloaded += 1;
-        return extractAccent(bytes, `sprite ${row.id} (${row.name}) at ${file}`);
+        try {
+          return extractAccent(bytes, `sprite ${row.id} (${row.name}) at ${file}`);
+        } catch (decodeError) {
+          // Drop the unreadable file so the next run refetches it. Otherwise a
+          // corrupt cache entry degrades forever and still ships a broken image.
+          await rm(file, { force: true });
+          throw decodeError;
+        }
       } catch (error) {
         // One missing sprite must not abandon the other 1024. The realistic
         // cause is PokeAPI listing a new species before the sprites repo has
@@ -385,11 +405,17 @@ async function main() {
   process.stderr.write(
     `Wrote ${rows.length} species to ${outPath} ` +
       `(ids ${rows[0].id}–${rows[rows.length - 1].id}); ` +
-      `${downloaded} sprites downloaded, ${rows.length - downloaded} cached\n`,
+      `${downloaded} downloaded, ` +
+      `${rows.length - downloaded - failures.length} cached, ` +
+      `${failures.length} failed\n`,
   );
 }
 
-main().catch((error) => {
-  process.stderr.write(`build-species-data failed: ${error.message}\n`);
-  process.exit(1);
-});
+// Only run the pipeline when invoked directly, so tests can import the pure
+// helpers above without kicking off a thousand downloads.
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main().catch((error) => {
+    process.stderr.write(`build-species-data failed: ${error.message}\n`);
+    process.exit(1);
+  });
+}
