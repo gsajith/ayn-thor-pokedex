@@ -64,7 +64,7 @@ describe("extractAccent", () => {
   });
 
   it("does not let near-white highlights dominate", () => {
-    const png = makePng(16, 16, (x, y) =>
+    const png = makePng(16, 16, (x) =>
       x < 6 ? [30, 80, 220, 255] : [250, 250, 250, 255],
     );
     const [r, g, b] = rgb(extractAccent(png));

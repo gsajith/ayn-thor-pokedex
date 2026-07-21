@@ -29,3 +29,14 @@ export function spriteUrl(id: number): string {
  * alter typings, and issue #5 adds per-species overrides on top.
  */
 export const SPECIES = speciesData as Species[];
+
+const BY_ID = new Map(SPECIES.map((species) => [species.id, species]));
+
+/**
+ * Always look the vanilla record up by id rather than holding onto a species
+ * object. A resolved species carries overridden types in its `types` field, so
+ * re-resolving one would bake a correction in permanently and survive a revert.
+ */
+export function speciesById(id: number): Species | undefined {
+  return BY_ID.get(id);
+}
