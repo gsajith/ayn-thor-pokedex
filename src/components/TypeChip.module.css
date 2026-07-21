@@ -54,9 +54,9 @@
 }
 
 .bucket {
-  padding: 3px 7px;
+  padding: 2px 6px;
   font-size: 12px;
-  line-height: 1.25;
+  line-height: 16px;
 }
 
 @media (prefers-reduced-motion: reduce) {

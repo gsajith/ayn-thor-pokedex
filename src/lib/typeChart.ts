@@ -192,17 +192,44 @@ export interface Bucket {
 }
 
 /**
+ * Two defending types can only ever produce one of BUCKET_STEPS, but the
+ * signature accepts any number. Three or more would yield values like 8x or
+ * 0.125x, and matching on exact equality would silently drop those types from
+ * every bucket. Snapping to the closest step keeps every type visible and
+ * directionally correct instead.
+ */
+function nearestStep(multiplier: number): (typeof BUCKET_STEPS)[number] {
+  let closest: (typeof BUCKET_STEPS)[number] = BUCKET_STEPS[0];
+  let smallestGap = Infinity;
+  for (const step of BUCKET_STEPS) {
+    const gap = Math.abs(step - multiplier);
+    if (gap < smallestGap) {
+      smallestGap = gap;
+      closest = step;
+    }
+  }
+  return closest;
+}
+
+/**
  * Always returns all six buckets, including empty ones, so bucket positions
- * stay fixed between lookups and can be learned by muscle memory.
+ * stay fixed between lookups and can be learned by muscle memory. Types keep
+ * canonical order within a bucket because chart.types is walked in order.
  */
 export function bucketize(
   defending: readonly PokemonType[],
   chart: GenerationChart,
 ): Bucket[] {
   const effectiveness = effectivenessAgainst(defending, chart);
+  const byStep = new Map<(typeof BUCKET_STEPS)[number], PokemonType[]>(
+    BUCKET_STEPS.map((step) => [step, []]),
+  );
+  for (const type of chart.types) {
+    byStep.get(nearestStep(effectiveness[type]))!.push(type);
+  }
   return BUCKET_STEPS.map((multiplier) => ({
     multiplier,
     label: BUCKET_LABELS[multiplier],
-    types: chart.types.filter((t) => effectiveness[t] === multiplier),
+    types: byStep.get(multiplier)!,
   }));
 }

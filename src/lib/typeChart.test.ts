@@ -197,4 +197,22 @@ describe("bucketize", () => {
     const buckets = bucketize([], chart);
     expect(buckets.find((b) => b.multiplier === 1)!.types).toHaveLength(18);
   });
+
+  it("never drops a type, even beyond the two-type cap", () => {
+    // Three types can produce 8x or 0.125x, which match no canonical step.
+    const buckets = bucketize(["rock", "ground", "fire"], chart);
+    const all = buckets.flatMap((b) => b.types);
+    expect(all).toHaveLength(18);
+    expect(new Set(all).size).toBe(18);
+    // Water is 2 * 2 * 2 = 8x here, and snaps to the 4x bucket rather than vanishing.
+    expect(buckets.find((b) => b.multiplier === 4)!.types).toContain("water");
+  });
+
+  it("keeps a true immunity distinct from a very small multiplier", () => {
+    const buckets = bucketize(["rock", "ground", "flying"], chart);
+    // Electric is 1 * 0 * 2 = 0, a real immunity.
+    expect(buckets.find((b) => b.multiplier === 0)!.types).toContain(
+      "electric",
+    );
+  });
 });
