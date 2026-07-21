@@ -13,7 +13,7 @@
  *   node scripts/build-species-data.mjs [--out path]
  */
 
-import { writeFile, mkdir, readFile, access } from "node:fs/promises";
+import { writeFile, mkdir, readFile, access, rename } from "node:fs/promises";
 import { dirname, resolve, join } from "node:path";
 import { PNG } from "pngjs";
 
@@ -25,6 +25,12 @@ const SPRITE_DIR = "public/sprites";
 
 /** Kept low to stay polite to raw.githubusercontent.com. */
 const DOWNLOAD_CONCURRENCY = 12;
+
+/** Used when a sprite cannot be fetched or decoded. Neutral, not alarming. */
+const FALLBACK_ACCENT = "#808080";
+
+/** Above this many sprite failures, assume systemic breakage and fail loudly. */
+const MAX_SPRITE_FAILURES = 10;
 
 /** PokeAPI gives alternate forms (megas, regional variants) ids of 10001+. */
 const MAX_BASE_FORM_ID = 10000;
@@ -137,6 +143,10 @@ async function exists(path) {
 /**
  * Downloads a sprite unless it is already on disk, so re-runs cost no network.
  * Returns the raw PNG bytes either way.
+ *
+ * Writes via a temporary file and an atomic rename. A direct write interrupted
+ * part-way would leave a truncated PNG that later runs treat as a valid cache
+ * entry forever, since the cache check only tests for existence.
  */
 async function loadSprite(id, spriteDir) {
   const file = join(spriteDir, `${id}.png`);
@@ -144,7 +154,9 @@ async function loadSprite(id, spriteDir) {
 
   const res = await fetchWithRetry(`${SPRITE_BASE}/${id}.png`);
   const bytes = Buffer.from(await res.arrayBuffer());
-  await writeFile(file, bytes);
+  const temporary = `${file}.${process.pid}.tmp`;
+  await writeFile(temporary, bytes);
+  await rename(temporary, file);
   return bytes;
 }
 
@@ -167,8 +179,15 @@ function saturationOf(r, g, b) {
  * Greyscale sprites have no saturated pixels at all, so the filters relax in
  * stages rather than failing.
  */
-function extractAccent(pngBytes) {
-  const png = PNG.sync.read(pngBytes);
+function extractAccent(pngBytes, describe = "sprite") {
+  let png;
+  try {
+    png = PNG.sync.read(pngBytes);
+  } catch (error) {
+    // Name the offending file: with 1025 cached sprites, "invalid PNG" alone
+    // gives the operator no way to find which one to delete.
+    throw new Error(`${describe}: cannot decode PNG (${error.message})`);
+  }
   const { data, width, height } = png;
 
   const attempt = (minAlpha, minLuma, maxLuma, minSaturation) => {
@@ -212,7 +231,7 @@ function extractAccent(pngBytes) {
     attempt(200, 0.05, 0.95, 0.1) ??
     attempt(128, 0, 1, 0);
 
-  if (!best) return "#808080";
+  if (!best) return FALLBACK_ACCENT;
 
   const toHex = (value) =>
     Math.round(value / best.weight)
@@ -318,16 +337,43 @@ async function main() {
 
   process.stderr.write(`Fetching sprites and extracting accents…\n`);
   let downloaded = 0;
+  const failures = [];
   const accents = await mapWithConcurrency(
     rows,
     DOWNLOAD_CONCURRENCY,
     async (row) => {
-      const cached = await exists(join(spriteDir, `${row.id}.png`));
-      const bytes = await loadSprite(row.id, spriteDir);
-      if (!cached) downloaded += 1;
-      return extractAccent(bytes);
+      const file = join(spriteDir, `${row.id}.png`);
+      const cached = await exists(file);
+      try {
+        const bytes = await loadSprite(row.id, spriteDir);
+        if (!cached) downloaded += 1;
+        return extractAccent(bytes, `sprite ${row.id} (${row.name}) at ${file}`);
+      } catch (error) {
+        // One missing sprite must not abandon the other 1024. The realistic
+        // cause is PokeAPI listing a new species before the sprites repo has
+        // its PNG, which should degrade to a neutral accent, not a failed build.
+        failures.push({ id: row.id, name: row.name, file, error });
+        return FALLBACK_ACCENT;
+      }
     },
   );
+
+  for (const failure of failures) {
+    process.stderr.write(
+      `  warning: sprite ${failure.id} (${failure.name}) unavailable at ` +
+        `${failure.file} — using ${FALLBACK_ACCENT}: ${failure.error.message}\n`,
+    );
+  }
+
+  // A handful of gaps is expected drift. Dozens means the source moved or the
+  // network is broken, and shipping a dex of grey placeholders would be worse
+  // than failing loudly.
+  if (failures.length > MAX_SPRITE_FAILURES) {
+    throw new Error(
+      `${failures.length} sprites failed (limit ${MAX_SPRITE_FAILURES}); ` +
+        `first: ${failures[0].id} ${failures[0].error.message}`,
+    );
+  }
 
   rows.forEach((row, index) => {
     row.accent = accents[index];
