@@ -90,7 +90,7 @@ export default function Home() {
       {searching ? (
         <SearchResults
           results={results}
-          onSelect={(species) => setDetailId(species.id)}
+          onSelect={setDetailId}
         />
       ) : (
         <>

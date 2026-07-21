@@ -155,6 +155,32 @@ describe("store", () => {
     expect(getOverrides()).toEqual({});
   });
 
+  it("rejects an invalid write instead of persisting it", () => {
+    installStorage();
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+    // Would otherwise persist, look saved, then vanish on the next reload when
+    // the read-side validator rejects it.
+    setOverride(1, ["bogus"] as never);
+    setOverride(2, []);
+    setOverride(3, ["fire", "water", "ice"] as never);
+    setOverride(4, ["fire", "fire"] as never);
+    setOverride(-1, ["fire"]);
+    expect(getOverrides()).toEqual({});
+    expect(warn).toHaveBeenCalled();
+    warn.mockRestore();
+  });
+
+  it("ignores a non-object passed to the import boundary", () => {
+    installStorage();
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+    // A data pack may come from a wiki scrape, so the argument itself is
+    // untrusted, not merely its rows.
+    expect(() => importOverrides(null as never)).not.toThrow();
+    expect(() => importOverrides(undefined as never)).not.toThrow();
+    expect(getOverrides()).toEqual({});
+    warn.mockRestore();
+  });
+
   it("keeps an edit in memory even if it cannot be persisted", () => {
     vi.stubGlobal("window", {
       localStorage: {

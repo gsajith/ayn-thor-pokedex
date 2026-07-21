@@ -104,6 +104,14 @@ export function setOverride(
   types: PokemonType[],
   source: OverrideSource = "manual",
 ) {
+  // Validate on write as well as on read. Without this an invalid write would
+  // persist, appear to work, then silently vanish on the next reload when the
+  // read-side validator rejects it — the most confusing possible outcome.
+  const candidate = { types, source };
+  if (!Number.isInteger(id) || id <= 0 || !isValidEntry(candidate)) {
+    console.warn("Ignoring invalid type override", { id, types, source });
+    return;
+  }
   write({ ...read(), [id]: { types: [...types], source } });
 }
 
@@ -117,8 +125,17 @@ export function clearAllOverrides() {
   write({});
 }
 
-/** Bulk write path for a future per-game data-pack import. */
+/**
+ * Bulk write path for a future per-game data-pack import.
+ *
+ * This is the untrusted-data boundary — a pack may come from a wiki scrape — so
+ * the argument itself is checked, not just its rows.
+ */
 export function importOverrides(entries: Record<number, PokemonType[]>) {
+  if (typeof entries !== "object" || entries === null) {
+    console.warn("Ignoring invalid override import", entries);
+    return;
+  }
   const next = { ...read() };
   for (const [key, types] of Object.entries(entries)) {
     const id = Number(key);
