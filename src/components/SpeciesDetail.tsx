@@ -1,4 +1,5 @@
-import { Species } from "@/lib/species";
+import Image from "next/image";
+import { Species, spriteUrl } from "@/lib/species";
 import { DEFAULT_GENERATION, TYPE_CHARTS, bucketize } from "@/lib/typeChart";
 import { EffectivenessBuckets } from "./EffectivenessBuckets";
 import { TypeChip } from "./TypeChip";
@@ -18,10 +19,20 @@ export function SpeciesDetail({ species, onBack }: Props) {
         <button type="button" className={styles.back} onClick={onBack}>
           ← Back
         </button>
-        <span className={styles.dex}>
-          #{String(species.id).padStart(4, "0")}
-        </span>
-        <h1 className={styles.name}>{species.label}</h1>
+        <Image
+          className={styles.sprite}
+          src={spriteUrl(species.id)}
+          alt=""
+          width={96}
+          height={96}
+          priority
+        />
+        <div className={styles.naming}>
+          <span className={styles.dex}>
+            #{String(species.id).padStart(4, "0")}
+          </span>
+          <h1 className={styles.name}>{species.label}</h1>
+        </div>
         <span className={styles.types}>
           {species.types.map((type) => (
             <TypeChip key={type} type={type} />

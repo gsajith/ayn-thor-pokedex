@@ -62,6 +62,56 @@ describe("species data", () => {
     }
   });
 
+  it("gives every species a valid accent colour", () => {
+    for (const species of SPECIES) {
+      expect(species.accent, species.name).toMatch(/^#[0-9A-F]{6}$/);
+    }
+  });
+
+  it("extracts accents that are distinct rather than muddy", () => {
+    // A naive average would collapse every sprite to the same brown-grey, so
+    // assert the population is actually varied and saturated.
+    const distinct = new Set(SPECIES.map((s) => s.accent));
+    expect(distinct.size).toBeGreaterThan(SPECIES.length * 0.8);
+
+    const saturation = (hex: string) => {
+      const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
+      const max = Math.max(r, g, b);
+      return max === 0 ? 0 : (max - Math.min(r, g, b)) / max;
+    };
+    const grey = SPECIES.filter((s) => saturation(s.accent) < 0.15);
+    expect(grey.length).toBeLessThan(20);
+  });
+
+  it("extracts recognisable accents for well-known sprites", () => {
+    const hue = (hex: string) => {
+      const [r, g, b] = [1, 3, 5].map(
+        (i) => parseInt(hex.slice(i, i + 2), 16) / 255,
+      );
+      const max = Math.max(r, g, b);
+      const delta = max - Math.min(r, g, b);
+      if (delta === 0) return -1;
+      let h: number;
+      if (max === r) h = ((g - b) / delta) % 6;
+      else if (max === g) h = (b - r) / delta + 2;
+      else h = (r - g) / delta + 4;
+      return Math.round(h * 60 + 360) % 360;
+    };
+    const accentOf = (id: number) => SPECIES.find((s) => s.id === id)!.accent;
+
+    // Charmander and Charizard are orange.
+    expect(hue(accentOf(4))).toBeGreaterThanOrEqual(10);
+    expect(hue(accentOf(4))).toBeLessThanOrEqual(45);
+    expect(hue(accentOf(6))).toBeGreaterThanOrEqual(10);
+    expect(hue(accentOf(6))).toBeLessThanOrEqual(45);
+    // Pikachu is yellow.
+    expect(hue(accentOf(25))).toBeGreaterThanOrEqual(45);
+    expect(hue(accentOf(25))).toBeLessThanOrEqual(70);
+    // Lucario is blue.
+    expect(hue(accentOf(448))).toBeGreaterThanOrEqual(180);
+    expect(hue(accentOf(448))).toBeLessThanOrEqual(250);
+  });
+
   it("renders awkward names readably", () => {
     const label = (name: string) =>
       SPECIES.find((s) => s.name === name)?.label;

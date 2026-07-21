@@ -6,7 +6,8 @@
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "accent": "#399494"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "accent": "#209483"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "accent": "#20B49C"
   },
   {
     "id": 4,
@@ -32,7 +35,8 @@
     "label": "Charmander",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#FF9441"
   },
   {
     "id": 5,
@@ -40,7 +44,8 @@
     "label": "Charmeleon",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#CD3939"
   },
   {
     "id": 6,
@@ -49,7 +54,8 @@
     "types": [
       "fire",
       "flying"
-    ]
+    ],
+    "accent": "#EE8329"
   },
   {
     "id": 7,
@@ -57,7 +63,8 @@
     "label": "Squirtle",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#5A9CA4"
   },
   {
     "id": 8,
@@ -65,7 +72,8 @@
     "label": "Wartortle",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#8BACF6"
   },
   {
     "id": 9,
@@ -73,7 +81,8 @@
     "label": "Blastoise",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#5A8BCD"
   },
   {
     "id": 10,
@@ -81,7 +90,8 @@
     "label": "Caterpie",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#31AC41"
   },
   {
     "id": 11,
@@ -89,7 +99,8 @@
     "label": "Metapod",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#83C54A"
   },
   {
     "id": 12,
@@ -98,7 +109,8 @@
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "accent": "#313152"
   },
   {
     "id": 13,
@@ -107,7 +119,8 @@
     "types": [
       "bug",
       "poison"
-    ]
+    ],
+    "accent": "#CD7310"
   },
   {
     "id": 14,
@@ -116,7 +129,8 @@
     "types": [
       "bug",
       "poison"
-    ]
+    ],
+    "accent": "#CD9C10"
   },
   {
     "id": 15,
@@ -125,7 +139,8 @@
     "types": [
       "bug",
       "poison"
-    ]
+    ],
+    "accent": "#E69420"
   },
   {
     "id": 16,
@@ -134,7 +149,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#E6BD62"
   },
   {
     "id": 17,
@@ -143,7 +159,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#FFE68B"
   },
   {
     "id": 18,
@@ -152,7 +169,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#E6B462"
   },
   {
     "id": 19,
@@ -160,7 +178,8 @@
     "label": "Rattata",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#B473BD"
   },
   {
     "id": 20,
@@ -168,7 +187,8 @@
     "label": "Raticate",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#A47329"
   },
   {
     "id": 21,
@@ -177,7 +197,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#9C5218"
   },
   {
     "id": 22,
@@ -186,7 +207,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#B47320"
   },
   {
     "id": 23,
@@ -194,7 +216,8 @@
     "label": "Ekans",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#CD62B4"
   },
   {
     "id": 24,
@@ -202,7 +225,8 @@
     "label": "Arbok",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#7B62AC"
   },
   {
     "id": 25,
@@ -210,7 +234,8 @@
     "label": "Pikachu",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#F6E652"
   },
   {
     "id": 26,
@@ -218,7 +243,8 @@
     "label": "Raichu",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#F6AC29"
   },
   {
     "id": 27,
@@ -226,7 +252,8 @@
     "label": "Sandshrew",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#CDB400"
   },
   {
     "id": 28,
@@ -234,7 +261,8 @@
     "label": "Sandslash",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#8B6218"
   },
   {
     "id": 29,
@@ -242,7 +270,8 @@
     "label": "Nidoran♀",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#414183"
   },
   {
     "id": 30,
@@ -250,7 +279,8 @@
     "label": "Nidorina",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#8BC5CD"
   },
   {
     "id": 31,
@@ -259,7 +289,8 @@
     "types": [
       "poison",
       "ground"
-    ]
+    ],
+    "accent": "#628BAC"
   },
   {
     "id": 32,
@@ -267,7 +298,8 @@
     "label": "Nidoran♂",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#BD62C5"
   },
   {
     "id": 33,
@@ -275,7 +307,8 @@
     "label": "Nidorino",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#945AB4"
   },
   {
     "id": 34,
@@ -284,7 +317,8 @@
     "types": [
       "poison",
       "ground"
-    ]
+    ],
+    "accent": "#A45294"
   },
   {
     "id": 35,
@@ -292,7 +326,8 @@
     "label": "Clefairy",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#FFD5BD"
   },
   {
     "id": 36,
@@ -300,7 +335,8 @@
     "label": "Clefable",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#FFC5B4"
   },
   {
     "id": 37,
@@ -308,7 +344,8 @@
     "label": "Vulpix",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#BD4A29"
   },
   {
     "id": 38,
@@ -316,7 +353,8 @@
     "label": "Ninetales",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#E6C552"
   },
   {
     "id": 39,
@@ -325,7 +363,8 @@
     "types": [
       "normal",
       "fairy"
-    ]
+    ],
+    "accent": "#FFACA4"
   },
   {
     "id": 40,
@@ -334,7 +373,8 @@
     "types": [
       "normal",
       "fairy"
-    ]
+    ],
+    "accent": "#FFACBD"
   },
   {
     "id": 41,
@@ -343,7 +383,8 @@
     "types": [
       "poison",
       "flying"
-    ]
+    ],
+    "accent": "#8BB4EE"
   },
   {
     "id": 42,
@@ -352,7 +393,8 @@
     "types": [
       "poison",
       "flying"
-    ]
+    ],
+    "accent": "#AC52AC"
   },
   {
     "id": 43,
@@ -361,7 +403,8 @@
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "accent": "#8BAC31"
   },
   {
     "id": 44,
@@ -370,7 +413,8 @@
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "accent": "#FF7300"
   },
   {
     "id": 45,
@@ -379,7 +423,8 @@
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "accent": "#DE4A5A"
   },
   {
     "id": 46,
@@ -388,7 +433,8 @@
     "types": [
       "bug",
       "grass"
-    ]
+    ],
+    "accent": "#E68329"
   },
   {
     "id": 47,
@@ -397,7 +443,8 @@
     "types": [
       "bug",
       "grass"
-    ]
+    ],
+    "accent": "#EE3131"
   },
   {
     "id": 48,
@@ -406,7 +453,8 @@
     "types": [
       "bug",
       "poison"
-    ]
+    ],
+    "accent": "#8B6AA4"
   },
   {
     "id": 49,
@@ -415,7 +463,8 @@
     "types": [
       "bug",
       "poison"
-    ]
+    ],
+    "accent": "#9C8BBD"
   },
   {
     "id": 50,
@@ -423,7 +472,8 @@
     "label": "Diglett",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#C57341"
   },
   {
     "id": 51,
@@ -431,7 +481,8 @@
     "label": "Dugtrio",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#C57341"
   },
   {
     "id": 52,
@@ -439,7 +490,8 @@
     "label": "Meowth",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#8B6A00"
   },
   {
     "id": 53,
@@ -447,7 +499,8 @@
     "label": "Persian",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#DEB46A"
   },
   {
     "id": 54,
@@ -455,7 +508,8 @@
     "label": "Psyduck",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#FFD54A"
   },
   {
     "id": 55,
@@ -463,7 +517,8 @@
     "label": "Golduck",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#8BACD5"
   },
   {
     "id": 56,
@@ -471,7 +526,8 @@
     "label": "Mankey",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#D5AC9C"
   },
   {
     "id": 57,
@@ -479,7 +535,8 @@
     "label": "Primeape",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#E6BD9C"
   },
   {
     "id": 58,
@@ -487,7 +544,8 @@
     "label": "Growlithe",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#C55252"
   },
   {
     "id": 59,
@@ -495,7 +553,8 @@
     "label": "Arcanine",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#D5A48B"
   },
   {
     "id": 60,
@@ -503,7 +562,8 @@
     "label": "Poliwag",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#5283C5"
   },
   {
     "id": 61,
@@ -511,7 +571,8 @@
     "label": "Poliwhirl",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#5283C5"
   },
   {
     "id": 62,
@@ -520,7 +581,8 @@
     "types": [
       "water",
       "fighting"
-    ]
+    ],
+    "accent": "#395A83"
   },
   {
     "id": 63,
@@ -528,7 +590,8 @@
     "label": "Abra",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#FFE629"
   },
   {
     "id": 64,
@@ -536,7 +599,8 @@
     "label": "Kadabra",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#D5BD08"
   },
   {
     "id": 65,
@@ -544,7 +608,8 @@
     "label": "Alakazam",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#FFEE18"
   },
   {
     "id": 66,
@@ -552,7 +617,8 @@
     "label": "Machop",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#73A4A4"
   },
   {
     "id": 67,
@@ -560,7 +626,8 @@
     "label": "Machoke",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#BD9CE6"
   },
   {
     "id": 68,
@@ -568,7 +635,8 @@
     "label": "Machamp",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#415262"
   },
   {
     "id": 69,
@@ -577,7 +645,8 @@
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "accent": "#5A3900"
   },
   {
     "id": 70,
@@ -586,7 +655,8 @@
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "accent": "#6AC552"
   },
   {
     "id": 71,
@@ -595,7 +665,8 @@
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "accent": "#4AA47B"
   },
   {
     "id": 72,
@@ -604,7 +675,8 @@
     "types": [
       "water",
       "poison"
-    ]
+    ],
+    "accent": "#6AB4E6"
   },
   {
     "id": 73,
@@ -613,7 +685,8 @@
     "types": [
       "water",
       "poison"
-    ]
+    ],
+    "accent": "#6AB4E6"
   },
   {
     "id": 74,
@@ -622,7 +695,8 @@
     "types": [
       "rock",
       "ground"
-    ]
+    ],
+    "accent": "#9C9483"
   },
   {
     "id": 75,
@@ -631,7 +705,8 @@
     "types": [
       "rock",
       "ground"
-    ]
+    ],
+    "accent": "#4A4131"
   },
   {
     "id": 76,
@@ -640,7 +715,8 @@
     "types": [
       "rock",
       "ground"
-    ]
+    ],
+    "accent": "#626A20"
   },
   {
     "id": 77,
@@ -648,7 +724,8 @@
     "label": "Ponyta",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#E65A29"
   },
   {
     "id": 78,
@@ -656,7 +733,8 @@
     "label": "Rapidash",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#FF9C18"
   },
   {
     "id": 79,
@@ -665,7 +743,8 @@
     "types": [
       "water",
       "psychic"
-    ]
+    ],
+    "accent": "#DE627B"
   },
   {
     "id": 80,
@@ -674,7 +753,8 @@
     "types": [
       "water",
       "psychic"
-    ]
+    ],
+    "accent": "#E66A7B"
   },
   {
     "id": 81,
@@ -683,7 +763,8 @@
     "types": [
       "electric",
       "steel"
-    ]
+    ],
+    "accent": "#EE1800"
   },
   {
     "id": 82,
@@ -692,7 +773,8 @@
     "types": [
       "electric",
       "steel"
-    ]
+    ],
+    "accent": "#EE1800"
   },
   {
     "id": 83,
@@ -701,7 +783,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#836A20"
   },
   {
     "id": 84,
@@ -710,7 +793,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#BD8B52"
   },
   {
     "id": 85,
@@ -719,7 +803,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#A47B5A"
   },
   {
     "id": 86,
@@ -727,7 +812,8 @@
     "label": "Seel",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#415283"
   },
   {
     "id": 87,
@@ -736,7 +822,8 @@
     "types": [
       "water",
       "ice"
-    ]
+    ],
+    "accent": "#415262"
   },
   {
     "id": 88,
@@ -744,7 +831,8 @@
     "label": "Grimer",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#944A9C"
   },
   {
     "id": 89,
@@ -752,7 +840,8 @@
     "label": "Muk",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#BD7BBD"
   },
   {
     "id": 90,
@@ -760,7 +849,8 @@
     "label": "Shellder",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#9C8BC5"
   },
   {
     "id": 91,
@@ -769,7 +859,8 @@
     "types": [
       "water",
       "ice"
-    ]
+    ],
+    "accent": "#7B5283"
   },
   {
     "id": 92,
@@ -778,7 +869,8 @@
     "types": [
       "ghost",
       "poison"
-    ]
+    ],
+    "accent": "#8B6283"
   },
   {
     "id": 93,
@@ -787,7 +879,8 @@
     "types": [
       "ghost",
       "poison"
-    ]
+    ],
+    "accent": "#835A6A"
   },
   {
     "id": 94,
@@ -796,7 +889,8 @@
     "types": [
       "ghost",
       "poison"
-    ]
+    ],
+    "accent": "#9473B4"
   },
   {
     "id": 95,
@@ -805,7 +899,8 @@
     "types": [
       "rock",
       "ground"
-    ]
+    ],
+    "accent": "#837B7B"
   },
   {
     "id": 96,
@@ -813,7 +908,8 @@
     "label": "Drowzee",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#F6DE00"
   },
   {
     "id": 97,
@@ -821,7 +917,8 @@
     "label": "Hypno",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#F6DE00"
   },
   {
     "id": 98,
@@ -829,7 +926,8 @@
     "label": "Krabby",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#DE524A"
   },
   {
     "id": 99,
@@ -837,7 +935,8 @@
     "label": "Kingler",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#C56A5A"
   },
   {
     "id": 100,
@@ -845,7 +944,8 @@
     "label": "Voltorb",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#FF5220"
   },
   {
     "id": 101,
@@ -853,7 +953,8 @@
     "label": "Electrode",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#C52941"
   },
   {
     "id": 102,
@@ -862,7 +963,8 @@
     "types": [
       "grass",
       "psychic"
-    ]
+    ],
+    "accent": "#FFD5AC"
   },
   {
     "id": 103,
@@ -871,7 +973,8 @@
     "types": [
       "grass",
       "psychic"
-    ]
+    ],
+    "accent": "#73AC31"
   },
   {
     "id": 104,
@@ -879,7 +982,8 @@
     "label": "Cubone",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#946A5A"
   },
   {
     "id": 105,
@@ -887,7 +991,8 @@
     "label": "Marowak",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#946A52"
   },
   {
     "id": 106,
@@ -895,7 +1000,8 @@
     "label": "Hitmonlee",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#CDA483"
   },
   {
     "id": 107,
@@ -903,7 +1009,8 @@
     "label": "Hitmonchan",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#CDB47B"
   },
   {
     "id": 108,
@@ -911,7 +1018,8 @@
     "label": "Lickitung",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#EE736A"
   },
   {
     "id": 109,
@@ -919,7 +1027,8 @@
     "label": "Koffing",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#EED56A"
   },
   {
     "id": 110,
@@ -927,7 +1036,8 @@
     "label": "Weezing",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#EED56A"
   },
   {
     "id": 111,
@@ -936,7 +1046,8 @@
     "types": [
       "ground",
       "rock"
-    ]
+    ],
+    "accent": "#393952"
   },
   {
     "id": 112,
@@ -945,7 +1056,8 @@
     "types": [
       "ground",
       "rock"
-    ]
+    ],
+    "accent": "#B4A473"
   },
   {
     "id": 113,
@@ -953,7 +1065,8 @@
     "label": "Chansey",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#FFACAC"
   },
   {
     "id": 114,
@@ -961,7 +1074,8 @@
     "label": "Tangela",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#417B94"
   },
   {
     "id": 115,
@@ -969,7 +1083,8 @@
     "label": "Kangaskhan",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#9C7B73"
   },
   {
     "id": 116,
@@ -977,7 +1092,8 @@
     "label": "Horsea",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#6A94B4"
   },
   {
     "id": 117,
@@ -985,7 +1101,8 @@
     "label": "Seadra",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#6A839C"
   },
   {
     "id": 118,
@@ -993,7 +1110,8 @@
     "label": "Goldeen",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#D54110"
   },
   {
     "id": 119,
@@ -1001,7 +1119,8 @@
     "label": "Seaking",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#E67341"
   },
   {
     "id": 120,
@@ -1009,7 +1128,8 @@
     "label": "Staryu",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#9C6A39"
   },
   {
     "id": 121,
@@ -1018,7 +1138,8 @@
     "types": [
       "water",
       "psychic"
-    ]
+    ],
+    "accent": "#5A529C"
   },
   {
     "id": 122,
@@ -1027,7 +1148,8 @@
     "types": [
       "psychic",
       "fairy"
-    ]
+    ],
+    "accent": "#104A73"
   },
   {
     "id": 123,
@@ -1036,7 +1158,8 @@
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "accent": "#8BCD73"
   },
   {
     "id": 124,
@@ -1045,7 +1168,8 @@
     "types": [
       "ice",
       "psychic"
-    ]
+    ],
+    "accent": "#F6315A"
   },
   {
     "id": 125,
@@ -1053,7 +1177,8 @@
     "label": "Electabuzz",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#C5A410"
   },
   {
     "id": 126,
@@ -1061,7 +1186,8 @@
     "label": "Magmar",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#CD1041"
   },
   {
     "id": 127,
@@ -1069,7 +1195,8 @@
     "label": "Pinsir",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#C5AC8B"
   },
   {
     "id": 128,
@@ -1077,7 +1204,8 @@
     "label": "Tauros",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#DEA44A"
   },
   {
     "id": 129,
@@ -1085,7 +1213,8 @@
     "label": "Magikarp",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#F66218"
   },
   {
     "id": 130,
@@ -1094,7 +1223,8 @@
     "types": [
       "water",
       "flying"
-    ]
+    ],
+    "accent": "#208BAC"
   },
   {
     "id": 131,
@@ -1103,7 +1233,8 @@
     "types": [
       "water",
       "ice"
-    ]
+    ],
+    "accent": "#397BA4"
   },
   {
     "id": 132,
@@ -1111,7 +1242,8 @@
     "label": "Ditto",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#C57BE6"
   },
   {
     "id": 133,
@@ -1119,7 +1251,8 @@
     "label": "Eevee",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#A4624A"
   },
   {
     "id": 134,
@@ -1127,7 +1260,8 @@
     "label": "Vaporeon",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#5AC5E6"
   },
   {
     "id": 135,
@@ -1135,7 +1269,8 @@
     "label": "Jolteon",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#FFDE52"
   },
   {
     "id": 136,
@@ -1143,7 +1278,8 @@
     "label": "Flareon",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#C5A46A"
   },
   {
     "id": 137,
@@ -1151,7 +1287,8 @@
     "label": "Porygon",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#0883A4"
   },
   {
     "id": 138,
@@ -1160,7 +1297,8 @@
     "types": [
       "rock",
       "water"
-    ]
+    ],
+    "accent": "#9C836A"
   },
   {
     "id": 139,
@@ -1169,7 +1307,8 @@
     "types": [
       "rock",
       "water"
-    ]
+    ],
+    "accent": "#399CCD"
   },
   {
     "id": 140,
@@ -1178,7 +1317,8 @@
     "types": [
       "rock",
       "water"
-    ]
+    ],
+    "accent": "#C58329"
   },
   {
     "id": 141,
@@ -1187,7 +1327,8 @@
     "types": [
       "rock",
       "water"
-    ]
+    ],
+    "accent": "#BD8B41"
   },
   {
     "id": 142,
@@ -1196,7 +1337,8 @@
     "types": [
       "rock",
       "flying"
-    ]
+    ],
+    "accent": "#735294"
   },
   {
     "id": 143,
@@ -1204,7 +1346,8 @@
     "label": "Snorlax",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#315A7B"
   },
   {
     "id": 144,
@@ -1213,7 +1356,8 @@
     "types": [
       "ice",
       "flying"
-    ]
+    ],
+    "accent": "#6AACF6"
   },
   {
     "id": 145,
@@ -1222,7 +1366,8 @@
     "types": [
       "electric",
       "flying"
-    ]
+    ],
+    "accent": "#D5AC08"
   },
   {
     "id": 146,
@@ -1231,7 +1376,8 @@
     "types": [
       "fire",
       "flying"
-    ]
+    ],
+    "accent": "#D50808"
   },
   {
     "id": 147,
@@ -1239,7 +1385,8 @@
     "label": "Dratini",
     "types": [
       "dragon"
-    ]
+    ],
+    "accent": "#7383D5"
   },
   {
     "id": 148,
@@ -1247,7 +1394,8 @@
     "label": "Dragonair",
     "types": [
       "dragon"
-    ]
+    ],
+    "accent": "#5A8BEE"
   },
   {
     "id": 149,
@@ -1256,7 +1404,8 @@
     "types": [
       "dragon",
       "flying"
-    ]
+    ],
+    "accent": "#DE7339"
   },
   {
     "id": 150,
@@ -1264,7 +1413,8 @@
     "label": "Mewtwo",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#6A319C"
   },
   {
     "id": 151,
@@ -1272,7 +1422,8 @@
     "label": "Mew",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#FFB4D5"
   },
   {
     "id": 152,
@@ -1280,7 +1431,8 @@
     "label": "Chikorita",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#D5F68B"
   },
   {
     "id": 153,
@@ -1288,7 +1440,8 @@
     "label": "Bayleef",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#F6E64A"
   },
   {
     "id": 154,
@@ -1296,7 +1449,8 @@
     "label": "Meganium",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#9CE652"
   },
   {
     "id": 155,
@@ -1304,7 +1458,8 @@
     "label": "Cyndaquil",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#DE0000"
   },
   {
     "id": 156,
@@ -1312,7 +1467,8 @@
     "label": "Quilava",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#FF5A00"
   },
   {
     "id": 157,
@@ -1320,7 +1476,8 @@
     "label": "Typhlosion",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#DE0000"
   },
   {
     "id": 158,
@@ -1328,7 +1485,8 @@
     "label": "Totodile",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#6AB4E6"
   },
   {
     "id": 159,
@@ -1336,7 +1494,8 @@
     "label": "Croconaw",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#5AACE6"
   },
   {
     "id": 160,
@@ -1344,7 +1503,8 @@
     "label": "Feraligatr",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#5AB4F6"
   },
   {
     "id": 161,
@@ -1352,7 +1512,8 @@
     "label": "Sentret",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#BD835A"
   },
   {
     "id": 162,
@@ -1360,7 +1521,8 @@
     "label": "Furret",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#9C624A"
   },
   {
     "id": 163,
@@ -1369,7 +1531,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#BD8B41"
   },
   {
     "id": 164,
@@ -1378,7 +1541,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#7B5A4A"
   },
   {
     "id": 165,
@@ -1387,7 +1551,8 @@
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "accent": "#F65A18"
   },
   {
     "id": 166,
@@ -1396,7 +1561,8 @@
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "accent": "#FF4A41"
   },
   {
     "id": 167,
@@ -1405,7 +1571,8 @@
     "types": [
       "bug",
       "poison"
-    ]
+    ],
+    "accent": "#8BE631"
   },
   {
     "id": 168,
@@ -1414,7 +1581,8 @@
     "types": [
       "bug",
       "poison"
-    ]
+    ],
+    "accent": "#C54141"
   },
   {
     "id": 169,
@@ -1423,7 +1591,8 @@
     "types": [
       "poison",
       "flying"
-    ]
+    ],
+    "accent": "#A45ACD"
   },
   {
     "id": 170,
@@ -1432,7 +1601,8 @@
     "types": [
       "water",
       "electric"
-    ]
+    ],
+    "accent": "#FFCD52"
   },
   {
     "id": 171,
@@ -1441,7 +1611,8 @@
     "types": [
       "water",
       "electric"
-    ]
+    ],
+    "accent": "#6294E6"
   },
   {
     "id": 172,
@@ -1449,7 +1620,8 @@
     "label": "Pichu",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#F6E652"
   },
   {
     "id": 173,
@@ -1457,7 +1629,8 @@
     "label": "Cleffa",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#FFA494"
   },
   {
     "id": 174,
@@ -1466,7 +1639,8 @@
     "types": [
       "normal",
       "fairy"
-    ]
+    ],
+    "accent": "#FFACBD"
   },
   {
     "id": 175,
@@ -1474,7 +1648,8 @@
     "label": "Togepi",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#F6D5A4"
   },
   {
     "id": 176,
@@ -1483,7 +1658,8 @@
     "types": [
       "fairy",
       "flying"
-    ]
+    ],
+    "accent": "#BD1808"
   },
   {
     "id": 177,
@@ -1492,7 +1668,8 @@
     "types": [
       "psychic",
       "flying"
-    ]
+    ],
+    "accent": "#73BD41"
   },
   {
     "id": 178,
@@ -1501,7 +1678,8 @@
     "types": [
       "psychic",
       "flying"
-    ]
+    ],
+    "accent": "#EE3900"
   },
   {
     "id": 179,
@@ -1509,7 +1687,8 @@
     "label": "Mareep",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#FFE6BD"
   },
   {
     "id": 180,
@@ -1517,7 +1696,8 @@
     "label": "Flaaffy",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#FFA4A4"
   },
   {
     "id": 181,
@@ -1525,7 +1705,8 @@
     "label": "Ampharos",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#FFC510"
   },
   {
     "id": 182,
@@ -1533,7 +1714,8 @@
     "label": "Bellossom",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#D52000"
   },
   {
     "id": 183,
@@ -1542,7 +1724,8 @@
     "types": [
       "water",
       "fairy"
-    ]
+    ],
+    "accent": "#5A9CEE"
   },
   {
     "id": 184,
@@ -1551,7 +1734,8 @@
     "types": [
       "water",
       "fairy"
-    ]
+    ],
+    "accent": "#5A9CEE"
   },
   {
     "id": 185,
@@ -1559,7 +1743,8 @@
     "label": "Sudowoodo",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#C5A44A"
   },
   {
     "id": 186,
@@ -1567,7 +1752,8 @@
     "label": "Politoed",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#8BCD18"
   },
   {
     "id": 187,
@@ -1576,7 +1762,8 @@
     "types": [
       "grass",
       "flying"
-    ]
+    ],
+    "accent": "#9CDE5A"
   },
   {
     "id": 188,
@@ -1585,7 +1772,8 @@
     "types": [
       "grass",
       "flying"
-    ]
+    ],
+    "accent": "#62D531"
   },
   {
     "id": 189,
@@ -1594,7 +1782,8 @@
     "types": [
       "grass",
       "flying"
-    ]
+    ],
+    "accent": "#739CFF"
   },
   {
     "id": 190,
@@ -1602,7 +1791,8 @@
     "label": "Aipom",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#8341AC"
   },
   {
     "id": 191,
@@ -1610,7 +1800,8 @@
     "label": "Sunkern",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#6A6231"
   },
   {
     "id": 192,
@@ -1618,7 +1809,8 @@
     "label": "Sunflora",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#EECD08"
   },
   {
     "id": 193,
@@ -1627,7 +1819,8 @@
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "accent": "#FFBD9C"
   },
   {
     "id": 194,
@@ -1636,7 +1829,8 @@
     "types": [
       "water",
       "ground"
-    ]
+    ],
+    "accent": "#397BC5"
   },
   {
     "id": 195,
@@ -1645,7 +1839,8 @@
     "types": [
       "water",
       "ground"
-    ]
+    ],
+    "accent": "#629CBD"
   },
   {
     "id": 196,
@@ -1653,7 +1848,8 @@
     "label": "Espeon",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#E6A4D5"
   },
   {
     "id": 197,
@@ -1661,7 +1857,8 @@
     "label": "Umbreon",
     "types": [
       "dark"
-    ]
+    ],
+    "accent": "#29314A"
   },
   {
     "id": 198,
@@ -1670,7 +1867,8 @@
     "types": [
       "dark",
       "flying"
-    ]
+    ],
+    "accent": "#314162"
   },
   {
     "id": 199,
@@ -1679,7 +1877,8 @@
     "types": [
       "water",
       "psychic"
-    ]
+    ],
+    "accent": "#EE736A"
   },
   {
     "id": 200,
@@ -1687,7 +1886,8 @@
     "label": "Misdreavus",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#314A62"
   },
   {
     "id": 201,
@@ -1695,7 +1895,8 @@
     "label": "Unown",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#737373"
   },
   {
     "id": 202,
@@ -1703,7 +1904,8 @@
     "label": "Wobbuffet",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#3194EE"
   },
   {
     "id": 203,
@@ -1712,7 +1914,8 @@
     "types": [
       "normal",
       "psychic"
-    ]
+    ],
+    "accent": "#EEDE52"
   },
   {
     "id": 204,
@@ -1720,7 +1923,8 @@
     "label": "Pineco",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#294A7B"
   },
   {
     "id": 205,
@@ -1729,7 +1933,8 @@
     "types": [
       "bug",
       "steel"
-    ]
+    ],
+    "accent": "#C5A4DE"
   },
   {
     "id": 206,
@@ -1737,7 +1942,8 @@
     "label": "Dunsparce",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#318BA4"
   },
   {
     "id": 207,
@@ -1746,7 +1952,8 @@
     "types": [
       "ground",
       "flying"
-    ]
+    ],
+    "accent": "#AC6294"
   },
   {
     "id": 208,
@@ -1755,7 +1962,8 @@
     "types": [
       "steel",
       "ground"
-    ]
+    ],
+    "accent": "#4A628B"
   },
   {
     "id": 209,
@@ -1763,7 +1971,8 @@
     "label": "Snubbull",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#EE6A7B"
   },
   {
     "id": 210,
@@ -1771,7 +1980,8 @@
     "label": "Granbull",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#62395A"
   },
   {
     "id": 211,
@@ -1780,7 +1990,8 @@
     "types": [
       "water",
       "poison"
-    ]
+    ],
+    "accent": "#418394"
   },
   {
     "id": 212,
@@ -1789,7 +2000,8 @@
     "types": [
       "bug",
       "steel"
-    ]
+    ],
+    "accent": "#A42929"
   },
   {
     "id": 213,
@@ -1798,7 +2010,8 @@
     "types": [
       "bug",
       "rock"
-    ]
+    ],
+    "accent": "#EEC54A"
   },
   {
     "id": 214,
@@ -1807,7 +2020,8 @@
     "types": [
       "bug",
       "fighting"
-    ]
+    ],
+    "accent": "#416294"
   },
   {
     "id": 215,
@@ -1816,7 +2030,8 @@
     "types": [
       "dark",
       "ice"
-    ]
+    ],
+    "accent": "#3994AC"
   },
   {
     "id": 216,
@@ -1824,7 +2039,8 @@
     "label": "Teddiursa",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#B46220"
   },
   {
     "id": 217,
@@ -1832,7 +2048,8 @@
     "label": "Ursaring",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#945220"
   },
   {
     "id": 218,
@@ -1840,7 +2057,8 @@
     "label": "Slugma",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#CD3918"
   },
   {
     "id": 219,
@@ -1849,7 +2067,8 @@
     "types": [
       "fire",
       "rock"
-    ]
+    ],
+    "accent": "#DE5A20"
   },
   {
     "id": 220,
@@ -1858,7 +2077,8 @@
     "types": [
       "ice",
       "ground"
-    ]
+    ],
+    "accent": "#CD9C7B"
   },
   {
     "id": 221,
@@ -1867,7 +2087,8 @@
     "types": [
       "ice",
       "ground"
-    ]
+    ],
+    "accent": "#AC835A"
   },
   {
     "id": 222,
@@ -1876,7 +2097,8 @@
     "types": [
       "water",
       "rock"
-    ]
+    ],
+    "accent": "#FFA4C5"
   },
   {
     "id": 223,
@@ -1884,7 +2106,8 @@
     "label": "Remoraid",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#295A83"
   },
   {
     "id": 224,
@@ -1892,7 +2115,8 @@
     "label": "Octillery",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#A43110"
   },
   {
     "id": 225,
@@ -1901,7 +2125,8 @@
     "types": [
       "ice",
       "flying"
-    ]
+    ],
+    "accent": "#BD2900"
   },
   {
     "id": 226,
@@ -1910,7 +2135,8 @@
     "types": [
       "water",
       "flying"
-    ]
+    ],
+    "accent": "#5A6ADE"
   },
   {
     "id": 227,
@@ -1919,7 +2145,8 @@
     "types": [
       "steel",
       "flying"
-    ]
+    ],
+    "accent": "#31527B"
   },
   {
     "id": 228,
@@ -1928,7 +2155,8 @@
     "types": [
       "dark",
       "fire"
-    ]
+    ],
+    "accent": "#101820"
   },
   {
     "id": 229,
@@ -1937,7 +2165,8 @@
     "types": [
       "dark",
       "fire"
-    ]
+    ],
+    "accent": "#A45A4A"
   },
   {
     "id": 230,
@@ -1946,7 +2175,8 @@
     "types": [
       "water",
       "dragon"
-    ]
+    ],
+    "accent": "#629CCD"
   },
   {
     "id": 231,
@@ -1954,7 +2184,8 @@
     "label": "Phanpy",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#ACD5EE"
   },
   {
     "id": 232,
@@ -1962,7 +2193,8 @@
     "label": "Donphan",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#832029"
   },
   {
     "id": 233,
@@ -1970,7 +2202,8 @@
     "label": "Porygon2",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#EE5A62"
   },
   {
     "id": 234,
@@ -1978,7 +2211,8 @@
     "label": "Stantler",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#E6B45A"
   },
   {
     "id": 235,
@@ -1986,7 +2220,8 @@
     "label": "Smeargle",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#4A3910"
   },
   {
     "id": 236,
@@ -1994,7 +2229,8 @@
     "label": "Tyrogue",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#83315A"
   },
   {
     "id": 237,
@@ -2002,7 +2238,8 @@
     "label": "Hitmontop",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#BDA452"
   },
   {
     "id": 238,
@@ -2011,7 +2248,8 @@
     "types": [
       "ice",
       "psychic"
-    ]
+    ],
+    "accent": "#FFE652"
   },
   {
     "id": 239,
@@ -2019,7 +2257,8 @@
     "label": "Elekid",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#CD8B00"
   },
   {
     "id": 240,
@@ -2027,7 +2266,8 @@
     "label": "Magby",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#D55239"
   },
   {
     "id": 241,
@@ -2035,7 +2275,8 @@
     "label": "Miltank",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#D58B83"
   },
   {
     "id": 242,
@@ -2043,7 +2284,8 @@
     "label": "Blissey",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#FFACC5"
   },
   {
     "id": 243,
@@ -2051,7 +2293,8 @@
     "label": "Raikou",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#FFCD41"
   },
   {
     "id": 244,
@@ -2059,7 +2302,8 @@
     "label": "Entei",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#CDA462"
   },
   {
     "id": 245,
@@ -2067,7 +2311,8 @@
     "label": "Suicune",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#7BBDFF"
   },
   {
     "id": 246,
@@ -2076,7 +2321,8 @@
     "types": [
       "rock",
       "ground"
-    ]
+    ],
+    "accent": "#7B9C62"
   },
   {
     "id": 247,
@@ -2085,7 +2331,8 @@
     "types": [
       "rock",
       "ground"
-    ]
+    ],
+    "accent": "#739CC5"
   },
   {
     "id": 248,
@@ -2094,7 +2341,8 @@
     "types": [
       "rock",
       "dark"
-    ]
+    ],
+    "accent": "#739C62"
   },
   {
     "id": 249,
@@ -2103,7 +2351,8 @@
     "types": [
       "psychic",
       "flying"
-    ]
+    ],
+    "accent": "#9CACE6"
   },
   {
     "id": 250,
@@ -2112,7 +2361,8 @@
     "types": [
       "fire",
       "flying"
-    ]
+    ],
+    "accent": "#FF5A10"
   },
   {
     "id": 251,
@@ -2121,7 +2371,8 @@
     "types": [
       "psychic",
       "grass"
-    ]
+    ],
+    "accent": "#73A431"
   },
   {
     "id": 252,
@@ -2129,7 +2380,8 @@
     "label": "Treecko",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#ACDE6A"
   },
   {
     "id": 253,
@@ -2137,7 +2389,8 @@
     "label": "Grovyle",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#62AC4A"
   },
   {
     "id": 254,
@@ -2145,7 +2398,8 @@
     "label": "Sceptile",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#83CD6A"
   },
   {
     "id": 255,
@@ -2153,7 +2407,8 @@
     "label": "Torchic",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#FF8B31"
   },
   {
     "id": 256,
@@ -2162,7 +2417,8 @@
     "types": [
       "fire",
       "fighting"
-    ]
+    ],
+    "accent": "#EEBD4A"
   },
   {
     "id": 257,
@@ -2171,7 +2427,8 @@
     "types": [
       "fire",
       "fighting"
-    ]
+    ],
+    "accent": "#BD4141"
   },
   {
     "id": 258,
@@ -2179,7 +2436,8 @@
     "label": "Mudkip",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#41A4DE"
   },
   {
     "id": 259,
@@ -2188,7 +2446,8 @@
     "types": [
       "water",
       "ground"
-    ]
+    ],
+    "accent": "#4AB4AC"
   },
   {
     "id": 260,
@@ -2197,7 +2456,8 @@
     "types": [
       "water",
       "ground"
-    ]
+    ],
+    "accent": "#5A83C5"
   },
   {
     "id": 261,
@@ -2205,7 +2465,8 @@
     "label": "Poochyena",
     "types": [
       "dark"
-    ]
+    ],
+    "accent": "#9C2941"
   },
   {
     "id": 262,
@@ -2213,7 +2474,8 @@
     "label": "Mightyena",
     "types": [
       "dark"
-    ]
+    ],
+    "accent": "#AC1020"
   },
   {
     "id": 263,
@@ -2221,7 +2483,8 @@
     "label": "Zigzagoon",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#947B6A"
   },
   {
     "id": 264,
@@ -2229,7 +2492,8 @@
     "label": "Linoone",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#836A5A"
   },
   {
     "id": 265,
@@ -2237,7 +2501,8 @@
     "label": "Wurmple",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#D52952"
   },
   {
     "id": 266,
@@ -2245,7 +2510,8 @@
     "label": "Silcoon",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#B41839"
   },
   {
     "id": 267,
@@ -2254,7 +2520,8 @@
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "accent": "#FFD529"
   },
   {
     "id": 268,
@@ -2262,7 +2529,8 @@
     "label": "Cascoon",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#BD3152"
   },
   {
     "id": 269,
@@ -2271,7 +2539,8 @@
     "types": [
       "bug",
       "poison"
-    ]
+    ],
+    "accent": "#739452"
   },
   {
     "id": 270,
@@ -2280,7 +2549,8 @@
     "types": [
       "water",
       "grass"
-    ]
+    ],
+    "accent": "#317B41"
   },
   {
     "id": 271,
@@ -2289,7 +2559,8 @@
     "types": [
       "water",
       "grass"
-    ]
+    ],
+    "accent": "#6A8B39"
   },
   {
     "id": 272,
@@ -2298,7 +2569,8 @@
     "types": [
       "water",
       "grass"
-    ]
+    ],
+    "accent": "#9CC562"
   },
   {
     "id": 273,
@@ -2306,7 +2578,8 @@
     "label": "Seedot",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#83625A"
   },
   {
     "id": 274,
@@ -2315,7 +2588,8 @@
     "types": [
       "grass",
       "dark"
-    ]
+    ],
+    "accent": "#947362"
   },
   {
     "id": 275,
@@ -2324,7 +2598,8 @@
     "types": [
       "grass",
       "dark"
-    ]
+    ],
+    "accent": "#9C6A4A"
   },
   {
     "id": 276,
@@ -2333,7 +2608,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#314A7B"
   },
   {
     "id": 277,
@@ -2342,7 +2618,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#294162"
   },
   {
     "id": 278,
@@ -2351,7 +2628,8 @@
     "types": [
       "water",
       "flying"
-    ]
+    ],
+    "accent": "#73ACFF"
   },
   {
     "id": 279,
@@ -2360,7 +2638,8 @@
     "types": [
       "water",
       "flying"
-    ]
+    ],
+    "accent": "#FFDE4A"
   },
   {
     "id": 280,
@@ -2369,7 +2648,8 @@
     "types": [
       "psychic",
       "fairy"
-    ]
+    ],
+    "accent": "#73BD73"
   },
   {
     "id": 281,
@@ -2378,7 +2658,8 @@
     "types": [
       "psychic",
       "fairy"
-    ]
+    ],
+    "accent": "#73BD73"
   },
   {
     "id": 282,
@@ -2387,7 +2668,8 @@
     "types": [
       "psychic",
       "fairy"
-    ]
+    ],
+    "accent": "#317B41"
   },
   {
     "id": 283,
@@ -2396,7 +2678,8 @@
     "types": [
       "bug",
       "water"
-    ]
+    ],
+    "accent": "#31A4D5"
   },
   {
     "id": 284,
@@ -2405,7 +2688,8 @@
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "accent": "#E66A29"
   },
   {
     "id": 285,
@@ -2413,7 +2697,8 @@
     "label": "Shroomish",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#C5A483"
   },
   {
     "id": 286,
@@ -2422,7 +2707,8 @@
     "types": [
       "grass",
       "fighting"
-    ]
+    ],
+    "accent": "#629452"
   },
   {
     "id": 287,
@@ -2430,7 +2716,8 @@
     "label": "Slakoth",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#B49C7B"
   },
   {
     "id": 288,
@@ -2438,7 +2725,8 @@
     "label": "Vigoroth",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#9C414A"
   },
   {
     "id": 289,
@@ -2446,7 +2734,8 @@
     "label": "Slaking",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#A4836A"
   },
   {
     "id": 290,
@@ -2455,7 +2744,8 @@
     "types": [
       "bug",
       "ground"
-    ]
+    ],
+    "accent": "#9C8373"
   },
   {
     "id": 291,
@@ -2464,7 +2754,8 @@
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "accent": "#9C2041"
   },
   {
     "id": 292,
@@ -2473,7 +2764,8 @@
     "types": [
       "bug",
       "ghost"
-    ]
+    ],
+    "accent": "#B4945A"
   },
   {
     "id": 293,
@@ -2481,7 +2773,8 @@
     "label": "Whismur",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#EEACE6"
   },
   {
     "id": 294,
@@ -2489,7 +2782,8 @@
     "label": "Loudred",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#736294"
   },
   {
     "id": 295,
@@ -2497,7 +2791,8 @@
     "label": "Exploud",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#524A8B"
   },
   {
     "id": 296,
@@ -2505,7 +2800,8 @@
     "label": "Makuhita",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#FFDE6A"
   },
   {
     "id": 297,
@@ -2513,7 +2809,8 @@
     "label": "Hariyama",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#B46A52"
   },
   {
     "id": 298,
@@ -2522,7 +2819,8 @@
     "types": [
       "normal",
       "fairy"
-    ]
+    ],
+    "accent": "#4A7BE6"
   },
   {
     "id": 299,
@@ -2530,7 +2828,8 @@
     "label": "Nosepass",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#627BBD"
   },
   {
     "id": 300,
@@ -2538,7 +2837,8 @@
     "label": "Skitty",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#D55A7B"
   },
   {
     "id": 301,
@@ -2546,7 +2846,8 @@
     "label": "Delcatty",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#8352A4"
   },
   {
     "id": 302,
@@ -2555,7 +2856,8 @@
     "types": [
       "dark",
       "ghost"
-    ]
+    ],
+    "accent": "#5A4A94"
   },
   {
     "id": 303,
@@ -2564,7 +2866,8 @@
     "types": [
       "steel",
       "fairy"
-    ]
+    ],
+    "accent": "#FFC55A"
   },
   {
     "id": 304,
@@ -2573,7 +2876,8 @@
     "types": [
       "steel",
       "rock"
-    ]
+    ],
+    "accent": "#316A9C"
   },
   {
     "id": 305,
@@ -2582,7 +2886,8 @@
     "types": [
       "steel",
       "rock"
-    ]
+    ],
+    "accent": "#AC394A"
   },
   {
     "id": 306,
@@ -2591,7 +2896,8 @@
     "types": [
       "steel",
       "rock"
-    ]
+    ],
+    "accent": "#9C3141"
   },
   {
     "id": 307,
@@ -2600,7 +2906,8 @@
     "types": [
       "fighting",
       "psychic"
-    ]
+    ],
+    "accent": "#6ACDE6"
   },
   {
     "id": 308,
@@ -2609,7 +2916,8 @@
     "types": [
       "fighting",
       "psychic"
-    ]
+    ],
+    "accent": "#E6738B"
   },
   {
     "id": 309,
@@ -2617,7 +2925,8 @@
     "label": "Electrike",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#629C62"
   },
   {
     "id": 310,
@@ -2625,7 +2934,8 @@
     "label": "Manectric",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#C5AC5A"
   },
   {
     "id": 311,
@@ -2633,7 +2943,8 @@
     "label": "Plusle",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#DE4A41"
   },
   {
     "id": 312,
@@ -2641,7 +2952,8 @@
     "label": "Minun",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#5A83EE"
   },
   {
     "id": 313,
@@ -2649,7 +2961,8 @@
     "label": "Volbeat",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#E65262"
   },
   {
     "id": 314,
@@ -2657,7 +2970,8 @@
     "label": "Illumise",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#9C52BD"
   },
   {
     "id": 315,
@@ -2666,7 +2980,8 @@
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "accent": "#295A94"
   },
   {
     "id": 316,
@@ -2674,7 +2989,8 @@
     "label": "Gulpin",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#A4DE94"
   },
   {
     "id": 317,
@@ -2682,7 +2998,8 @@
     "label": "Swalot",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#AC83EE"
   },
   {
     "id": 318,
@@ -2691,7 +3008,8 @@
     "types": [
       "water",
       "dark"
-    ]
+    ],
+    "accent": "#EEBD29"
   },
   {
     "id": 319,
@@ -2700,7 +3018,8 @@
     "types": [
       "water",
       "dark"
-    ]
+    ],
+    "accent": "#395294"
   },
   {
     "id": 320,
@@ -2708,7 +3027,8 @@
     "label": "Wailmer",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#4A83B4"
   },
   {
     "id": 321,
@@ -2716,7 +3036,8 @@
     "label": "Wailord",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#1052CD"
   },
   {
     "id": 322,
@@ -2725,7 +3046,8 @@
     "types": [
       "fire",
       "ground"
-    ]
+    ],
+    "accent": "#DEB44A"
   },
   {
     "id": 323,
@@ -2734,7 +3056,8 @@
     "types": [
       "fire",
       "ground"
-    ]
+    ],
+    "accent": "#EE6A4A"
   },
   {
     "id": 324,
@@ -2742,7 +3065,8 @@
     "label": "Torkoal",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#EE8341"
   },
   {
     "id": 325,
@@ -2750,7 +3074,8 @@
     "label": "Spoink",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#C5627B"
   },
   {
     "id": 326,
@@ -2758,7 +3083,8 @@
     "label": "Grumpig",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#E6A4DE"
   },
   {
     "id": 327,
@@ -2766,7 +3092,8 @@
     "label": "Spinda",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#E6D5A4"
   },
   {
     "id": 328,
@@ -2774,7 +3101,8 @@
     "label": "Trapinch",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#EE7341"
   },
   {
     "id": 329,
@@ -2783,7 +3111,8 @@
     "types": [
       "ground",
       "dragon"
-    ]
+    ],
+    "accent": "#6AC56A"
   },
   {
     "id": 330,
@@ -2792,7 +3121,8 @@
     "types": [
       "ground",
       "dragon"
-    ]
+    ],
+    "accent": "#B4DE73"
   },
   {
     "id": 331,
@@ -2800,7 +3130,8 @@
     "label": "Cacnea",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#205200"
   },
   {
     "id": 332,
@@ -2809,7 +3140,8 @@
     "types": [
       "grass",
       "dark"
-    ]
+    ],
+    "accent": "#A4D573"
   },
   {
     "id": 333,
@@ -2818,7 +3150,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#7BCDFF"
   },
   {
     "id": 334,
@@ -2827,7 +3160,8 @@
     "types": [
       "dragon",
       "flying"
-    ]
+    ],
+    "accent": "#109CCD"
   },
   {
     "id": 335,
@@ -2835,7 +3169,8 @@
     "label": "Zangoose",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#E64A6A"
   },
   {
     "id": 336,
@@ -2843,7 +3178,8 @@
     "label": "Seviper",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#394152"
   },
   {
     "id": 337,
@@ -2852,7 +3188,8 @@
     "types": [
       "rock",
       "psychic"
-    ]
+    ],
+    "accent": "#B4A452"
   },
   {
     "id": 338,
@@ -2861,7 +3198,8 @@
     "types": [
       "rock",
       "psychic"
-    ]
+    ],
+    "accent": "#DEB418"
   },
   {
     "id": 339,
@@ -2870,7 +3208,8 @@
     "types": [
       "water",
       "ground"
-    ]
+    ],
+    "accent": "#31B4E6"
   },
   {
     "id": 340,
@@ -2879,7 +3218,8 @@
     "types": [
       "water",
       "ground"
-    ]
+    ],
+    "accent": "#394A9C"
   },
   {
     "id": 341,
@@ -2887,7 +3227,8 @@
     "label": "Corphish",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#E65208"
   },
   {
     "id": 342,
@@ -2896,7 +3237,8 @@
     "types": [
       "water",
       "dark"
-    ]
+    ],
+    "accent": "#CD3131"
   },
   {
     "id": 343,
@@ -2905,7 +3247,8 @@
     "types": [
       "ground",
       "psychic"
-    ]
+    ],
+    "accent": "#C5C562"
   },
   {
     "id": 344,
@@ -2914,7 +3257,8 @@
     "types": [
       "ground",
       "psychic"
-    ]
+    ],
+    "accent": "#EE5A83"
   },
   {
     "id": 345,
@@ -2923,7 +3267,8 @@
     "types": [
       "rock",
       "grass"
-    ]
+    ],
+    "accent": "#83395A"
   },
   {
     "id": 346,
@@ -2932,7 +3277,8 @@
     "types": [
       "rock",
       "grass"
-    ]
+    ],
+    "accent": "#7BC573"
   },
   {
     "id": 347,
@@ -2941,7 +3287,8 @@
     "types": [
       "rock",
       "bug"
-    ]
+    ],
+    "accent": "#FF5252"
   },
   {
     "id": 348,
@@ -2950,7 +3297,8 @@
     "types": [
       "rock",
       "bug"
-    ]
+    ],
+    "accent": "#7373AC"
   },
   {
     "id": 349,
@@ -2958,7 +3306,8 @@
     "label": "Feebas",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#D5CD83"
   },
   {
     "id": 350,
@@ -2966,7 +3315,8 @@
     "label": "Milotic",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#FFE6B4"
   },
   {
     "id": 351,
@@ -2974,7 +3324,8 @@
     "label": "Castform",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#E6DEDE"
   },
   {
     "id": 352,
@@ -2982,7 +3333,8 @@
     "label": "Kecleon",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#5A9473"
   },
   {
     "id": 353,
@@ -2990,7 +3342,8 @@
     "label": "Shuppet",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#625A8B"
   },
   {
     "id": 354,
@@ -2998,7 +3351,8 @@
     "label": "Banette",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#523900"
   },
   {
     "id": 355,
@@ -3006,7 +3360,8 @@
     "label": "Duskull",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#FF4A10"
   },
   {
     "id": 356,
@@ -3014,7 +3369,8 @@
     "label": "Dusclops",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#6A5A4A"
   },
   {
     "id": 357,
@@ -3023,7 +3379,8 @@
     "types": [
       "grass",
       "flying"
-    ]
+    ],
+    "accent": "#398B4A"
   },
   {
     "id": 358,
@@ -3031,7 +3388,8 @@
     "label": "Chimecho",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#F6527B"
   },
   {
     "id": 359,
@@ -3039,7 +3397,8 @@
     "label": "Absol",
     "types": [
       "dark"
-    ]
+    ],
+    "accent": "#414A6A"
   },
   {
     "id": 360,
@@ -3047,7 +3406,8 @@
     "label": "Wynaut",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#6ABDDE"
   },
   {
     "id": 361,
@@ -3055,7 +3415,8 @@
     "label": "Snorunt",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#EEC56A"
   },
   {
     "id": 362,
@@ -3063,7 +3424,8 @@
     "label": "Glalie",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#2983BD"
   },
   {
     "id": 363,
@@ -3072,7 +3434,8 @@
     "types": [
       "ice",
       "water"
-    ]
+    ],
+    "accent": "#4A6ABD"
   },
   {
     "id": 364,
@@ -3081,7 +3444,8 @@
     "types": [
       "ice",
       "water"
-    ]
+    ],
+    "accent": "#5A94DE"
   },
   {
     "id": 365,
@@ -3090,7 +3454,8 @@
     "types": [
       "ice",
       "water"
-    ]
+    ],
+    "accent": "#3973AC"
   },
   {
     "id": 366,
@@ -3098,7 +3463,8 @@
     "label": "Clamperl",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#3962BD"
   },
   {
     "id": 367,
@@ -3106,7 +3472,8 @@
     "label": "Huntail",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#D58300"
   },
   {
     "id": 368,
@@ -3114,7 +3481,8 @@
     "label": "Gorebyss",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#F68BC5"
   },
   {
     "id": 369,
@@ -3123,7 +3491,8 @@
     "types": [
       "water",
       "rock"
-    ]
+    ],
+    "accent": "#CDB494"
   },
   {
     "id": 370,
@@ -3131,7 +3500,8 @@
     "label": "Luvdisc",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#E6739C"
   },
   {
     "id": 371,
@@ -3139,7 +3509,8 @@
     "label": "Bagon",
     "types": [
       "dragon"
-    ]
+    ],
+    "accent": "#62ACE6"
   },
   {
     "id": 372,
@@ -3147,7 +3518,8 @@
     "label": "Shelgon",
     "types": [
       "dragon"
-    ]
+    ],
+    "accent": "#EEE662"
   },
   {
     "id": 373,
@@ -3156,7 +3528,8 @@
     "types": [
       "dragon",
       "flying"
-    ]
+    ],
+    "accent": "#A4394A"
   },
   {
     "id": 374,
@@ -3165,7 +3538,8 @@
     "types": [
       "steel",
       "psychic"
-    ]
+    ],
+    "accent": "#4A6AA4"
   },
   {
     "id": 375,
@@ -3174,7 +3548,8 @@
     "types": [
       "steel",
       "psychic"
-    ]
+    ],
+    "accent": "#41628B"
   },
   {
     "id": 376,
@@ -3183,7 +3558,8 @@
     "types": [
       "steel",
       "psychic"
-    ]
+    ],
+    "accent": "#416294"
   },
   {
     "id": 377,
@@ -3191,7 +3567,8 @@
     "label": "Regirock",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#EE8339"
   },
   {
     "id": 378,
@@ -3199,7 +3576,8 @@
     "label": "Regice",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#6AB4D5"
   },
   {
     "id": 379,
@@ -3207,7 +3585,8 @@
     "label": "Registeel",
     "types": [
       "steel"
-    ]
+    ],
+    "accent": "#FF4141"
   },
   {
     "id": 380,
@@ -3216,7 +3595,8 @@
     "types": [
       "dragon",
       "psychic"
-    ]
+    ],
+    "accent": "#BD4141"
   },
   {
     "id": 381,
@@ -3225,7 +3605,8 @@
     "types": [
       "dragon",
       "psychic"
-    ]
+    ],
+    "accent": "#4A62B4"
   },
   {
     "id": 382,
@@ -3233,7 +3614,8 @@
     "label": "Kyogre",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#3962B4"
   },
   {
     "id": 383,
@@ -3241,7 +3623,8 @@
     "label": "Groudon",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#FF2029"
   },
   {
     "id": 384,
@@ -3250,7 +3633,8 @@
     "types": [
       "dragon",
       "flying"
-    ]
+    ],
+    "accent": "#4A8373"
   },
   {
     "id": 385,
@@ -3259,7 +3643,8 @@
     "types": [
       "steel",
       "psychic"
-    ]
+    ],
+    "accent": "#E6BD52"
   },
   {
     "id": 386,
@@ -3267,7 +3652,8 @@
     "label": "Deoxys",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#BD6A6A"
   },
   {
     "id": 387,
@@ -3275,7 +3661,8 @@
     "label": "Turtwig",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#BDCD83"
   },
   {
     "id": 388,
@@ -3283,7 +3670,8 @@
     "label": "Grotle",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#DEB441"
   },
   {
     "id": 389,
@@ -3292,7 +3680,8 @@
     "types": [
       "grass",
       "ground"
-    ]
+    ],
+    "accent": "#41AC41"
   },
   {
     "id": 390,
@@ -3300,7 +3689,8 @@
     "label": "Chimchar",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#DE8300"
   },
   {
     "id": 391,
@@ -3309,7 +3699,8 @@
     "types": [
       "fire",
       "fighting"
-    ]
+    ],
+    "accent": "#D58B29"
   },
   {
     "id": 392,
@@ -3318,7 +3709,8 @@
     "types": [
       "fire",
       "fighting"
-    ]
+    ],
+    "accent": "#E63941"
   },
   {
     "id": 393,
@@ -3326,7 +3718,8 @@
     "label": "Piplup",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#318BD5"
   },
   {
     "id": 394,
@@ -3334,7 +3727,8 @@
     "label": "Prinplup",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#205A94"
   },
   {
     "id": 395,
@@ -3343,7 +3737,8 @@
     "types": [
       "water",
       "steel"
-    ]
+    ],
+    "accent": "#103973"
   },
   {
     "id": 396,
@@ -3352,7 +3747,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#392029"
   },
   {
     "id": 397,
@@ -3361,7 +3757,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#BD6200"
   },
   {
     "id": 398,
@@ -3370,7 +3767,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#BD6200"
   },
   {
     "id": 399,
@@ -3378,7 +3776,8 @@
     "label": "Bidoof",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#C58B41"
   },
   {
     "id": 400,
@@ -3387,7 +3786,8 @@
     "types": [
       "normal",
       "water"
-    ]
+    ],
+    "accent": "#BD834A"
   },
   {
     "id": 401,
@@ -3395,7 +3795,8 @@
     "label": "Kricketot",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#B44A39"
   },
   {
     "id": 402,
@@ -3403,7 +3804,8 @@
     "label": "Kricketune",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#DE5A52"
   },
   {
     "id": 403,
@@ -3411,7 +3813,8 @@
     "label": "Shinx",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#7BACF6"
   },
   {
     "id": 404,
@@ -3419,7 +3822,8 @@
     "label": "Luxio",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#7BACF6"
   },
   {
     "id": 405,
@@ -3427,7 +3831,8 @@
     "label": "Luxray",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#627BB4"
   },
   {
     "id": 406,
@@ -3436,7 +3841,8 @@
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "accent": "#7BD55A"
   },
   {
     "id": 407,
@@ -3445,7 +3851,8 @@
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "accent": "#297B52"
   },
   {
     "id": 408,
@@ -3453,7 +3860,8 @@
     "label": "Cranidos",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#4A83BD"
   },
   {
     "id": 409,
@@ -3461,7 +3869,8 @@
     "label": "Rampardos",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#3983D5"
   },
   {
     "id": 410,
@@ -3470,7 +3879,8 @@
     "types": [
       "rock",
       "steel"
-    ]
+    ],
+    "accent": "#C59C5A"
   },
   {
     "id": 411,
@@ -3479,7 +3889,8 @@
     "types": [
       "rock",
       "steel"
-    ]
+    ],
+    "accent": "#FFCD7B"
   },
   {
     "id": 412,
@@ -3487,7 +3898,8 @@
     "label": "Burmy",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#527341"
   },
   {
     "id": 413,
@@ -3496,7 +3908,8 @@
     "types": [
       "bug",
       "grass"
-    ]
+    ],
+    "accent": "#7B9C4A"
   },
   {
     "id": 414,
@@ -3505,7 +3918,8 @@
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "accent": "#F6D57B"
   },
   {
     "id": 415,
@@ -3514,7 +3928,8 @@
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "accent": "#FFC500"
   },
   {
     "id": 416,
@@ -3523,7 +3938,8 @@
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "accent": "#FFCD08"
   },
   {
     "id": 417,
@@ -3531,7 +3947,8 @@
     "label": "Pachirisu",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#7BB4E6"
   },
   {
     "id": 418,
@@ -3539,7 +3956,8 @@
     "label": "Buizel",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#EE7B18"
   },
   {
     "id": 419,
@@ -3547,7 +3965,8 @@
     "label": "Floatzel",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#EE7B18"
   },
   {
     "id": 420,
@@ -3555,7 +3974,8 @@
     "label": "Cherubi",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#DE6283"
   },
   {
     "id": 421,
@@ -3563,7 +3983,8 @@
     "label": "Cherrim",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#6A417B"
   },
   {
     "id": 422,
@@ -3571,7 +3992,8 @@
     "label": "Shellos",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#FF8BC5"
   },
   {
     "id": 423,
@@ -3580,7 +4002,8 @@
     "types": [
       "water",
       "ground"
-    ]
+    ],
+    "accent": "#6A4A39"
   },
   {
     "id": 424,
@@ -3588,7 +4011,8 @@
     "label": "Ambipom",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#8339AC"
   },
   {
     "id": 425,
@@ -3597,7 +4021,8 @@
     "types": [
       "ghost",
       "flying"
-    ]
+    ],
+    "accent": "#946AE6"
   },
   {
     "id": 426,
@@ -3606,7 +4031,8 @@
     "types": [
       "ghost",
       "flying"
-    ]
+    ],
+    "accent": "#8352AC"
   },
   {
     "id": 427,
@@ -3614,7 +4040,8 @@
     "label": "Buneary",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#B47B4A"
   },
   {
     "id": 428,
@@ -3622,7 +4049,8 @@
     "label": "Lopunny",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#C5A47B"
   },
   {
     "id": 429,
@@ -3630,7 +4058,8 @@
     "label": "Mismagius",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#6A4A94"
   },
   {
     "id": 430,
@@ -3639,7 +4068,8 @@
     "types": [
       "dark",
       "flying"
-    ]
+    ],
+    "accent": "#39395A"
   },
   {
     "id": 431,
@@ -3647,7 +4077,8 @@
     "label": "Glameow",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#8B9CBD"
   },
   {
     "id": 432,
@@ -3655,7 +4086,8 @@
     "label": "Purugly",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#8394B4"
   },
   {
     "id": 433,
@@ -3663,7 +4095,8 @@
     "label": "Chingling",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#FFD55A"
   },
   {
     "id": 434,
@@ -3672,7 +4105,8 @@
     "types": [
       "poison",
       "dark"
-    ]
+    ],
+    "accent": "#6A528B"
   },
   {
     "id": 435,
@@ -3681,7 +4115,8 @@
     "types": [
       "poison",
       "dark"
-    ]
+    ],
+    "accent": "#6A528B"
   },
   {
     "id": 436,
@@ -3690,7 +4125,8 @@
     "types": [
       "steel",
       "psychic"
-    ]
+    ],
+    "accent": "#185A7B"
   },
   {
     "id": 437,
@@ -3699,7 +4135,8 @@
     "types": [
       "steel",
       "psychic"
-    ]
+    ],
+    "accent": "#207383"
   },
   {
     "id": 438,
@@ -3707,7 +4144,8 @@
     "label": "Bonsly",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#AC835A"
   },
   {
     "id": 439,
@@ -3716,7 +4154,8 @@
     "types": [
       "psychic",
       "fairy"
-    ]
+    ],
+    "accent": "#526AD5"
   },
   {
     "id": 440,
@@ -3724,7 +4163,8 @@
     "label": "Happiny",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#DE6A9C"
   },
   {
     "id": 441,
@@ -3733,7 +4173,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#2962B4"
   },
   {
     "id": 442,
@@ -3742,7 +4183,8 @@
     "types": [
       "ghost",
       "dark"
-    ]
+    ],
+    "accent": "#A4529C"
   },
   {
     "id": 443,
@@ -3751,7 +4193,8 @@
     "types": [
       "dragon",
       "ground"
-    ]
+    ],
+    "accent": "#5294AC"
   },
   {
     "id": 444,
@@ -3760,7 +4203,8 @@
     "types": [
       "dragon",
       "ground"
-    ]
+    ],
+    "accent": "#394A8B"
   },
   {
     "id": 445,
@@ -3769,7 +4213,8 @@
     "types": [
       "dragon",
       "ground"
-    ]
+    ],
+    "accent": "#5A62AC"
   },
   {
     "id": 446,
@@ -3777,7 +4222,8 @@
     "label": "Munchlax",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#317B9C"
   },
   {
     "id": 447,
@@ -3785,7 +4231,8 @@
     "label": "Riolu",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#4A9CEE"
   },
   {
     "id": 448,
@@ -3794,7 +4241,8 @@
     "types": [
       "fighting",
       "steel"
-    ]
+    ],
+    "accent": "#29739C"
   },
   {
     "id": 449,
@@ -3802,7 +4250,8 @@
     "label": "Hippopotas",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#E6CD7B"
   },
   {
     "id": 450,
@@ -3810,7 +4259,8 @@
     "label": "Hippowdon",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#CDB439"
   },
   {
     "id": 451,
@@ -3819,7 +4269,8 @@
     "types": [
       "poison",
       "bug"
-    ]
+    ],
+    "accent": "#6A6AB4"
   },
   {
     "id": 452,
@@ -3828,7 +4279,8 @@
     "types": [
       "poison",
       "dark"
-    ]
+    ],
+    "accent": "#4A3162"
   },
   {
     "id": 453,
@@ -3837,7 +4289,8 @@
     "types": [
       "poison",
       "fighting"
-    ]
+    ],
+    "accent": "#6A73D5"
   },
   {
     "id": 454,
@@ -3846,7 +4299,8 @@
     "types": [
       "poison",
       "fighting"
-    ]
+    ],
+    "accent": "#6A73D5"
   },
   {
     "id": 455,
@@ -3854,7 +4308,8 @@
     "label": "Carnivine",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#BDC57B"
   },
   {
     "id": 456,
@@ -3862,7 +4317,8 @@
     "label": "Finneon",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#31415A"
   },
   {
     "id": 457,
@@ -3870,7 +4326,8 @@
     "label": "Lumineon",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#31415A"
   },
   {
     "id": 458,
@@ -3879,7 +4336,8 @@
     "types": [
       "water",
       "flying"
-    ]
+    ],
+    "accent": "#1052AC"
   },
   {
     "id": 459,
@@ -3888,7 +4346,8 @@
     "types": [
       "grass",
       "ice"
-    ]
+    ],
+    "accent": "#735A4A"
   },
   {
     "id": 460,
@@ -3897,7 +4356,8 @@
     "types": [
       "grass",
       "ice"
-    ]
+    ],
+    "accent": "#298373"
   },
   {
     "id": 461,
@@ -3906,7 +4366,8 @@
     "types": [
       "dark",
       "ice"
-    ]
+    ],
+    "accent": "#C52973"
   },
   {
     "id": 462,
@@ -3915,7 +4376,8 @@
     "types": [
       "electric",
       "steel"
-    ]
+    ],
+    "accent": "#6A739C"
   },
   {
     "id": 463,
@@ -3923,7 +4385,8 @@
     "label": "Lickilicky",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#E67394"
   },
   {
     "id": 464,
@@ -3932,7 +4395,8 @@
     "types": [
       "ground",
       "rock"
-    ]
+    ],
+    "accent": "#EE5200"
   },
   {
     "id": 465,
@@ -3940,7 +4404,8 @@
     "label": "Tangrowth",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#3973AC"
   },
   {
     "id": 466,
@@ -3948,7 +4413,8 @@
     "label": "Electivire",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#FFDE20"
   },
   {
     "id": 467,
@@ -3956,7 +4422,8 @@
     "label": "Magmortar",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#FFC539"
   },
   {
     "id": 468,
@@ -3965,7 +4432,8 @@
     "types": [
       "fairy",
       "flying"
-    ]
+    ],
+    "accent": "#4A5A73"
   },
   {
     "id": 469,
@@ -3974,7 +4442,8 @@
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "accent": "#F65A52"
   },
   {
     "id": 470,
@@ -3982,7 +4451,8 @@
     "label": "Leafeon",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#319C73"
   },
   {
     "id": 471,
@@ -3990,7 +4460,8 @@
     "label": "Glaceon",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#94E6EE"
   },
   {
     "id": 472,
@@ -3999,7 +4470,8 @@
     "types": [
       "ground",
       "flying"
-    ]
+    ],
+    "accent": "#9C8BEE"
   },
   {
     "id": 473,
@@ -4008,7 +4480,8 @@
     "types": [
       "ice",
       "ground"
-    ]
+    ],
+    "accent": "#9C6A4A"
   },
   {
     "id": 474,
@@ -4016,7 +4489,8 @@
     "label": "Porygon-Z",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#4A9CD5"
   },
   {
     "id": 475,
@@ -4025,7 +4499,8 @@
     "types": [
       "psychic",
       "fighting"
-    ]
+    ],
+    "accent": "#5AB46A"
   },
   {
     "id": 476,
@@ -4034,7 +4509,8 @@
     "types": [
       "rock",
       "steel"
-    ]
+    ],
+    "accent": "#E65A62"
   },
   {
     "id": 477,
@@ -4042,7 +4518,8 @@
     "label": "Dusknoir",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#9C7B29"
   },
   {
     "id": 478,
@@ -4051,7 +4528,8 @@
     "types": [
       "ice",
       "ghost"
-    ]
+    ],
+    "accent": "#41416A"
   },
   {
     "id": 479,
@@ -4060,7 +4538,8 @@
     "types": [
       "electric",
       "ghost"
-    ]
+    ],
+    "accent": "#29ACBD"
   },
   {
     "id": 480,
@@ -4068,7 +4547,8 @@
     "label": "Uxie",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#F6C573"
   },
   {
     "id": 481,
@@ -4076,7 +4556,8 @@
     "label": "Mesprit",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#EE73AC"
   },
   {
     "id": 482,
@@ -4084,7 +4565,8 @@
     "label": "Azelf",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#5A94C5"
   },
   {
     "id": 483,
@@ -4093,7 +4575,8 @@
     "types": [
       "steel",
       "dragon"
-    ]
+    ],
+    "accent": "#20416A"
   },
   {
     "id": 484,
@@ -4102,7 +4585,8 @@
     "types": [
       "water",
       "dragon"
-    ]
+    ],
+    "accent": "#8B5294"
   },
   {
     "id": 485,
@@ -4111,7 +4595,8 @@
     "types": [
       "fire",
       "steel"
-    ]
+    ],
+    "accent": "#AC5A41"
   },
   {
     "id": 486,
@@ -4119,7 +4604,8 @@
     "label": "Regigigas",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#C59C52"
   },
   {
     "id": 487,
@@ -4128,7 +4614,8 @@
     "types": [
       "ghost",
       "dragon"
-    ]
+    ],
+    "accent": "#FFD500"
   },
   {
     "id": 488,
@@ -4136,7 +4623,8 @@
     "label": "Cresselia",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#C55A9C"
   },
   {
     "id": 489,
@@ -4144,7 +4632,8 @@
     "label": "Phione",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#6AC5F6"
   },
   {
     "id": 490,
@@ -4152,7 +4641,8 @@
     "label": "Manaphy",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#6AC5F6"
   },
   {
     "id": 491,
@@ -4160,7 +4650,8 @@
     "label": "Darkrai",
     "types": [
       "dark"
-    ]
+    ],
+    "accent": "#E63929"
   },
   {
     "id": 492,
@@ -4168,7 +4659,8 @@
     "label": "Shaymin",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#ACDE62"
   },
   {
     "id": 493,
@@ -4176,7 +4668,8 @@
     "label": "Arceus",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#837300"
   },
   {
     "id": 494,
@@ -4185,7 +4678,8 @@
     "types": [
       "psychic",
       "fire"
-    ]
+    ],
+    "accent": "#FF6A18"
   },
   {
     "id": 495,
@@ -4193,7 +4687,8 @@
     "label": "Snivy",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#00B400"
   },
   {
     "id": 496,
@@ -4201,7 +4696,8 @@
     "label": "Servine",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#29C54A"
   },
   {
     "id": 497,
@@ -4209,7 +4705,8 @@
     "label": "Serperior",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#189C4A"
   },
   {
     "id": 498,
@@ -4217,7 +4714,8 @@
     "label": "Tepig",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#EE8339"
   },
   {
     "id": 499,
@@ -4226,7 +4724,8 @@
     "types": [
       "fire",
       "fighting"
-    ]
+    ],
+    "accent": "#EE7329"
   },
   {
     "id": 500,
@@ -4235,7 +4734,8 @@
     "types": [
       "fire",
       "fighting"
-    ]
+    ],
+    "accent": "#EEBD08"
   },
   {
     "id": 501,
@@ -4243,7 +4743,8 @@
     "label": "Oshawott",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#29BDC5"
   },
   {
     "id": 502,
@@ -4251,7 +4752,8 @@
     "label": "Dewott",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#52BDBD"
   },
   {
     "id": 503,
@@ -4259,7 +4761,8 @@
     "label": "Samurott",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#205A9C"
   },
   {
     "id": 504,
@@ -4267,7 +4770,8 @@
     "label": "Patrat",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#9C6A31"
   },
   {
     "id": 505,
@@ -4275,7 +4779,8 @@
     "label": "Watchog",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#943939"
   },
   {
     "id": 506,
@@ -4283,7 +4788,8 @@
     "label": "Lillipup",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#EECD94"
   },
   {
     "id": 507,
@@ -4291,7 +4797,8 @@
     "label": "Herdier",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#945A41"
   },
   {
     "id": 508,
@@ -4299,7 +4806,8 @@
     "label": "Stoutland",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#FFE6AC"
   },
   {
     "id": 509,
@@ -4307,7 +4815,8 @@
     "label": "Purrloin",
     "types": [
       "dark"
-    ]
+    ],
+    "accent": "#7B527B"
   },
   {
     "id": 510,
@@ -4315,7 +4824,8 @@
     "label": "Liepard",
     "types": [
       "dark"
-    ]
+    ],
+    "accent": "#836294"
   },
   {
     "id": 511,
@@ -4323,7 +4833,8 @@
     "label": "Pansage",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#18A452"
   },
   {
     "id": 512,
@@ -4331,7 +4842,8 @@
     "label": "Simisage",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#18A452"
   },
   {
     "id": 513,
@@ -4339,7 +4851,8 @@
     "label": "Pansear",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#E65241"
   },
   {
     "id": 514,
@@ -4347,7 +4860,8 @@
     "label": "Simisear",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#E65241"
   },
   {
     "id": 515,
@@ -4355,7 +4869,8 @@
     "label": "Panpour",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#29B4DE"
   },
   {
     "id": 516,
@@ -4363,7 +4878,8 @@
     "label": "Simipour",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#29B4DE"
   },
   {
     "id": 517,
@@ -4371,7 +4887,8 @@
     "label": "Munna",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#CD8BBD"
   },
   {
     "id": 518,
@@ -4379,7 +4896,8 @@
     "label": "Musharna",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#DE7BBD"
   },
   {
     "id": 519,
@@ -4388,7 +4906,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#BD6262"
   },
   {
     "id": 520,
@@ -4397,7 +4916,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#8B2031"
   },
   {
     "id": 521,
@@ -4406,7 +4926,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#FF417B"
   },
   {
     "id": 522,
@@ -4414,7 +4935,8 @@
     "label": "Blitzle",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#182020"
   },
   {
     "id": 523,
@@ -4422,7 +4944,8 @@
     "label": "Zebstrika",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#182020"
   },
   {
     "id": 524,
@@ -4430,7 +4953,8 @@
     "label": "Roggenrola",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#182039"
   },
   {
     "id": 525,
@@ -4438,7 +4962,8 @@
     "label": "Boldore",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#41528B"
   },
   {
     "id": 526,
@@ -4446,7 +4971,8 @@
     "label": "Gigalith",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#41528B"
   },
   {
     "id": 527,
@@ -4455,7 +4981,8 @@
     "types": [
       "psychic",
       "flying"
-    ]
+    ],
+    "accent": "#ACDEF6"
   },
   {
     "id": 528,
@@ -4464,7 +4991,8 @@
     "types": [
       "psychic",
       "flying"
-    ]
+    ],
+    "accent": "#18A4CD"
   },
   {
     "id": 529,
@@ -4472,7 +5000,8 @@
     "label": "Drilbur",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#626A83"
   },
   {
     "id": 530,
@@ -4481,7 +5010,8 @@
     "types": [
       "ground",
       "steel"
-    ]
+    ],
+    "accent": "#5A4A41"
   },
   {
     "id": 531,
@@ -4489,7 +5019,8 @@
     "label": "Audino",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#DE8B94"
   },
   {
     "id": 532,
@@ -4497,7 +5028,8 @@
     "label": "Timburr",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#AC7308"
   },
   {
     "id": 533,
@@ -4505,7 +5037,8 @@
     "label": "Gurdurr",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#832939"
   },
   {
     "id": 534,
@@ -4513,7 +5046,8 @@
     "label": "Conkeldurr",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#C59C73"
   },
   {
     "id": 535,
@@ -4521,7 +5055,8 @@
     "label": "Tympole",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#FFDEBD"
   },
   {
     "id": 536,
@@ -4530,7 +5065,8 @@
     "types": [
       "water",
       "ground"
-    ]
+    ],
+    "accent": "#83E6D5"
   },
   {
     "id": 537,
@@ -4539,7 +5075,8 @@
     "types": [
       "water",
       "ground"
-    ]
+    ],
+    "accent": "#0894D5"
   },
   {
     "id": 538,
@@ -4547,7 +5084,8 @@
     "label": "Throh",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#DE5A5A"
   },
   {
     "id": 539,
@@ -4555,7 +5093,8 @@
     "label": "Sawk",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#B4F6EE"
   },
   {
     "id": 540,
@@ -4564,7 +5103,8 @@
     "types": [
       "bug",
       "grass"
-    ]
+    ],
+    "accent": "#94CD08"
   },
   {
     "id": 541,
@@ -4573,7 +5113,8 @@
     "types": [
       "bug",
       "grass"
-    ]
+    ],
+    "accent": "#94CD08"
   },
   {
     "id": 542,
@@ -4582,7 +5123,8 @@
     "types": [
       "bug",
       "grass"
-    ]
+    ],
+    "accent": "#7BCD08"
   },
   {
     "id": 543,
@@ -4591,7 +5133,8 @@
     "types": [
       "bug",
       "poison"
-    ]
+    ],
+    "accent": "#BD3152"
   },
   {
     "id": 544,
@@ -4600,7 +5143,8 @@
     "types": [
       "bug",
       "poison"
-    ]
+    ],
+    "accent": "#83739C"
   },
   {
     "id": 545,
@@ -4609,7 +5153,8 @@
     "types": [
       "bug",
       "poison"
-    ]
+    ],
+    "accent": "#9C1041"
   },
   {
     "id": 546,
@@ -4618,7 +5163,8 @@
     "types": [
       "grass",
       "fairy"
-    ]
+    ],
+    "accent": "#52A44A"
   },
   {
     "id": 547,
@@ -4627,7 +5173,8 @@
     "types": [
       "grass",
       "fairy"
-    ]
+    ],
+    "accent": "#C5B48B"
   },
   {
     "id": 548,
@@ -4635,7 +5182,8 @@
     "label": "Petilil",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#C5EE7B"
   },
   {
     "id": 549,
@@ -4643,7 +5191,8 @@
     "label": "Lilligant",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#C5EE7B"
   },
   {
     "id": 550,
@@ -4651,7 +5200,8 @@
     "label": "Basculin",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#41A452"
   },
   {
     "id": 551,
@@ -4660,7 +5210,8 @@
     "types": [
       "ground",
       "dark"
-    ]
+    ],
+    "accent": "#C59C5A"
   },
   {
     "id": 552,
@@ -4669,7 +5220,8 @@
     "types": [
       "ground",
       "dark"
-    ]
+    ],
+    "accent": "#C59C5A"
   },
   {
     "id": 553,
@@ -4678,7 +5230,8 @@
     "types": [
       "ground",
       "dark"
-    ]
+    ],
+    "accent": "#8B3141"
   },
   {
     "id": 554,
@@ -4686,7 +5239,8 @@
     "label": "Darumaka",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#CD3131"
   },
   {
     "id": 555,
@@ -4694,7 +5248,8 @@
     "label": "Darmanitan",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#AC2018"
   },
   {
     "id": 556,
@@ -4702,7 +5257,8 @@
     "label": "Maractus",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#5AD56A"
   },
   {
     "id": 557,
@@ -4711,7 +5267,8 @@
     "types": [
       "bug",
       "rock"
-    ]
+    ],
+    "accent": "#EE9C4A"
   },
   {
     "id": 558,
@@ -4720,7 +5277,8 @@
     "types": [
       "bug",
       "rock"
-    ]
+    ],
+    "accent": "#8B6A4A"
   },
   {
     "id": 559,
@@ -4729,7 +5287,8 @@
     "types": [
       "dark",
       "fighting"
-    ]
+    ],
+    "accent": "#FFCD00"
   },
   {
     "id": 560,
@@ -4738,7 +5297,8 @@
     "types": [
       "dark",
       "fighting"
-    ]
+    ],
+    "accent": "#B49418"
   },
   {
     "id": 561,
@@ -4747,7 +5307,8 @@
     "types": [
       "psychic",
       "flying"
-    ]
+    ],
+    "accent": "#FFC508"
   },
   {
     "id": 562,
@@ -4755,7 +5316,8 @@
     "label": "Yamask",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#F6AC29"
   },
   {
     "id": 563,
@@ -4763,7 +5325,8 @@
     "label": "Cofagrigus",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#FFBD31"
   },
   {
     "id": 564,
@@ -4772,7 +5335,8 @@
     "types": [
       "water",
       "rock"
-    ]
+    ],
+    "accent": "#4A9CDE"
   },
   {
     "id": 565,
@@ -4781,7 +5345,8 @@
     "types": [
       "water",
       "rock"
-    ]
+    ],
+    "accent": "#4A94D5"
   },
   {
     "id": 566,
@@ -4790,7 +5355,8 @@
     "types": [
       "rock",
       "flying"
-    ]
+    ],
+    "accent": "#F6CD62"
   },
   {
     "id": 567,
@@ -4799,7 +5365,8 @@
     "types": [
       "rock",
       "flying"
-    ]
+    ],
+    "accent": "#3183F6"
   },
   {
     "id": 568,
@@ -4807,7 +5374,8 @@
     "label": "Trubbish",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#296A4A"
   },
   {
     "id": 569,
@@ -4815,7 +5383,8 @@
     "label": "Garbodor",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#296A4A"
   },
   {
     "id": 570,
@@ -4823,7 +5392,8 @@
     "label": "Zorua",
     "types": [
       "dark"
-    ]
+    ],
+    "accent": "#202031"
   },
   {
     "id": 571,
@@ -4831,7 +5401,8 @@
     "label": "Zoroark",
     "types": [
       "dark"
-    ]
+    ],
+    "accent": "#AC1041"
   },
   {
     "id": 572,
@@ -4839,7 +5410,8 @@
     "label": "Minccino",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#BD2929"
   },
   {
     "id": 573,
@@ -4847,7 +5419,8 @@
     "label": "Cinccino",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#D55252"
   },
   {
     "id": 574,
@@ -4855,7 +5428,8 @@
     "label": "Gothita",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#CD8BBD"
   },
   {
     "id": 575,
@@ -4863,7 +5437,8 @@
     "label": "Gothorita",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#946A83"
   },
   {
     "id": 576,
@@ -4871,7 +5446,8 @@
     "label": "Gothitelle",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#E6ACDE"
   },
   {
     "id": 577,
@@ -4879,7 +5455,8 @@
     "label": "Solosis",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#5AB47B"
   },
   {
     "id": 578,
@@ -4887,7 +5464,8 @@
     "label": "Duosion",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#5AB47B"
   },
   {
     "id": 579,
@@ -4895,7 +5473,8 @@
     "label": "Reuniclus",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#5AB47B"
   },
   {
     "id": 580,
@@ -4904,7 +5483,8 @@
     "types": [
       "water",
       "flying"
-    ]
+    ],
+    "accent": "#94DEF6"
   },
   {
     "id": 581,
@@ -4913,7 +5493,8 @@
     "types": [
       "water",
       "flying"
-    ]
+    ],
+    "accent": "#5A6A83"
   },
   {
     "id": 582,
@@ -4921,7 +5502,8 @@
     "label": "Vanillite",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#A4DEF6"
   },
   {
     "id": 583,
@@ -4929,7 +5511,8 @@
     "label": "Vanillish",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#6AA4EE"
   },
   {
     "id": 584,
@@ -4937,7 +5520,8 @@
     "label": "Vanilluxe",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#6AA4EE"
   },
   {
     "id": 585,
@@ -4946,7 +5530,8 @@
     "types": [
       "normal",
       "grass"
-    ]
+    ],
+    "accent": "#FF9CAC"
   },
   {
     "id": 586,
@@ -4955,7 +5540,8 @@
     "types": [
       "normal",
       "grass"
-    ]
+    ],
+    "accent": "#7B5A31"
   },
   {
     "id": 587,
@@ -4964,7 +5550,8 @@
     "types": [
       "electric",
       "flying"
-    ]
+    ],
+    "accent": "#FFD500"
   },
   {
     "id": 588,
@@ -4972,7 +5559,8 @@
     "label": "Karrablast",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#316AFF"
   },
   {
     "id": 589,
@@ -4981,7 +5569,8 @@
     "types": [
       "bug",
       "steel"
-    ]
+    ],
+    "accent": "#BD2052"
   },
   {
     "id": 590,
@@ -4990,7 +5579,8 @@
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "accent": "#6A4A31"
   },
   {
     "id": 591,
@@ -4999,7 +5589,8 @@
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "accent": "#DE528B"
   },
   {
     "id": 592,
@@ -5008,7 +5599,8 @@
     "types": [
       "water",
       "ghost"
-    ]
+    ],
+    "accent": "#83D5FF"
   },
   {
     "id": 593,
@@ -5017,7 +5609,8 @@
     "types": [
       "water",
       "ghost"
-    ]
+    ],
+    "accent": "#39C5F6"
   },
   {
     "id": 594,
@@ -5025,7 +5618,8 @@
     "label": "Alomomola",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#FFBDBD"
   },
   {
     "id": 595,
@@ -5034,7 +5628,8 @@
     "types": [
       "bug",
       "electric"
-    ]
+    ],
+    "accent": "#F6DE41"
   },
   {
     "id": 596,
@@ -5043,7 +5638,8 @@
     "types": [
       "bug",
       "electric"
-    ]
+    ],
+    "accent": "#CDAC00"
   },
   {
     "id": 597,
@@ -5052,7 +5648,8 @@
     "types": [
       "grass",
       "steel"
-    ]
+    ],
+    "accent": "#00B45A"
   },
   {
     "id": 598,
@@ -5061,7 +5658,8 @@
     "types": [
       "grass",
       "steel"
-    ]
+    ],
+    "accent": "#185231"
   },
   {
     "id": 599,
@@ -5069,7 +5667,8 @@
     "label": "Klink",
     "types": [
       "steel"
-    ]
+    ],
+    "accent": "#29ACBD"
   },
   {
     "id": 600,
@@ -5077,7 +5676,8 @@
     "label": "Klang",
     "types": [
       "steel"
-    ]
+    ],
+    "accent": "#29ACBD"
   },
   {
     "id": 601,
@@ -5085,7 +5685,8 @@
     "label": "Klinklang",
     "types": [
       "steel"
-    ]
+    ],
+    "accent": "#29ACBD"
   },
   {
     "id": 602,
@@ -5093,7 +5694,8 @@
     "label": "Tynamo",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#FFD500"
   },
   {
     "id": 603,
@@ -5101,7 +5703,8 @@
     "label": "Eelektrik",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#205A62"
   },
   {
     "id": 604,
@@ -5109,7 +5712,8 @@
     "label": "Eelektross",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#206273"
   },
   {
     "id": 605,
@@ -5117,7 +5721,8 @@
     "label": "Elgyem",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#629483"
   },
   {
     "id": 606,
@@ -5125,7 +5730,8 @@
     "label": "Beheeyem",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#DE9C7B"
   },
   {
     "id": 607,
@@ -5134,7 +5740,8 @@
     "types": [
       "ghost",
       "fire"
-    ]
+    ],
+    "accent": "#7352E6"
   },
   {
     "id": 608,
@@ -5143,7 +5750,8 @@
     "types": [
       "ghost",
       "fire"
-    ]
+    ],
+    "accent": "#836AE6"
   },
   {
     "id": 609,
@@ -5152,7 +5760,8 @@
     "types": [
       "ghost",
       "fire"
-    ]
+    ],
+    "accent": "#7352E6"
   },
   {
     "id": 610,
@@ -5160,7 +5769,8 @@
     "label": "Axew",
     "types": [
       "dragon"
-    ]
+    ],
+    "accent": "#94A45A"
   },
   {
     "id": 611,
@@ -5168,7 +5778,8 @@
     "label": "Fraxure",
     "types": [
       "dragon"
-    ]
+    ],
+    "accent": "#4A8B4A"
   },
   {
     "id": 612,
@@ -5176,7 +5787,8 @@
     "label": "Haxorus",
     "types": [
       "dragon"
-    ]
+    ],
+    "accent": "#A4AC18"
   },
   {
     "id": 613,
@@ -5184,7 +5796,8 @@
     "label": "Cubchoo",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#94D5EE"
   },
   {
     "id": 614,
@@ -5192,7 +5805,8 @@
     "label": "Beartic",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#41626A"
   },
   {
     "id": 615,
@@ -5200,7 +5814,8 @@
     "label": "Cryogonal",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#5262C5"
   },
   {
     "id": 616,
@@ -5208,7 +5823,8 @@
     "label": "Shelmet",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#FF4A7B"
   },
   {
     "id": 617,
@@ -5216,7 +5832,8 @@
     "label": "Accelgor",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#6A83C5"
   },
   {
     "id": 618,
@@ -5225,7 +5842,8 @@
     "types": [
       "ground",
       "electric"
-    ]
+    ],
+    "accent": "#D59C83"
   },
   {
     "id": 619,
@@ -5233,7 +5851,8 @@
     "label": "Mienfoo",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#A44152"
   },
   {
     "id": 620,
@@ -5241,7 +5860,8 @@
     "label": "Mienshao",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#8362AC"
   },
   {
     "id": 621,
@@ -5249,7 +5869,8 @@
     "label": "Druddigon",
     "types": [
       "dragon"
-    ]
+    ],
+    "accent": "#104A8B"
   },
   {
     "id": 622,
@@ -5258,7 +5879,8 @@
     "types": [
       "ground",
       "ghost"
-    ]
+    ],
+    "accent": "#83CDCD"
   },
   {
     "id": 623,
@@ -5267,7 +5889,8 @@
     "types": [
       "ground",
       "ghost"
-    ]
+    ],
+    "accent": "#5AA4A4"
   },
   {
     "id": 624,
@@ -5276,7 +5899,8 @@
     "types": [
       "dark",
       "steel"
-    ]
+    ],
+    "accent": "#BD4141"
   },
   {
     "id": 625,
@@ -5285,7 +5909,8 @@
     "types": [
       "dark",
       "steel"
-    ]
+    ],
+    "accent": "#C53131"
   },
   {
     "id": 626,
@@ -5293,7 +5918,8 @@
     "label": "Bouffalant",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#4A4131"
   },
   {
     "id": 627,
@@ -5302,7 +5928,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#6A8394"
   },
   {
     "id": 628,
@@ -5311,7 +5938,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#A43131"
   },
   {
     "id": 629,
@@ -5320,7 +5948,8 @@
     "types": [
       "dark",
       "flying"
-    ]
+    ],
+    "accent": "#392929"
   },
   {
     "id": 630,
@@ -5329,7 +5958,8 @@
     "types": [
       "dark",
       "flying"
-    ]
+    ],
+    "accent": "#624A41"
   },
   {
     "id": 631,
@@ -5337,7 +5967,8 @@
     "label": "Heatmor",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#C54A41"
   },
   {
     "id": 632,
@@ -5346,7 +5977,8 @@
     "types": [
       "bug",
       "steel"
-    ]
+    ],
+    "accent": "#181820"
   },
   {
     "id": 633,
@@ -5355,7 +5987,8 @@
     "types": [
       "dark",
       "dragon"
-    ]
+    ],
+    "accent": "#3962A4"
   },
   {
     "id": 634,
@@ -5364,7 +5997,8 @@
     "types": [
       "dark",
       "dragon"
-    ]
+    ],
+    "accent": "#3962A4"
   },
   {
     "id": 635,
@@ -5373,7 +6007,8 @@
     "types": [
       "dark",
       "dragon"
-    ]
+    ],
+    "accent": "#5A83CD"
   },
   {
     "id": 636,
@@ -5382,7 +6017,8 @@
     "types": [
       "bug",
       "fire"
-    ]
+    ],
+    "accent": "#D53918"
   },
   {
     "id": 637,
@@ -5391,7 +6027,8 @@
     "types": [
       "bug",
       "fire"
-    ]
+    ],
+    "accent": "#EE7318"
   },
   {
     "id": 638,
@@ -5400,7 +6037,8 @@
     "types": [
       "steel",
       "fighting"
-    ]
+    ],
+    "accent": "#18ACB4"
   },
   {
     "id": 639,
@@ -5409,7 +6047,8 @@
     "types": [
       "rock",
       "fighting"
-    ]
+    ],
+    "accent": "#B4A483"
   },
   {
     "id": 640,
@@ -5418,7 +6057,8 @@
     "types": [
       "grass",
       "fighting"
-    ]
+    ],
+    "accent": "#9CCD52"
   },
   {
     "id": 641,
@@ -5426,7 +6066,8 @@
     "label": "Tornadus",
     "types": [
       "flying"
-    ]
+    ],
+    "accent": "#8341AC"
   },
   {
     "id": 642,
@@ -5435,7 +6076,8 @@
     "types": [
       "electric",
       "flying"
-    ]
+    ],
+    "accent": "#62C5FF"
   },
   {
     "id": 643,
@@ -5444,7 +6086,8 @@
     "types": [
       "dragon",
       "fire"
-    ]
+    ],
+    "accent": "#737B9C"
   },
   {
     "id": 644,
@@ -5453,7 +6096,8 @@
     "types": [
       "dragon",
       "electric"
-    ]
+    ],
+    "accent": "#181820"
   },
   {
     "id": 645,
@@ -5462,7 +6106,8 @@
     "types": [
       "ground",
       "flying"
-    ]
+    ],
+    "accent": "#F67B41"
   },
   {
     "id": 646,
@@ -5471,7 +6116,8 @@
     "types": [
       "dragon",
       "ice"
-    ]
+    ],
+    "accent": "#BDE6FF"
   },
   {
     "id": 647,
@@ -5480,7 +6126,8 @@
     "types": [
       "water",
       "fighting"
-    ]
+    ],
+    "accent": "#DE4120"
   },
   {
     "id": 648,
@@ -5489,7 +6136,8 @@
     "types": [
       "normal",
       "psychic"
-    ]
+    ],
+    "accent": "#CDF69C"
   },
   {
     "id": 649,
@@ -5498,7 +6146,8 @@
     "types": [
       "bug",
       "steel"
-    ]
+    ],
+    "accent": "#9C5AC5"
   },
   {
     "id": 650,
@@ -5506,7 +6155,8 @@
     "label": "Chespin",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#A6D941"
   },
   {
     "id": 651,
@@ -5514,7 +6164,8 @@
     "label": "Quilladin",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#A6D941"
   },
   {
     "id": 652,
@@ -5523,7 +6174,8 @@
     "types": [
       "grass",
       "fighting"
-    ]
+    ],
+    "accent": "#F7DBAA"
   },
   {
     "id": 653,
@@ -5531,7 +6183,8 @@
     "label": "Fennekin",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#FFD659"
   },
   {
     "id": 654,
@@ -5539,7 +6192,8 @@
     "label": "Braixen",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#FFD659"
   },
   {
     "id": 655,
@@ -5548,7 +6202,8 @@
     "types": [
       "fire",
       "psychic"
-    ]
+    ],
+    "accent": "#893027"
   },
   {
     "id": 656,
@@ -5556,7 +6211,8 @@
     "label": "Froakie",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#4CA3BF"
   },
   {
     "id": 657,
@@ -5564,7 +6220,8 @@
     "label": "Frogadier",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#006BA6"
   },
   {
     "id": 658,
@@ -5573,7 +6230,8 @@
     "types": [
       "water",
       "dark"
-    ]
+    ],
+    "accent": "#2E4999"
   },
   {
     "id": 659,
@@ -5581,7 +6239,8 @@
     "label": "Bunnelby",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#926B4D"
   },
   {
     "id": 660,
@@ -5590,7 +6249,8 @@
     "types": [
       "normal",
       "ground"
-    ]
+    ],
+    "accent": "#8A6239"
   },
   {
     "id": 661,
@@ -5599,7 +6259,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#FF6A4C"
   },
   {
     "id": 662,
@@ -5608,7 +6269,8 @@
     "types": [
       "fire",
       "flying"
-    ]
+    ],
+    "accent": "#FFCD39"
   },
   {
     "id": 663,
@@ -5617,7 +6279,8 @@
     "types": [
       "fire",
       "flying"
-    ]
+    ],
+    "accent": "#FF6A4C"
   },
   {
     "id": 664,
@@ -5625,7 +6288,8 @@
     "label": "Scatterbug",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#D1BF6B"
   },
   {
     "id": 665,
@@ -5633,7 +6297,8 @@
     "label": "Spewpa",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#9D7247"
   },
   {
     "id": 666,
@@ -5642,7 +6307,8 @@
     "types": [
       "bug",
       "flying"
-    ]
+    ],
+    "accent": "#DF6FA4"
   },
   {
     "id": 667,
@@ -5651,7 +6317,8 @@
     "types": [
       "fire",
       "normal"
-    ]
+    ],
+    "accent": "#F2BC85"
   },
   {
     "id": 668,
@@ -5660,7 +6327,8 @@
     "types": [
       "fire",
       "normal"
-    ]
+    ],
+    "accent": "#DC3A2F"
   },
   {
     "id": 669,
@@ -5668,7 +6336,8 @@
     "label": "Flabébé",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#EF6F6F"
   },
   {
     "id": 670,
@@ -5676,7 +6345,8 @@
     "label": "Floette",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#208050"
   },
   {
     "id": 671,
@@ -5684,7 +6354,8 @@
     "label": "Florges",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#50996F"
   },
   {
     "id": 672,
@@ -5692,7 +6363,8 @@
     "label": "Skiddo",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#36B389"
   },
   {
     "id": 673,
@@ -5700,7 +6372,8 @@
     "label": "Gogoat",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#2FB657"
   },
   {
     "id": 674,
@@ -5708,7 +6381,8 @@
     "label": "Pancham",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#36B35F"
   },
   {
     "id": 675,
@@ -5717,7 +6391,8 @@
     "types": [
       "fighting",
       "dark"
-    ]
+    ],
+    "accent": "#1B5930"
   },
   {
     "id": 676,
@@ -5725,7 +6400,8 @@
     "label": "Furfrou",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#FC362C"
   },
   {
     "id": 677,
@@ -5733,7 +6409,8 @@
     "label": "Espurr",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#995C99"
   },
   {
     "id": 678,
@@ -5741,7 +6418,8 @@
     "label": "Meowstic",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#365FB3"
   },
   {
     "id": 679,
@@ -5750,7 +6428,8 @@
     "types": [
       "steel",
       "ghost"
-    ]
+    ],
+    "accent": "#316B9F"
   },
   {
     "id": 680,
@@ -5759,7 +6438,8 @@
     "types": [
       "steel",
       "ghost"
-    ]
+    ],
+    "accent": "#8D6443"
   },
   {
     "id": 681,
@@ -5768,7 +6448,8 @@
     "types": [
       "steel",
       "ghost"
-    ]
+    ],
+    "accent": "#9F8D56"
   },
   {
     "id": 682,
@@ -5776,7 +6457,8 @@
     "label": "Spritzee",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#FF99B3"
   },
   {
     "id": 683,
@@ -5784,7 +6466,8 @@
     "label": "Aromatisse",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#CC5299"
   },
   {
     "id": 684,
@@ -5792,7 +6475,8 @@
     "label": "Swirlix",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#805963"
   },
   {
     "id": 685,
@@ -5800,7 +6484,8 @@
     "label": "Slurpuff",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#E53964"
   },
   {
     "id": 686,
@@ -5809,7 +6494,8 @@
     "types": [
       "dark",
       "psychic"
-    ]
+    ],
+    "accent": "#85BCF2"
   },
   {
     "id": 687,
@@ -5818,7 +6504,8 @@
     "types": [
       "dark",
       "psychic"
-    ]
+    ],
+    "accent": "#5C81CC"
   },
   {
     "id": 688,
@@ -5827,7 +6514,8 @@
     "types": [
       "rock",
       "water"
-    ]
+    ],
+    "accent": "#896C44"
   },
   {
     "id": 689,
@@ -5836,7 +6524,8 @@
     "types": [
       "rock",
       "water"
-    ]
+    ],
+    "accent": "#896C44"
   },
   {
     "id": 690,
@@ -5845,7 +6534,8 @@
     "types": [
       "poison",
       "water"
-    ]
+    ],
+    "accent": "#A6703A"
   },
   {
     "id": 691,
@@ -5854,7 +6544,8 @@
     "types": [
       "poison",
       "dragon"
-    ]
+    ],
+    "accent": "#8B5737"
   },
   {
     "id": 692,
@@ -5862,7 +6553,8 @@
     "label": "Clauncher",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#61DAF2"
   },
   {
     "id": 693,
@@ -5870,7 +6562,8 @@
     "label": "Clawitzer",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#4595E5"
   },
   {
     "id": 694,
@@ -5879,7 +6572,8 @@
     "types": [
       "electric",
       "normal"
-    ]
+    ],
+    "accent": "#FFDE3A"
   },
   {
     "id": 695,
@@ -5888,7 +6582,8 @@
     "types": [
       "electric",
       "normal"
-    ]
+    ],
+    "accent": "#FFDE3A"
   },
   {
     "id": 696,
@@ -5897,7 +6592,8 @@
     "types": [
       "rock",
       "dragon"
-    ]
+    ],
+    "accent": "#966858"
   },
   {
     "id": 697,
@@ -5906,7 +6602,8 @@
     "types": [
       "rock",
       "dragon"
-    ]
+    ],
+    "accent": "#963E4E"
   },
   {
     "id": 698,
@@ -5915,7 +6612,8 @@
     "types": [
       "rock",
       "ice"
-    ]
+    ],
+    "accent": "#A6E1FF"
   },
   {
     "id": 699,
@@ -5924,7 +6622,8 @@
     "types": [
       "rock",
       "ice"
-    ]
+    ],
+    "accent": "#81A0DC"
   },
   {
     "id": 700,
@@ -5932,7 +6631,8 @@
     "label": "Sylveon",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#FA8CAA"
   },
   {
     "id": 701,
@@ -5941,7 +6641,8 @@
     "types": [
       "fighting",
       "flying"
-    ]
+    ],
+    "accent": "#3D997A"
   },
   {
     "id": 702,
@@ -5950,7 +6651,8 @@
     "types": [
       "electric",
       "fairy"
-    ]
+    ],
+    "accent": "#F2C261"
   },
   {
     "id": 703,
@@ -5959,7 +6661,8 @@
     "types": [
       "rock",
       "fairy"
-    ]
+    ],
+    "accent": "#6994BF"
   },
   {
     "id": 704,
@@ -5967,7 +6670,8 @@
     "label": "Goomy",
     "types": [
       "dragon"
-    ]
+    ],
+    "accent": "#B8A1E5"
   },
   {
     "id": 705,
@@ -5975,7 +6679,8 @@
     "label": "Sliggoo",
     "types": [
       "dragon"
-    ]
+    ],
+    "accent": "#8F7DB3"
   },
   {
     "id": 706,
@@ -5983,7 +6688,8 @@
     "label": "Goodra",
     "types": [
       "dragon"
-    ]
+    ],
+    "accent": "#B791F0"
   },
   {
     "id": 707,
@@ -5992,7 +6698,8 @@
     "types": [
       "steel",
       "fairy"
-    ]
+    ],
+    "accent": "#CC9C3D"
   },
   {
     "id": 708,
@@ -6001,7 +6708,8 @@
     "types": [
       "ghost",
       "grass"
-    ]
+    ],
+    "accent": "#A87651"
   },
   {
     "id": 709,
@@ -6010,7 +6718,8 @@
     "types": [
       "ghost",
       "grass"
-    ]
+    ],
+    "accent": "#A37A4C"
   },
   {
     "id": 710,
@@ -6019,7 +6728,8 @@
     "types": [
       "ghost",
       "grass"
-    ]
+    ],
+    "accent": "#664E42"
   },
   {
     "id": 711,
@@ -6028,7 +6738,8 @@
     "types": [
       "ghost",
       "grass"
-    ]
+    ],
+    "accent": "#F49670"
   },
   {
     "id": 712,
@@ -6036,7 +6747,8 @@
     "label": "Bergmite",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#B3EAF8"
   },
   {
     "id": 713,
@@ -6044,7 +6756,8 @@
     "label": "Avalugg",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#BFF4FF"
   },
   {
     "id": 714,
@@ -6053,7 +6766,8 @@
     "types": [
       "flying",
       "dragon"
-    ]
+    ],
+    "accent": "#85489B"
   },
   {
     "id": 715,
@@ -6062,7 +6776,8 @@
     "types": [
       "flying",
       "dragon"
-    ]
+    ],
+    "accent": "#BD70CC"
   },
   {
     "id": 716,
@@ -6070,7 +6785,8 @@
     "label": "Xerneas",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#638BDD"
   },
   {
     "id": 717,
@@ -6079,7 +6795,8 @@
     "types": [
       "dark",
       "flying"
-    ]
+    ],
+    "accent": "#982E3B"
   },
   {
     "id": 718,
@@ -6088,7 +6805,8 @@
     "types": [
       "dragon",
       "ground"
-    ]
+    ],
+    "accent": "#AFCF4F"
   },
   {
     "id": 719,
@@ -6097,7 +6815,8 @@
     "types": [
       "rock",
       "fairy"
-    ]
+    ],
+    "accent": "#F291B2"
   },
   {
     "id": 720,
@@ -6106,7 +6825,8 @@
     "types": [
       "psychic",
       "ghost"
-    ]
+    ],
+    "accent": "#FF73A2"
   },
   {
     "id": 721,
@@ -6115,7 +6835,8 @@
     "types": [
       "fire",
       "water"
-    ]
+    ],
+    "accent": "#E54545"
   },
   {
     "id": 722,
@@ -6124,7 +6845,8 @@
     "types": [
       "grass",
       "flying"
-    ]
+    ],
+    "accent": "#F2C89D"
   },
   {
     "id": 723,
@@ -6133,7 +6855,8 @@
     "types": [
       "grass",
       "flying"
-    ]
+    ],
+    "accent": "#AC7946"
   },
   {
     "id": 724,
@@ -6142,7 +6865,8 @@
     "types": [
       "grass",
       "ghost"
-    ]
+    ],
+    "accent": "#01A87A"
   },
   {
     "id": 725,
@@ -6150,7 +6874,8 @@
     "label": "Litten",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#4C4C66"
   },
   {
     "id": 726,
@@ -6158,7 +6883,8 @@
     "label": "Torracat",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#F26B30"
   },
   {
     "id": 727,
@@ -6167,7 +6893,8 @@
     "types": [
       "fire",
       "dark"
-    ]
+    ],
+    "accent": "#AA1710"
   },
   {
     "id": 728,
@@ -6175,7 +6902,8 @@
     "label": "Popplio",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#436CBF"
   },
   {
     "id": 729,
@@ -6183,7 +6911,8 @@
     "label": "Brionne",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#1EB9EE"
   },
   {
     "id": 730,
@@ -6192,7 +6921,8 @@
     "types": [
       "water",
       "fairy"
-    ]
+    ],
+    "accent": "#44A0B5"
   },
   {
     "id": 731,
@@ -6201,7 +6931,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#F23D3D"
   },
   {
     "id": 732,
@@ -6210,7 +6941,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#ED3834"
   },
   {
     "id": 733,
@@ -6219,7 +6951,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#F24724"
   },
   {
     "id": 734,
@@ -6227,7 +6960,8 @@
     "label": "Yungoos",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#BA836D"
   },
   {
     "id": 735,
@@ -6235,7 +6969,8 @@
     "label": "Gumshoos",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#AF754E"
   },
   {
     "id": 736,
@@ -6243,7 +6978,8 @@
     "label": "Grubbin",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#E55C2E"
   },
   {
     "id": 737,
@@ -6252,7 +6988,8 @@
     "types": [
       "bug",
       "electric"
-    ]
+    ],
+    "accent": "#659954"
   },
   {
     "id": 738,
@@ -6261,7 +6998,8 @@
     "types": [
       "bug",
       "electric"
-    ]
+    ],
+    "accent": "#00586A"
   },
   {
     "id": 739,
@@ -6269,7 +7007,8 @@
     "label": "Crabrawler",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#2DB0F0"
   },
   {
     "id": 740,
@@ -6278,7 +7017,8 @@
     "types": [
       "fighting",
       "ice"
-    ]
+    ],
+    "accent": "#53597B"
   },
   {
     "id": 741,
@@ -6287,7 +7027,8 @@
     "types": [
       "fire",
       "flying"
-    ]
+    ],
+    "accent": "#F14B50"
   },
   {
     "id": 742,
@@ -6296,7 +7037,8 @@
     "types": [
       "bug",
       "fairy"
-    ]
+    ],
+    "accent": "#B37D47"
   },
   {
     "id": 743,
@@ -6305,7 +7047,8 @@
     "types": [
       "bug",
       "fairy"
-    ]
+    ],
+    "accent": "#B37D47"
   },
   {
     "id": 744,
@@ -6313,7 +7056,8 @@
     "label": "Rockruff",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#DFAB8C"
   },
   {
     "id": 745,
@@ -6321,7 +7065,8 @@
     "label": "Lycanroc",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#E3BBA7"
   },
   {
     "id": 746,
@@ -6329,7 +7074,8 @@
     "label": "Wishiwashi",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#4764C9"
   },
   {
     "id": 747,
@@ -6338,7 +7084,8 @@
     "types": [
       "poison",
       "water"
-    ]
+    ],
+    "accent": "#9FD9D6"
   },
   {
     "id": 748,
@@ -6347,7 +7094,8 @@
     "types": [
       "poison",
       "water"
-    ]
+    ],
+    "accent": "#93D1D7"
   },
   {
     "id": 749,
@@ -6355,7 +7103,8 @@
     "label": "Mudbray",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#AE7760"
   },
   {
     "id": 750,
@@ -6363,7 +7112,8 @@
     "label": "Mudsdale",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#AD463A"
   },
   {
     "id": 751,
@@ -6372,7 +7122,8 @@
     "types": [
       "water",
       "bug"
-    ]
+    ],
+    "accent": "#CEDF42"
   },
   {
     "id": 752,
@@ -6381,7 +7132,8 @@
     "types": [
       "water",
       "bug"
-    ]
+    ],
+    "accent": "#81AFC9"
   },
   {
     "id": 753,
@@ -6389,7 +7141,8 @@
     "label": "Fomantis",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#69BF94"
   },
   {
     "id": 754,
@@ -6397,7 +7150,8 @@
     "label": "Lurantis",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#FF667F"
   },
   {
     "id": 755,
@@ -6406,7 +7160,8 @@
     "types": [
       "grass",
       "fairy"
-    ]
+    ],
+    "accent": "#65604B"
   },
   {
     "id": 756,
@@ -6415,7 +7170,8 @@
     "types": [
       "grass",
       "fairy"
-    ]
+    ],
+    "accent": "#97B371"
   },
   {
     "id": 757,
@@ -6424,7 +7180,8 @@
     "types": [
       "poison",
       "fire"
-    ]
+    ],
+    "accent": "#F0530F"
   },
   {
     "id": 758,
@@ -6433,7 +7190,8 @@
     "types": [
       "poison",
       "fire"
-    ]
+    ],
+    "accent": "#D0285A"
   },
   {
     "id": 759,
@@ -6442,7 +7200,8 @@
     "types": [
       "normal",
       "fighting"
-    ]
+    ],
+    "accent": "#FFA6B5"
   },
   {
     "id": 760,
@@ -6451,7 +7210,8 @@
     "types": [
       "normal",
       "fighting"
-    ]
+    ],
+    "accent": "#FFA6B5"
   },
   {
     "id": 761,
@@ -6459,7 +7219,8 @@
     "label": "Bounsweet",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#E55C8A"
   },
   {
     "id": 762,
@@ -6467,7 +7228,8 @@
     "label": "Steenee",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#96C853"
   },
   {
     "id": 763,
@@ -6475,7 +7237,8 @@
     "label": "Tsareena",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#96C853"
   },
   {
     "id": 764,
@@ -6483,7 +7246,8 @@
     "label": "Comfey",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#E5B045"
   },
   {
     "id": 765,
@@ -6492,7 +7256,8 @@
     "types": [
       "normal",
       "psychic"
-    ]
+    ],
+    "accent": "#1BC953"
   },
   {
     "id": 766,
@@ -6500,7 +7265,8 @@
     "label": "Passimian",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#3C3126"
   },
   {
     "id": 767,
@@ -6509,7 +7275,8 @@
     "types": [
       "bug",
       "water"
-    ]
+    ],
+    "accent": "#A65E97"
   },
   {
     "id": 768,
@@ -6518,7 +7285,8 @@
     "types": [
       "bug",
       "water"
-    ]
+    ],
+    "accent": "#81B68E"
   },
   {
     "id": 769,
@@ -6527,7 +7295,8 @@
     "types": [
       "ghost",
       "ground"
-    ]
+    ],
+    "accent": "#403C30"
   },
   {
     "id": 770,
@@ -6536,7 +7305,8 @@
     "types": [
       "ghost",
       "ground"
-    ]
+    ],
+    "accent": "#F2AA61"
   },
   {
     "id": 771,
@@ -6544,7 +7314,8 @@
     "label": "Pyukumuku",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#D94174"
   },
   {
     "id": 772,
@@ -6552,7 +7323,8 @@
     "label": "Type: Null",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#C55E3A"
   },
   {
     "id": 773,
@@ -6560,7 +7332,8 @@
     "label": "Silvally",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#1E9378"
   },
   {
     "id": 774,
@@ -6569,7 +7342,8 @@
     "types": [
       "rock",
       "flying"
-    ]
+    ],
+    "accent": "#B4786B"
   },
   {
     "id": 775,
@@ -6577,7 +7351,8 @@
     "label": "Komala",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#96BEDD"
   },
   {
     "id": 776,
@@ -6586,7 +7361,8 @@
     "types": [
       "fire",
       "dragon"
-    ]
+    ],
+    "accent": "#B7282C"
   },
   {
     "id": 777,
@@ -6595,7 +7371,8 @@
     "types": [
       "electric",
       "steel"
-    ]
+    ],
+    "accent": "#CCB852"
   },
   {
     "id": 778,
@@ -6604,7 +7381,8 @@
     "types": [
       "ghost",
       "fairy"
-    ]
+    ],
+    "accent": "#F2E291"
   },
   {
     "id": 779,
@@ -6613,7 +7391,8 @@
     "types": [
       "water",
       "psychic"
-    ]
+    ],
+    "accent": "#EF87B5"
   },
   {
     "id": 780,
@@ -6622,7 +7401,8 @@
     "types": [
       "normal",
       "dragon"
-    ]
+    ],
+    "accent": "#5AA4A4"
   },
   {
     "id": 781,
@@ -6631,7 +7411,8 @@
     "types": [
       "ghost",
       "grass"
-    ]
+    ],
+    "accent": "#025A6A"
   },
   {
     "id": 782,
@@ -6639,7 +7420,8 @@
     "label": "Jangmo-o",
     "types": [
       "dragon"
-    ]
+    ],
+    "accent": "#F8F236"
   },
   {
     "id": 783,
@@ -6648,7 +7430,8 @@
     "types": [
       "dragon",
       "fighting"
-    ]
+    ],
+    "accent": "#F4DA42"
   },
   {
     "id": 784,
@@ -6657,7 +7440,8 @@
     "types": [
       "dragon",
       "fighting"
-    ]
+    ],
+    "accent": "#F4DA42"
   },
   {
     "id": 785,
@@ -6666,7 +7450,8 @@
     "types": [
       "electric",
       "fairy"
-    ]
+    ],
+    "accent": "#FFEA00"
   },
   {
     "id": 786,
@@ -6675,7 +7460,8 @@
     "types": [
       "psychic",
       "fairy"
-    ]
+    ],
+    "accent": "#C83E54"
   },
   {
     "id": 787,
@@ -6684,7 +7470,8 @@
     "types": [
       "grass",
       "fairy"
-    ]
+    ],
+    "accent": "#FF3F37"
   },
   {
     "id": 788,
@@ -6693,7 +7480,8 @@
     "types": [
       "water",
       "fairy"
-    ]
+    ],
+    "accent": "#855CCF"
   },
   {
     "id": 789,
@@ -6701,7 +7489,8 @@
     "label": "Cosmog",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#169FDA"
   },
   {
     "id": 790,
@@ -6709,7 +7498,8 @@
     "label": "Cosmoem",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#E8A61E"
   },
   {
     "id": 791,
@@ -6718,7 +7508,8 @@
     "types": [
       "psychic",
       "steel"
-    ]
+    ],
+    "accent": "#EFE85A"
   },
   {
     "id": 792,
@@ -6727,7 +7518,8 @@
     "types": [
       "psychic",
       "ghost"
-    ]
+    ],
+    "accent": "#45348E"
   },
   {
     "id": 793,
@@ -6736,7 +7528,8 @@
     "types": [
       "rock",
       "poison"
-    ]
+    ],
+    "accent": "#6B868F"
   },
   {
     "id": 794,
@@ -6745,7 +7538,8 @@
     "types": [
       "bug",
       "fighting"
-    ]
+    ],
+    "accent": "#FF2D32"
   },
   {
     "id": 795,
@@ -6754,7 +7548,8 @@
     "types": [
       "bug",
       "fighting"
-    ]
+    ],
+    "accent": "#855F25"
   },
   {
     "id": 796,
@@ -6762,7 +7557,8 @@
     "label": "Xurkitree",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#803809"
   },
   {
     "id": 797,
@@ -6771,7 +7567,8 @@
     "types": [
       "steel",
       "flying"
-    ]
+    ],
+    "accent": "#4C7E71"
   },
   {
     "id": 798,
@@ -6780,7 +7577,8 @@
     "types": [
       "grass",
       "steel"
-    ]
+    ],
+    "accent": "#A86C1C"
   },
   {
     "id": 799,
@@ -6789,7 +7587,8 @@
     "types": [
       "dark",
       "dragon"
-    ]
+    ],
+    "accent": "#394F59"
   },
   {
     "id": 800,
@@ -6797,7 +7596,8 @@
     "label": "Necrozma",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#EC925B"
   },
   {
     "id": 801,
@@ -6806,7 +7606,8 @@
     "types": [
       "steel",
       "fairy"
-    ]
+    ],
+    "accent": "#B78495"
   },
   {
     "id": 802,
@@ -6815,7 +7616,8 @@
     "types": [
       "fighting",
       "ghost"
-    ]
+    ],
+    "accent": "#FF4506"
   },
   {
     "id": 803,
@@ -6823,7 +7625,8 @@
     "label": "Poipole",
     "types": [
       "poison"
-    ]
+    ],
+    "accent": "#814EBA"
   },
   {
     "id": 804,
@@ -6832,7 +7635,8 @@
     "types": [
       "poison",
       "dragon"
-    ]
+    ],
+    "accent": "#793FBE"
   },
   {
     "id": 805,
@@ -6841,7 +7645,8 @@
     "types": [
       "rock",
       "steel"
-    ]
+    ],
+    "accent": "#72B9F3"
   },
   {
     "id": 806,
@@ -6850,7 +7655,8 @@
     "types": [
       "fire",
       "ghost"
-    ]
+    ],
+    "accent": "#31BDDF"
   },
   {
     "id": 807,
@@ -6858,7 +7664,8 @@
     "label": "Zeraora",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#F9E455"
   },
   {
     "id": 808,
@@ -6866,7 +7673,8 @@
     "label": "Meltan",
     "types": [
       "steel"
-    ]
+    ],
+    "accent": "#FFDA45"
   },
   {
     "id": 809,
@@ -6874,7 +7682,8 @@
     "label": "Melmetal",
     "types": [
       "steel"
-    ]
+    ],
+    "accent": "#AB732B"
   },
   {
     "id": 810,
@@ -6882,7 +7691,8 @@
     "label": "Grookey",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#87D751"
   },
   {
     "id": 811,
@@ -6890,7 +7700,8 @@
     "label": "Thwackey",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#CBD94D"
   },
   {
     "id": 812,
@@ -6898,7 +7709,8 @@
     "label": "Rillaboom",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#008445"
   },
   {
     "id": 813,
@@ -6906,7 +7718,8 @@
     "label": "Scorbunny",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#F27139"
   },
   {
     "id": 814,
@@ -6914,7 +7727,8 @@
     "label": "Raboot",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#ED442C"
   },
   {
     "id": 815,
@@ -6922,7 +7736,8 @@
     "label": "Cinderace",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#DE481D"
   },
   {
     "id": 816,
@@ -6930,7 +7745,8 @@
     "label": "Sobble",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#6AB6D2"
   },
   {
     "id": 817,
@@ -6938,7 +7754,8 @@
     "label": "Drizzile",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#31B5D0"
   },
   {
     "id": 818,
@@ -6946,7 +7763,8 @@
     "label": "Inteleon",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#003E6A"
   },
   {
     "id": 819,
@@ -6954,7 +7772,8 @@
     "label": "Skwovet",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#A78E78"
   },
   {
     "id": 820,
@@ -6962,7 +7781,8 @@
     "label": "Greedent",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#D49F91"
   },
   {
     "id": 821,
@@ -6970,7 +7790,8 @@
     "label": "Rookidee",
     "types": [
       "flying"
-    ]
+    ],
+    "accent": "#505038"
   },
   {
     "id": 822,
@@ -6978,7 +7799,8 @@
     "label": "Corvisquire",
     "types": [
       "flying"
-    ]
+    ],
+    "accent": "#426EB2"
   },
   {
     "id": 823,
@@ -6987,7 +7809,8 @@
     "types": [
       "flying",
       "steel"
-    ]
+    ],
+    "accent": "#434475"
   },
   {
     "id": 824,
@@ -6995,7 +7818,8 @@
     "label": "Blipbug",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#4E46AC"
   },
   {
     "id": 825,
@@ -7004,7 +7828,8 @@
     "types": [
       "bug",
       "psychic"
-    ]
+    ],
+    "accent": "#FDDA4D"
   },
   {
     "id": 826,
@@ -7013,7 +7838,8 @@
     "types": [
       "bug",
       "psychic"
-    ]
+    ],
+    "accent": "#FD2636"
   },
   {
     "id": 827,
@@ -7021,7 +7847,8 @@
     "label": "Nickit",
     "types": [
       "dark"
-    ]
+    ],
+    "accent": "#C4501E"
   },
   {
     "id": 828,
@@ -7029,7 +7856,8 @@
     "label": "Thievul",
     "types": [
       "dark"
-    ]
+    ],
+    "accent": "#C4501E"
   },
   {
     "id": 829,
@@ -7037,7 +7865,8 @@
     "label": "Gossifleur",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#CF301F"
   },
   {
     "id": 830,
@@ -7045,7 +7874,8 @@
     "label": "Eldegoss",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#B6B23D"
   },
   {
     "id": 831,
@@ -7053,7 +7883,8 @@
     "label": "Wooloo",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#824837"
   },
   {
     "id": 832,
@@ -7061,7 +7892,8 @@
     "label": "Dubwool",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#493325"
   },
   {
     "id": 833,
@@ -7069,7 +7901,8 @@
     "label": "Chewtle",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#7DDACA"
   },
   {
     "id": 834,
@@ -7078,7 +7911,8 @@
     "types": [
       "water",
       "rock"
-    ]
+    ],
+    "accent": "#F6BE13"
   },
   {
     "id": 835,
@@ -7086,7 +7920,8 @@
     "label": "Yamper",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#F7DA11"
   },
   {
     "id": 836,
@@ -7094,7 +7929,8 @@
     "label": "Boltund",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#FAD833"
   },
   {
     "id": 837,
@@ -7102,7 +7938,8 @@
     "label": "Rolycoly",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#ED591B"
   },
   {
     "id": 838,
@@ -7111,7 +7948,8 @@
     "types": [
       "rock",
       "fire"
-    ]
+    ],
+    "accent": "#1F1418"
   },
   {
     "id": 839,
@@ -7120,7 +7958,8 @@
     "types": [
       "rock",
       "fire"
-    ]
+    ],
+    "accent": "#1F1418"
   },
   {
     "id": 840,
@@ -7129,7 +7968,8 @@
     "types": [
       "grass",
       "dragon"
-    ]
+    ],
+    "accent": "#E2244A"
   },
   {
     "id": 841,
@@ -7138,7 +7978,8 @@
     "types": [
       "grass",
       "dragon"
-    ]
+    ],
+    "accent": "#CCB468"
   },
   {
     "id": 842,
@@ -7147,7 +7988,8 @@
     "types": [
       "grass",
       "dragon"
-    ]
+    ],
+    "accent": "#39A45F"
   },
   {
     "id": 843,
@@ -7155,7 +7997,8 @@
     "label": "Silicobra",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#777042"
   },
   {
     "id": 844,
@@ -7163,7 +8006,8 @@
     "label": "Sandaconda",
     "types": [
       "ground"
-    ]
+    ],
+    "accent": "#898C42"
   },
   {
     "id": 845,
@@ -7172,7 +8016,8 @@
     "types": [
       "flying",
       "water"
-    ]
+    ],
+    "accent": "#0F78D7"
   },
   {
     "id": 846,
@@ -7180,7 +8025,8 @@
     "label": "Arrokuda",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#8A6842"
   },
   {
     "id": 847,
@@ -7188,7 +8034,8 @@
     "label": "Barraskewda",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#8A6842"
   },
   {
     "id": 848,
@@ -7197,7 +8044,8 @@
     "types": [
       "electric",
       "poison"
-    ]
+    ],
+    "accent": "#9E30CD"
   },
   {
     "id": 849,
@@ -7206,7 +8054,8 @@
     "types": [
       "electric",
       "poison"
-    ]
+    ],
+    "accent": "#8D4FAE"
   },
   {
     "id": 850,
@@ -7215,7 +8064,8 @@
     "types": [
       "fire",
       "bug"
-    ]
+    ],
+    "accent": "#FF5839"
   },
   {
     "id": 851,
@@ -7224,7 +8074,8 @@
     "types": [
       "fire",
       "bug"
-    ]
+    ],
+    "accent": "#F89E08"
   },
   {
     "id": 852,
@@ -7232,7 +8083,8 @@
     "label": "Clobbopus",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#FD7647"
   },
   {
     "id": 853,
@@ -7240,7 +8092,8 @@
     "label": "Grapploct",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#115AE3"
   },
   {
     "id": 854,
@@ -7248,7 +8101,8 @@
     "label": "Sinistea",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#4BB2AF"
   },
   {
     "id": 855,
@@ -7256,7 +8110,8 @@
     "label": "Polteageist",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#9AEDEA"
   },
   {
     "id": 856,
@@ -7264,7 +8119,8 @@
     "label": "Hatenna",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#727AB1"
   },
   {
     "id": 857,
@@ -7272,7 +8128,8 @@
     "label": "Hattrem",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#727AB1"
   },
   {
     "id": 858,
@@ -7281,7 +8138,8 @@
     "types": [
       "psychic",
       "fairy"
-    ]
+    ],
+    "accent": "#948FC2"
   },
   {
     "id": 859,
@@ -7290,7 +8148,8 @@
     "types": [
       "dark",
       "fairy"
-    ]
+    ],
+    "accent": "#F589C2"
   },
   {
     "id": 860,
@@ -7299,7 +8158,8 @@
     "types": [
       "dark",
       "fairy"
-    ]
+    ],
+    "accent": "#F75C90"
   },
   {
     "id": 861,
@@ -7308,7 +8168,8 @@
     "types": [
       "dark",
       "fairy"
-    ]
+    ],
+    "accent": "#5D4694"
   },
   {
     "id": 862,
@@ -7317,7 +8178,8 @@
     "types": [
       "dark",
       "normal"
-    ]
+    ],
+    "accent": "#1B2627"
   },
   {
     "id": 863,
@@ -7325,7 +8187,8 @@
     "label": "Perrserker",
     "types": [
       "steel"
-    ]
+    ],
+    "accent": "#EF9B50"
   },
   {
     "id": 864,
@@ -7333,7 +8196,8 @@
     "label": "Cursola",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#E66294"
   },
   {
     "id": 865,
@@ -7341,7 +8205,8 @@
     "label": "Sirfetch'd",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#31805A"
   },
   {
     "id": 866,
@@ -7350,7 +8215,8 @@
     "types": [
       "ice",
       "psychic"
-    ]
+    ],
+    "accent": "#575481"
   },
   {
     "id": 867,
@@ -7359,7 +8225,8 @@
     "types": [
       "ground",
       "ghost"
-    ]
+    ],
+    "accent": "#CB414B"
   },
   {
     "id": 868,
@@ -7367,7 +8234,8 @@
     "label": "Milcery",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#B29B57"
   },
   {
     "id": 869,
@@ -7375,7 +8243,8 @@
     "label": "Alcremie",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#F28A95"
   },
   {
     "id": 870,
@@ -7383,7 +8252,8 @@
     "label": "Falinks",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#FFCD35"
   },
   {
     "id": 871,
@@ -7391,7 +8261,8 @@
     "label": "Pincurchin",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#665272"
   },
   {
     "id": 872,
@@ -7400,7 +8271,8 @@
     "types": [
       "ice",
       "bug"
-    ]
+    ],
+    "accent": "#ACC3CC"
   },
   {
     "id": 873,
@@ -7409,7 +8281,8 @@
     "types": [
       "ice",
       "bug"
-    ]
+    ],
+    "accent": "#4662CE"
   },
   {
     "id": 874,
@@ -7417,7 +8290,8 @@
     "label": "Stonjourner",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#73502D"
   },
   {
     "id": 875,
@@ -7425,7 +8299,8 @@
     "label": "Eiscue",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#8CBBCC"
   },
   {
     "id": 876,
@@ -7434,7 +8309,8 @@
     "types": [
       "psychic",
       "normal"
-    ]
+    ],
+    "accent": "#4D447E"
   },
   {
     "id": 877,
@@ -7443,7 +8319,8 @@
     "types": [
       "electric",
       "dark"
-    ]
+    ],
+    "accent": "#D3B351"
   },
   {
     "id": 878,
@@ -7451,7 +8328,8 @@
     "label": "Cufant",
     "types": [
       "steel"
-    ]
+    ],
+    "accent": "#D55139"
   },
   {
     "id": 879,
@@ -7459,7 +8337,8 @@
     "label": "Copperajah",
     "types": [
       "steel"
-    ]
+    ],
+    "accent": "#224236"
   },
   {
     "id": 880,
@@ -7468,7 +8347,8 @@
     "types": [
       "electric",
       "dragon"
-    ]
+    ],
+    "accent": "#008567"
   },
   {
     "id": 881,
@@ -7477,7 +8357,8 @@
     "types": [
       "electric",
       "ice"
-    ]
+    ],
+    "accent": "#085D94"
   },
   {
     "id": 882,
@@ -7486,7 +8367,8 @@
     "types": [
       "water",
       "dragon"
-    ]
+    ],
+    "accent": "#008567"
   },
   {
     "id": 883,
@@ -7495,7 +8377,8 @@
     "types": [
       "water",
       "ice"
-    ]
+    ],
+    "accent": "#83BBED"
   },
   {
     "id": 884,
@@ -7504,7 +8387,8 @@
     "types": [
       "steel",
       "dragon"
-    ]
+    ],
+    "accent": "#5151A4"
   },
   {
     "id": 885,
@@ -7513,7 +8397,8 @@
     "types": [
       "dragon",
       "ghost"
-    ]
+    ],
+    "accent": "#5F875A"
   },
   {
     "id": 886,
@@ -7522,7 +8407,8 @@
     "types": [
       "dragon",
       "ghost"
-    ]
+    ],
+    "accent": "#7FB3B1"
   },
   {
     "id": 887,
@@ -7531,7 +8417,8 @@
     "types": [
       "dragon",
       "ghost"
-    ]
+    ],
+    "accent": "#48A9B0"
   },
   {
     "id": 888,
@@ -7539,7 +8426,8 @@
     "label": "Zacian",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#4999DA"
   },
   {
     "id": 889,
@@ -7547,7 +8435,8 @@
     "label": "Zamazenta",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#EB363A"
   },
   {
     "id": 890,
@@ -7556,7 +8445,8 @@
     "types": [
       "poison",
       "dragon"
-    ]
+    ],
+    "accent": "#3A15BC"
   },
   {
     "id": 891,
@@ -7564,7 +8454,8 @@
     "label": "Kubfu",
     "types": [
       "fighting"
-    ]
+    ],
+    "accent": "#CDAB78"
   },
   {
     "id": 892,
@@ -7573,7 +8464,8 @@
     "types": [
       "fighting",
       "dark"
-    ]
+    ],
+    "accent": "#9E6225"
   },
   {
     "id": 893,
@@ -7582,7 +8474,8 @@
     "types": [
       "dark",
       "grass"
-    ]
+    ],
+    "accent": "#59C549"
   },
   {
     "id": 894,
@@ -7590,7 +8483,8 @@
     "label": "Regieleki",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#E5EE1A"
   },
   {
     "id": 895,
@@ -7598,7 +8492,8 @@
     "label": "Regidrago",
     "types": [
       "dragon"
-    ]
+    ],
+    "accent": "#4B6F78"
   },
   {
     "id": 896,
@@ -7606,7 +8501,8 @@
     "label": "Glastrier",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#003071"
   },
   {
     "id": 897,
@@ -7614,7 +8510,8 @@
     "label": "Spectrier",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#7C5BCF"
   },
   {
     "id": 898,
@@ -7623,7 +8520,8 @@
     "types": [
       "psychic",
       "grass"
-    ]
+    ],
+    "accent": "#007766"
   },
   {
     "id": 899,
@@ -7632,7 +8530,8 @@
     "types": [
       "normal",
       "psychic"
-    ]
+    ],
+    "accent": "#E2982E"
   },
   {
     "id": 900,
@@ -7641,7 +8540,8 @@
     "types": [
       "bug",
       "rock"
-    ]
+    ],
+    "accent": "#AF7845"
   },
   {
     "id": 901,
@@ -7650,7 +8550,8 @@
     "types": [
       "ground",
       "normal"
-    ]
+    ],
+    "accent": "#382423"
   },
   {
     "id": 902,
@@ -7659,7 +8560,8 @@
     "types": [
       "water",
       "ghost"
-    ]
+    ],
+    "accent": "#FA507E"
   },
   {
     "id": 903,
@@ -7668,7 +8570,8 @@
     "types": [
       "fighting",
       "poison"
-    ]
+    ],
+    "accent": "#9EBADE"
   },
   {
     "id": 904,
@@ -7677,7 +8580,8 @@
     "types": [
       "dark",
       "poison"
-    ]
+    ],
+    "accent": "#C8B48A"
   },
   {
     "id": 905,
@@ -7686,7 +8590,8 @@
     "types": [
       "fairy",
       "flying"
-    ]
+    ],
+    "accent": "#ED81AA"
   },
   {
     "id": 906,
@@ -7694,7 +8599,8 @@
     "label": "Sprigatito",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#6FAF36"
   },
   {
     "id": 907,
@@ -7702,7 +8608,8 @@
     "label": "Floragato",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#44803C"
   },
   {
     "id": 908,
@@ -7711,7 +8618,8 @@
     "types": [
       "grass",
       "dark"
-    ]
+    ],
+    "accent": "#44803C"
   },
   {
     "id": 909,
@@ -7719,7 +8627,8 @@
     "label": "Fuecoco",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#EF4F3A"
   },
   {
     "id": 910,
@@ -7727,7 +8636,8 @@
     "label": "Crocalor",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#FE9827"
   },
   {
     "id": 911,
@@ -7736,7 +8646,8 @@
     "types": [
       "fire",
       "ghost"
-    ]
+    ],
+    "accent": "#FF4A3C"
   },
   {
     "id": 912,
@@ -7744,7 +8655,8 @@
     "label": "Quaxly",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#4CD8F5"
   },
   {
     "id": 913,
@@ -7752,7 +8664,8 @@
     "label": "Quaxwell",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#147DDC"
   },
   {
     "id": 914,
@@ -7761,7 +8674,8 @@
     "types": [
       "water",
       "fighting"
-    ]
+    ],
+    "accent": "#4861EC"
   },
   {
     "id": 915,
@@ -7769,7 +8683,8 @@
     "label": "Lechonk",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#B47E5E"
   },
   {
     "id": 916,
@@ -7777,7 +8692,8 @@
     "label": "Oinkologne",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#46455F"
   },
   {
     "id": 917,
@@ -7785,7 +8701,8 @@
     "label": "Tarountula",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#DED34D"
   },
   {
     "id": 918,
@@ -7793,7 +8710,8 @@
     "label": "Spidops",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#7AA427"
   },
   {
     "id": 919,
@@ -7801,7 +8719,8 @@
     "label": "Nymble",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#6A86B5"
   },
   {
     "id": 920,
@@ -7810,7 +8729,8 @@
     "types": [
       "bug",
       "dark"
-    ]
+    ],
+    "accent": "#6498BF"
   },
   {
     "id": 921,
@@ -7818,7 +8738,8 @@
     "label": "Pawmi",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#EB7823"
   },
   {
     "id": 922,
@@ -7827,7 +8748,8 @@
     "types": [
       "electric",
       "fighting"
-    ]
+    ],
+    "accent": "#FFC060"
   },
   {
     "id": 923,
@@ -7836,7 +8758,8 @@
     "types": [
       "electric",
       "fighting"
-    ]
+    ],
+    "accent": "#F89A0E"
   },
   {
     "id": 924,
@@ -7844,7 +8767,8 @@
     "label": "Tandemaus",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#637384"
   },
   {
     "id": 925,
@@ -7852,7 +8776,8 @@
     "label": "Maushold",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#637384"
   },
   {
     "id": 926,
@@ -7860,7 +8785,8 @@
     "label": "Fidough",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#FCE25B"
   },
   {
     "id": 927,
@@ -7868,7 +8794,8 @@
     "label": "Dachsbun",
     "types": [
       "fairy"
-    ]
+    ],
+    "accent": "#DC5F3A"
   },
   {
     "id": 928,
@@ -7877,7 +8804,8 @@
     "types": [
       "grass",
       "normal"
-    ]
+    ],
+    "accent": "#C6DD4A"
   },
   {
     "id": 929,
@@ -7886,7 +8814,8 @@
     "types": [
       "grass",
       "normal"
-    ]
+    ],
+    "accent": "#84C136"
   },
   {
     "id": 930,
@@ -7895,7 +8824,8 @@
     "types": [
       "grass",
       "normal"
-    ]
+    ],
+    "accent": "#84C136"
   },
   {
     "id": 931,
@@ -7904,7 +8834,8 @@
     "types": [
       "normal",
       "flying"
-    ]
+    ],
+    "accent": "#589D2F"
   },
   {
     "id": 932,
@@ -7912,7 +8843,8 @@
     "label": "Nacli",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#96655D"
   },
   {
     "id": 933,
@@ -7920,7 +8852,8 @@
     "label": "Naclstack",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#C3927B"
   },
   {
     "id": 934,
@@ -7928,7 +8861,8 @@
     "label": "Garganacl",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#614C47"
   },
   {
     "id": 935,
@@ -7936,7 +8870,8 @@
     "label": "Charcadet",
     "types": [
       "fire"
-    ]
+    ],
+    "accent": "#FA2112"
   },
   {
     "id": 936,
@@ -7945,7 +8880,8 @@
     "types": [
       "fire",
       "psychic"
-    ]
+    ],
+    "accent": "#E23C1B"
   },
   {
     "id": 937,
@@ -7954,7 +8890,8 @@
     "types": [
       "fire",
       "ghost"
-    ]
+    ],
+    "accent": "#645AA3"
   },
   {
     "id": 938,
@@ -7962,7 +8899,8 @@
     "label": "Tadbulb",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#F3F226"
   },
   {
     "id": 939,
@@ -7970,7 +8908,8 @@
     "label": "Bellibolt",
     "types": [
       "electric"
-    ]
+    ],
+    "accent": "#47C7A9"
   },
   {
     "id": 940,
@@ -7979,7 +8918,8 @@
     "types": [
       "electric",
       "flying"
-    ]
+    ],
+    "accent": "#FFCD37"
   },
   {
     "id": 941,
@@ -7988,7 +8928,8 @@
     "types": [
       "electric",
       "flying"
-    ]
+    ],
+    "accent": "#FFCD37"
   },
   {
     "id": 942,
@@ -7996,7 +8937,8 @@
     "label": "Maschiff",
     "types": [
       "dark"
-    ]
+    ],
+    "accent": "#C37370"
   },
   {
     "id": 943,
@@ -8004,7 +8946,8 @@
     "label": "Mabosstiff",
     "types": [
       "dark"
-    ]
+    ],
+    "accent": "#FFB24A"
   },
   {
     "id": 944,
@@ -8013,7 +8956,8 @@
     "types": [
       "poison",
       "normal"
-    ]
+    ],
+    "accent": "#312C3F"
   },
   {
     "id": 945,
@@ -8022,7 +8966,8 @@
     "types": [
       "poison",
       "normal"
-    ]
+    ],
+    "accent": "#282434"
   },
   {
     "id": 946,
@@ -8031,7 +8976,8 @@
     "types": [
       "grass",
       "ghost"
-    ]
+    ],
+    "accent": "#614427"
   },
   {
     "id": 947,
@@ -8040,7 +8986,8 @@
     "types": [
       "grass",
       "ghost"
-    ]
+    ],
+    "accent": "#422B20"
   },
   {
     "id": 948,
@@ -8049,7 +8996,8 @@
     "types": [
       "ground",
       "grass"
-    ]
+    ],
+    "accent": "#F4C8B5"
   },
   {
     "id": 949,
@@ -8058,7 +9006,8 @@
     "types": [
       "ground",
       "grass"
-    ]
+    ],
+    "accent": "#525220"
   },
   {
     "id": 950,
@@ -8066,7 +9015,8 @@
     "label": "Klawf",
     "types": [
       "rock"
-    ]
+    ],
+    "accent": "#BC3F1E"
   },
   {
     "id": 951,
@@ -8074,7 +9024,8 @@
     "label": "Capsakid",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#79B97B"
   },
   {
     "id": 952,
@@ -8083,7 +9034,8 @@
     "types": [
       "grass",
       "fire"
-    ]
+    ],
+    "accent": "#25593F"
   },
   {
     "id": 953,
@@ -8091,7 +9043,8 @@
     "label": "Rellor",
     "types": [
       "bug"
-    ]
+    ],
+    "accent": "#9E8461"
   },
   {
     "id": 954,
@@ -8100,7 +9053,8 @@
     "types": [
       "bug",
       "psychic"
-    ]
+    ],
+    "accent": "#E310FB"
   },
   {
     "id": 955,
@@ -8108,7 +9062,8 @@
     "label": "Flittle",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#F0E262"
   },
   {
     "id": 956,
@@ -8116,7 +9071,8 @@
     "label": "Espathra",
     "types": [
       "psychic"
-    ]
+    ],
+    "accent": "#FAB743"
   },
   {
     "id": 957,
@@ -8125,7 +9081,8 @@
     "types": [
       "fairy",
       "steel"
-    ]
+    ],
+    "accent": "#F266AA"
   },
   {
     "id": 958,
@@ -8134,7 +9091,8 @@
     "types": [
       "fairy",
       "steel"
-    ]
+    ],
+    "accent": "#F266AA"
   },
   {
     "id": 959,
@@ -8143,7 +9101,8 @@
     "types": [
       "fairy",
       "steel"
-    ]
+    ],
+    "accent": "#7C6F96"
   },
   {
     "id": 960,
@@ -8151,7 +9110,8 @@
     "label": "Wiglett",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#577B74"
   },
   {
     "id": 961,
@@ -8159,7 +9119,8 @@
     "label": "Wugtrio",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#FA506D"
   },
   {
     "id": 962,
@@ -8168,7 +9129,8 @@
     "types": [
       "flying",
       "dark"
-    ]
+    ],
+    "accent": "#993E49"
   },
   {
     "id": 963,
@@ -8176,7 +9138,8 @@
     "label": "Finizen",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#52CADB"
   },
   {
     "id": 964,
@@ -8184,7 +9147,8 @@
     "label": "Palafin",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#52CADB"
   },
   {
     "id": 965,
@@ -8193,7 +9157,8 @@
     "types": [
       "steel",
       "poison"
-    ]
+    ],
+    "accent": "#3A3143"
   },
   {
     "id": 966,
@@ -8202,7 +9167,8 @@
     "types": [
       "steel",
       "poison"
-    ]
+    ],
+    "accent": "#3A3143"
   },
   {
     "id": 967,
@@ -8211,7 +9177,8 @@
     "types": [
       "dragon",
       "normal"
-    ]
+    ],
+    "accent": "#75B07D"
   },
   {
     "id": 968,
@@ -8219,7 +9186,8 @@
     "label": "Orthworm",
     "types": [
       "steel"
-    ]
+    ],
+    "accent": "#E35952"
   },
   {
     "id": 969,
@@ -8228,7 +9196,8 @@
     "types": [
       "rock",
       "poison"
-    ]
+    ],
+    "accent": "#2C369A"
   },
   {
     "id": 970,
@@ -8237,7 +9206,8 @@
     "types": [
       "rock",
       "poison"
-    ]
+    ],
+    "accent": "#2C369A"
   },
   {
     "id": 971,
@@ -8245,7 +9215,8 @@
     "label": "Greavard",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#575E75"
   },
   {
     "id": 972,
@@ -8253,7 +9224,8 @@
     "label": "Houndstone",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#6B58A3"
   },
   {
     "id": 973,
@@ -8262,7 +9234,8 @@
     "types": [
       "flying",
       "fighting"
-    ]
+    ],
+    "accent": "#FB7B9B"
   },
   {
     "id": 974,
@@ -8270,7 +9243,8 @@
     "label": "Cetoddle",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#E3A1D2"
   },
   {
     "id": 975,
@@ -8278,7 +9252,8 @@
     "label": "Cetitan",
     "types": [
       "ice"
-    ]
+    ],
+    "accent": "#C47CAB"
   },
   {
     "id": 976,
@@ -8287,7 +9262,8 @@
     "types": [
       "water",
       "psychic"
-    ]
+    ],
+    "accent": "#FF75EB"
   },
   {
     "id": 977,
@@ -8295,7 +9271,8 @@
     "label": "Dondozo",
     "types": [
       "water"
-    ]
+    ],
+    "accent": "#13B1FA"
   },
   {
     "id": 978,
@@ -8304,7 +9281,8 @@
     "types": [
       "dragon",
       "water"
-    ]
+    ],
+    "accent": "#9A3420"
   },
   {
     "id": 979,
@@ -8313,7 +9291,8 @@
     "types": [
       "fighting",
       "ghost"
-    ]
+    ],
+    "accent": "#47515F"
   },
   {
     "id": 980,
@@ -8322,7 +9301,8 @@
     "types": [
       "poison",
       "ground"
-    ]
+    ],
+    "accent": "#553F3E"
   },
   {
     "id": 981,
@@ -8331,7 +9311,8 @@
     "types": [
       "normal",
       "psychic"
-    ]
+    ],
+    "accent": "#F18D4E"
   },
   {
     "id": 982,
@@ -8339,7 +9320,8 @@
     "label": "Dudunsparce",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#DEBD39"
   },
   {
     "id": 983,
@@ -8348,7 +9330,8 @@
     "types": [
       "dark",
       "steel"
-    ]
+    ],
+    "accent": "#B59515"
   },
   {
     "id": 984,
@@ -8357,7 +9340,8 @@
     "types": [
       "ground",
       "fighting"
-    ]
+    ],
+    "accent": "#30365E"
   },
   {
     "id": 985,
@@ -8366,7 +9350,8 @@
     "types": [
       "fairy",
       "psychic"
-    ]
+    ],
+    "accent": "#D18EAA"
   },
   {
     "id": 986,
@@ -8375,7 +9360,8 @@
     "types": [
       "grass",
       "dark"
-    ]
+    ],
+    "accent": "#8FFF8F"
   },
   {
     "id": 987,
@@ -8384,7 +9370,8 @@
     "types": [
       "ghost",
       "fairy"
-    ]
+    ],
+    "accent": "#4A83A4"
   },
   {
     "id": 988,
@@ -8393,7 +9380,8 @@
     "types": [
       "bug",
       "fighting"
-    ]
+    ],
+    "accent": "#F3483F"
   },
   {
     "id": 989,
@@ -8402,7 +9390,8 @@
     "types": [
       "electric",
       "ground"
-    ]
+    ],
+    "accent": "#F5D974"
   },
   {
     "id": 990,
@@ -8411,7 +9400,8 @@
     "types": [
       "ground",
       "steel"
-    ]
+    ],
+    "accent": "#FF4142"
   },
   {
     "id": 991,
@@ -8420,7 +9410,8 @@
     "types": [
       "ice",
       "water"
-    ]
+    ],
+    "accent": "#DA3725"
   },
   {
     "id": 992,
@@ -8429,7 +9420,8 @@
     "types": [
       "fighting",
       "electric"
-    ]
+    ],
+    "accent": "#FCD216"
   },
   {
     "id": 993,
@@ -8438,7 +9430,8 @@
     "types": [
       "dark",
       "flying"
-    ]
+    ],
+    "accent": "#F25CB1"
   },
   {
     "id": 994,
@@ -8447,7 +9440,8 @@
     "types": [
       "fire",
       "poison"
-    ]
+    ],
+    "accent": "#FFA239"
   },
   {
     "id": 995,
@@ -8456,7 +9450,8 @@
     "types": [
       "rock",
       "electric"
-    ]
+    ],
+    "accent": "#82B53D"
   },
   {
     "id": 996,
@@ -8465,7 +9460,8 @@
     "types": [
       "dragon",
       "ice"
-    ]
+    ],
+    "accent": "#43435A"
   },
   {
     "id": 997,
@@ -8474,7 +9470,8 @@
     "types": [
       "dragon",
       "ice"
-    ]
+    ],
+    "accent": "#6BA0BF"
   },
   {
     "id": 998,
@@ -8483,7 +9480,8 @@
     "types": [
       "dragon",
       "ice"
-    ]
+    ],
+    "accent": "#4B5F6F"
   },
   {
     "id": 999,
@@ -8491,7 +9489,8 @@
     "label": "Gimmighoul",
     "types": [
       "ghost"
-    ]
+    ],
+    "accent": "#816831"
   },
   {
     "id": 1000,
@@ -8500,7 +9499,8 @@
     "types": [
       "steel",
       "ghost"
-    ]
+    ],
+    "accent": "#F1CE47"
   },
   {
     "id": 1001,
@@ -8509,7 +9509,8 @@
     "types": [
       "dark",
       "grass"
-    ]
+    ],
+    "accent": "#889E6D"
   },
   {
     "id": 1002,
@@ -8518,7 +9519,8 @@
     "types": [
       "dark",
       "ice"
-    ]
+    ],
+    "accent": "#8CC6E6"
   },
   {
     "id": 1003,
@@ -8527,7 +9529,8 @@
     "types": [
       "dark",
       "ground"
-    ]
+    ],
+    "accent": "#486863"
   },
   {
     "id": 1004,
@@ -8536,7 +9539,8 @@
     "types": [
       "dark",
       "fire"
-    ]
+    ],
+    "accent": "#BC2B29"
   },
   {
     "id": 1005,
@@ -8545,7 +9549,8 @@
     "types": [
       "dragon",
       "dark"
-    ]
+    ],
+    "accent": "#A32446"
   },
   {
     "id": 1006,
@@ -8554,7 +9559,8 @@
     "types": [
       "fairy",
       "fighting"
-    ]
+    ],
+    "accent": "#51824A"
   },
   {
     "id": 1007,
@@ -8563,7 +9569,8 @@
     "types": [
       "fighting",
       "dragon"
-    ]
+    ],
+    "accent": "#F73C2D"
   },
   {
     "id": 1008,
@@ -8572,7 +9579,8 @@
     "types": [
       "electric",
       "dragon"
-    ]
+    ],
+    "accent": "#2C9CE0"
   },
   {
     "id": 1009,
@@ -8581,7 +9589,8 @@
     "types": [
       "water",
       "dragon"
-    ]
+    ],
+    "accent": "#B367C2"
   },
   {
     "id": 1010,
@@ -8590,7 +9599,8 @@
     "types": [
       "grass",
       "psychic"
-    ]
+    ],
+    "accent": "#56AB56"
   },
   {
     "id": 1011,
@@ -8599,7 +9609,8 @@
     "types": [
       "grass",
       "dragon"
-    ]
+    ],
+    "accent": "#FC4C3F"
   },
   {
     "id": 1012,
@@ -8608,7 +9619,8 @@
     "types": [
       "grass",
       "ghost"
-    ]
+    ],
+    "accent": "#78C463"
   },
   {
     "id": 1013,
@@ -8617,7 +9629,8 @@
     "types": [
       "grass",
       "ghost"
-    ]
+    ],
+    "accent": "#7D5629"
   },
   {
     "id": 1014,
@@ -8626,7 +9639,8 @@
     "types": [
       "poison",
       "fighting"
-    ]
+    ],
+    "accent": "#6C9E39"
   },
   {
     "id": 1015,
@@ -8635,7 +9649,8 @@
     "types": [
       "poison",
       "psychic"
-    ]
+    ],
+    "accent": "#9CD1FF"
   },
   {
     "id": 1016,
@@ -8644,7 +9659,8 @@
     "types": [
       "poison",
       "fairy"
-    ]
+    ],
+    "accent": "#C9519F"
   },
   {
     "id": 1017,
@@ -8652,7 +9668,8 @@
     "label": "Ogerpon",
     "types": [
       "grass"
-    ]
+    ],
+    "accent": "#61A71B"
   },
   {
     "id": 1018,
@@ -8661,7 +9678,8 @@
     "types": [
       "steel",
       "dragon"
-    ]
+    ],
+    "accent": "#1E2C59"
   },
   {
     "id": 1019,
@@ -8670,7 +9688,8 @@
     "types": [
       "grass",
       "dragon"
-    ]
+    ],
+    "accent": "#83AB4B"
   },
   {
     "id": 1020,
@@ -8679,7 +9698,8 @@
     "types": [
       "fire",
       "dragon"
-    ]
+    ],
+    "accent": "#B98C06"
   },
   {
     "id": 1021,
@@ -8688,7 +9708,8 @@
     "types": [
       "electric",
       "dragon"
-    ]
+    ],
+    "accent": "#EDD132"
   },
   {
     "id": 1022,
@@ -8697,7 +9718,8 @@
     "types": [
       "rock",
       "psychic"
-    ]
+    ],
+    "accent": "#FFB62F"
   },
   {
     "id": 1023,
@@ -8706,7 +9728,8 @@
     "types": [
       "steel",
       "psychic"
-    ]
+    ],
+    "accent": "#359DAE"
   },
   {
     "id": 1024,
@@ -8714,7 +9737,8 @@
     "label": "Terapagos",
     "types": [
       "normal"
-    ]
+    ],
+    "accent": "#3D2F91"
   },
   {
     "id": 1025,
@@ -8723,6 +9747,7 @@
     "types": [
       "poison",
       "ghost"
-    ]
+    ],
+    "accent": "#E345B8"
   }
 ]

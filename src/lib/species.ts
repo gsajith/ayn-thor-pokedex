@@ -10,6 +10,17 @@ export interface Species {
   label: string;
   /** Primary type first. Vanilla data — a ROM hack may differ. */
   types: PokemonType[];
+  /**
+   * Dominant sprite colour as `#RRGGBB`, computed at build time so there is no
+   * runtime canvas work, no CORS concern, and no colour pop-in while the sprite
+   * decodes. Consumed by the theming slice.
+   */
+  accent: string;
+}
+
+/** Sprites are served from the public directory, keyed by dex number. */
+export function spriteUrl(id: number): string {
+  return `/sprites/${id}.png`;
 }
 
 /**
