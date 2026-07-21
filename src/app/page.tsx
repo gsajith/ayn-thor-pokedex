@@ -5,26 +5,23 @@ import { EffectivenessBuckets } from "@/components/EffectivenessBuckets";
 import { SearchResults } from "@/components/SearchResults";
 import { SpeciesDetail } from "@/components/SpeciesDetail";
 import { TypeGrid } from "@/components/TypeGrid";
+import { resolveSpecies, useOverrides } from "@/lib/overrides";
 import { PokemonType } from "@/lib/pokemonTypes";
-import { Species } from "@/lib/species";
+import { speciesById } from "@/lib/species";
 import { searchSpecies } from "@/lib/speciesSearch";
+import { toggleType } from "@/lib/typeSelection";
 import { DEFAULT_GENERATION, TYPE_CHARTS, bucketize } from "@/lib/typeChart";
 import styles from "./page.module.css";
-
-const MAX_SELECTED = 2;
 
 export default function Home() {
   const [selected, setSelected] = useState<PokemonType[]>([]);
   const [query, setQuery] = useState("");
-  const [detail, setDetail] = useState<Species | null>(null);
+  const [detailId, setDetailId] = useState<number | null>(null);
+
+  const overrides = useOverrides();
 
   const toggle = useCallback((type: PokemonType) => {
-    setSelected((current) => {
-      if (current.includes(type)) return current.filter((t) => t !== type);
-      // A third tap is ignored rather than replacing an existing pick.
-      if (current.length >= MAX_SELECTED) return current;
-      return [...current, type];
-    });
+    setSelected((current) => toggleType(current, type));
   }, []);
 
   const buckets = useMemo(
@@ -32,16 +29,25 @@ export default function Home() {
     [selected],
   );
 
-  const results = useMemo(() => searchSpecies(query), [query]);
+  // Resolving on every render rather than at selection time means a correction
+  // saved on the detail page is reflected immediately, with no stale copy.
+  const results = useMemo(
+    () => searchSpecies(query).map((s) => resolveSpecies(s, overrides)),
+    [query, overrides],
+  );
 
   const searching = query.trim().length > 0;
 
-  // Back returns to the results list rather than all the way home, so a
-  // mistaken tap costs one press instead of retyping on the covered keyboard.
-  if (detail) {
+  // Held as an id, not an object: a resolved species carries overridden types
+  // in its `types` field, so storing one would survive a revert.
+  const detailBase = detailId === null ? null : speciesById(detailId);
+  if (detailBase) {
     return (
       <main className={styles.pageDetail}>
-        <SpeciesDetail species={detail} onBack={() => setDetail(null)} />
+        <SpeciesDetail
+          species={resolveSpecies(detailBase, overrides)}
+          onBack={() => setDetailId(null)}
+        />
       </main>
     );
   }
@@ -82,7 +88,10 @@ export default function Home() {
       </div>
 
       {searching ? (
-        <SearchResults results={results} onSelect={setDetail} />
+        <SearchResults
+          results={results}
+          onSelect={setDetailId}
+        />
       ) : (
         <>
           <TypeGrid selected={selected} onToggle={toggle} />
