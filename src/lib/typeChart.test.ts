@@ -215,4 +215,13 @@ describe("bucketize", () => {
       "electric",
     );
   });
+
+  it("never rounds a small non-zero multiplier down to an immunity", () => {
+    // Bug is resisted by all three, giving 0.5^3 = 0.125 — exactly equidistant
+    // between the 0.25 and 0 steps. Reporting it as an immunity would be a
+    // materially wrong answer, so it must land in the quarter bucket.
+    const buckets = bucketize(["fire", "fighting", "poison"], chart);
+    expect(buckets.find((b) => b.multiplier === 0.25)!.types).toContain("bug");
+    expect(buckets.find((b) => b.multiplier === 0)!.types).not.toContain("bug");
+  });
 });

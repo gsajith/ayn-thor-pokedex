@@ -16,6 +16,10 @@
  * Rows size to their content rather than sharing the space equally. At most
  * one bucket can ever hold more than half the 18 types, so at most one row
  * wraps to a second line and the six rows still fit the height budget.
+ *
+ * This deliberately leaves dead space at the taller standalone height instead
+ * of stretching to fill it: bucket positions then sit identically with and
+ * without the browser address bar, which is what muscle memory depends on.
  */
 .row {
   display: flex;

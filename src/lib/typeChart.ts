@@ -199,9 +199,16 @@ export interface Bucket {
  * directionally correct instead.
  */
 function nearestStep(multiplier: number): (typeof BUCKET_STEPS)[number] {
-  let closest: (typeof BUCKET_STEPS)[number] = BUCKET_STEPS[0];
+  // Immunity is qualitatively different from "very small", so 0 is matched
+  // exactly and excluded from the search below. Otherwise 0.125 sits exactly
+  // between 0.25 and 0, and which one wins would depend on the order of
+  // BUCKET_STEPS — making a triple-resist silently read as an immunity.
+  if (multiplier === 0) return 0;
+
+  let closest: (typeof BUCKET_STEPS)[number] = 1;
   let smallestGap = Infinity;
   for (const step of BUCKET_STEPS) {
+    if (step === 0) continue;
     const gap = Math.abs(step - multiplier);
     if (gap < smallestGap) {
       smallestGap = gap;
