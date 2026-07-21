@@ -23,8 +23,18 @@ body {
   overflow-x: hidden;
 }
 
+/*
+ * A definite height, not min-height: this is an app shell, not a document.
+ * With min-height the body grows to fit its content, so `flex: 1` on <main>
+ * never bounds it and inner scroll regions (the search results list) push the
+ * whole page taller instead of scrolling within themselves.
+ *
+ * Deliberately no `overflow: hidden` here. That would also hide unintended
+ * overflow, and the bucket layout relies on overflow surfacing as a real page
+ * scroll so a regression is detectable rather than silently clipped.
+ */
 body {
-  min-height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   color: var(--foreground);

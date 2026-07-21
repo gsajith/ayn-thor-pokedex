@@ -33,13 +33,38 @@ against 412px so they hold either way.
 
 ```bash
 npm install
-npm run dev     # dev server
-npm run build   # static export to out/
+npm run dev        # dev server
+npm run build      # static export to out/
+npm test           # unit tests
+npm run typecheck
 npm run lint
 ```
 
 Built as a static export (`output: 'export'`), deployed to Vercel, with pushes to
 `main` deploying automatically.
+
+## Species data
+
+`src/data/species.json` holds the dex number, name and types for all 1025
+species. It is generated and **committed**, so a clean checkout needs no network
+access to build.
+
+```bash
+npm run build:data   # refetch from PokeAPI and rewrite species.json
+```
+
+The script reads the 18 `/api/v2/type/{name}` endpoints rather than ~1025
+per-species endpoints. Each type endpoint lists every Pokémon of that type with a
+`slot` field marking primary vs secondary, so inverting 18 responses reconstructs
+the whole map — 18 requests instead of 1025. Alternate forms (megas, regional
+variants) carry ids of 10001+ and are excluded.
+
+The script is idempotent: unchanged upstream data produces byte-identical output,
+so re-running it leaves no diff. Only re-run it when PokéAPI adds species.
+
+This data is **vanilla**. The hacks this app targets alter typings, which is why
+the type grid rather than species lookup is the authoritative path, and why
+per-species overrides are planned.
 
 ## Stack
 
