@@ -45,3 +45,8 @@ next-env.d.ts
 
 # transient sprite downloads
 public/sprites/*.tmp
+
+# generated service worker (built by @serwist/next)
+public/sw.js
+public/sw.js.map
+public/swe-worker-*.js

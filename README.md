@@ -43,6 +43,34 @@ npm run lint
 Built as a static export (`output: 'export'`), deployed to Vercel, with pushes to
 `main` deploying automatically.
 
+`npm run build` passes `--webpack` deliberately. Next 16 defaults to Turbopack,
+but `@serwist/next` injects a webpack config, and Turbopack refuses to run
+alongside one. Dev still uses Turbopack; only the production build opts out.
+
+## Offline / PWA
+
+The app installs to the home screen and works with no network.
+
+- **Precached** (~35 entries): the app shell, JS, CSS, fonts and icons. Species
+  data rides along inside the JS bundle, so the type chart and search work
+  offline immediately after install.
+- **Runtime cached**: sprites, cache-first under `pokedex-sprites`. They are
+  deliberately excluded from the precache — 1025 entries would make install a
+  thousand-request operation that fails atomically. A sprite is cached the first
+  time it is viewed, so an unvisited Pokémon's sprite is the one thing that
+  needs network.
+
+`globPublicPatterns: ["*"]` is what excludes them: `*` matches only top-level
+files in `public/`, never `public/sprites/`.
+
+Regenerate the app icons (a drawn Poké Ball, no binary blobs to trust) with:
+
+```bash
+npm run build:icons
+```
+
+`public/sw.js` is generated at build time and is gitignored.
+
 ## Species data
 
 `src/data/species.json` holds the dex number, name and types for all 1025
