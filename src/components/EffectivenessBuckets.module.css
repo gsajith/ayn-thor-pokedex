@@ -1,0 +1,46 @@
+.buckets {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 3px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/*
+ * Every row is rendered even when empty, so bucket positions never shift
+ * between lookups and can be found by muscle memory mid-battle.
+ */
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
+  min-height: 24px;
+  padding: 2px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.multiplier {
+  flex: 0 0 28px;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19px;
+  color: var(--muted);
+}
+
+.row[data-empty="false"] .multiplier {
+  color: var(--foreground);
+}
+
+.types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-width: 0;
+}
