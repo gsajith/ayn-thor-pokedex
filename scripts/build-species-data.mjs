@@ -153,6 +153,20 @@ async function main() {
     );
   }
 
+  // The reverse direction: a species that appears in no type endpoint would
+  // otherwise be dropped silently, since nothing above iterates the species
+  // list. Guarding both directions makes an incomplete fetch loud.
+  const covered = new Set(rows.map((row) => row.id));
+  const uncovered = [...speciesNames.keys()].filter(
+    (id) => id < MAX_BASE_FORM_ID && !covered.has(id),
+  );
+  if (uncovered.length > 0) {
+    throw new Error(
+      `${uncovered.length} species appear in no type endpoint, ` +
+        `e.g. ${uncovered[0]} (${speciesNames.get(uncovered[0])})`,
+    );
+  }
+
   const problems = rows.filter((r) => r.types.length < 1 || r.types.length > 2);
   if (problems.length > 0) {
     throw new Error(
