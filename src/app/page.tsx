@@ -12,7 +12,7 @@ import { speciesById } from "@/lib/species";
 import { searchSpecies } from "@/lib/speciesSearch";
 import { THEME_LABELS, cycleTheme, setTheme, useTheme } from "@/lib/theme";
 import { toggleType } from "@/lib/typeSelection";
-import { DEFAULT_GENERATION, TYPE_CHARTS, bucketize } from "@/lib/typeChart";
+import { DEFAULT_GENERATION, bucketize, chartFor } from "@/lib/typeChart";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
   }, []);
 
   const buckets = useMemo(
-    () => bucketize(selected, TYPE_CHARTS[DEFAULT_GENERATION]),
+    () => bucketize(selected, chartFor(DEFAULT_GENERATION)),
     [selected],
   );
 

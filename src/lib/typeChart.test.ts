@@ -2,12 +2,14 @@ import { describe, expect, it } from "vitest";
 import { TYPE_ORDER } from "./pokemonTypes";
 import {
   DEFAULT_GENERATION,
+  GENERATION_OPTIONS,
   TYPE_CHARTS,
   bucketize,
+  chartFor,
   effectivenessAgainst,
 } from "./typeChart";
 
-const chart = TYPE_CHARTS[DEFAULT_GENERATION];
+const chart = chartFor(DEFAULT_GENERATION);
 
 describe("chart integrity", () => {
   it("covers all 18 types in Gen 6+", () => {
@@ -223,5 +225,41 @@ describe("bucketize", () => {
     const buckets = bucketize(["fire", "fighting", "poison"], chart);
     expect(buckets.find((b) => b.multiplier === 0.25)!.types).toContain("bug");
     expect(buckets.find((b) => b.multiplier === 0)!.types).not.toContain("bug");
+  });
+});
+
+describe("generation options", () => {
+  it("declares every generation in the union, available or not", () => {
+    expect(GENERATION_OPTIONS.map((option) => option.id)).toEqual([
+      "gen1",
+      "gen2to5",
+      "gen6plus",
+    ]);
+  });
+
+  it("marks an option available exactly when its chart is populated", () => {
+    for (const option of GENERATION_OPTIONS) {
+      expect(option.available).toBe(TYPE_CHARTS[option.id] !== undefined);
+    }
+  });
+
+  it("keeps at least one option available so the app can always render", () => {
+    expect(GENERATION_OPTIONS.some((option) => option.available)).toBe(true);
+  });
+
+  it("gives every option a detail line explaining what differs", () => {
+    for (const option of GENERATION_OPTIONS) {
+      expect(option.detail.length).toBeGreaterThan(0);
+    }
+  });
+
+  it("returns the requested chart when it is populated", () => {
+    expect(chartFor("gen6plus").id).toBe("gen6plus");
+  });
+
+  it("falls back to the default chart for an unpopulated generation", () => {
+    // Rendering an empty chart would show every type as neutral, which is a
+    // wrong answer rather than a missing one.
+    expect(chartFor("gen1")).toBe(TYPE_CHARTS[DEFAULT_GENERATION]);
   });
 });

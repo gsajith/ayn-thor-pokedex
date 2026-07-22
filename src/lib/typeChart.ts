@@ -8,7 +8,14 @@ export type MatchupTable = Record<
   Partial<Record<PokemonType, Matchup>>
 >;
 
-export type Generation = "gen6plus";
+/**
+ * Every chart the app intends to offer, whether or not its data exists yet.
+ *
+ * Declared rather than added-when-populated so the settings control can show
+ * the roadmap honestly: an option the user can see but not select is clearer
+ * than one that is silently absent.
+ */
+export type Generation = "gen1" | "gen2to5" | "gen6plus";
 
 export interface GenerationChart {
   id: Generation;
@@ -147,7 +154,12 @@ const GEN6_MATCHUPS: MatchupTable = {
   },
 };
 
-export const TYPE_CHARTS: Record<Generation, GenerationChart> = {
+/**
+ * Partial on purpose. A generation appears here only once its matchup data is
+ * entered, and `GENERATION_OPTIONS` derives availability from that fact, so the
+ * two cannot drift.
+ */
+export const TYPE_CHARTS: Partial<Record<Generation, GenerationChart>> = {
   gen6plus: {
     id: "gen6plus",
     label: "Gen 6+ (Fairy)",
@@ -155,6 +167,51 @@ export const TYPE_CHARTS: Record<Generation, GenerationChart> = {
     matchups: GEN6_MATCHUPS,
   },
 };
+
+export interface GenerationOption {
+  id: Generation;
+  label: string;
+  /** What actually differs, so the choice is made on facts rather than a guess. */
+  detail: string;
+  /** False means declared but not yet populated. Renders disabled, not hidden. */
+  available: boolean;
+}
+
+/**
+ * The chart cannot be inferred from the ROM a hack is built on. Pokémon Odyssey
+ * is a FireRed hack that adds Fairy, so its base generation says nothing about
+ * which chart is correct — hence an explicit choice rather than a detected one.
+ */
+export const GENERATION_OPTIONS: readonly GenerationOption[] = [
+  {
+    id: "gen1",
+    label: "Gen 1",
+    detail: "No Dark or Steel. Bug beats Poison, Ghost misses Psychic.",
+    available: TYPE_CHARTS.gen1 !== undefined,
+  },
+  {
+    id: "gen2to5",
+    label: "Gen 2–5",
+    detail: "Dark and Steel exist, Fairy does not. Steel resists Ghost and Dark.",
+    available: TYPE_CHARTS.gen2to5 !== undefined,
+  },
+  {
+    id: "gen6plus",
+    label: "Gen 6+",
+    detail: "Adds Fairy. Steel loses its Ghost and Dark resistances.",
+    available: TYPE_CHARTS.gen6plus !== undefined,
+  },
+];
+
+/**
+ * Always yields a usable chart. An unpopulated generation falls back to the
+ * default rather than returning undefined: an empty chart would render every
+ * type as neutral, which is a confidently wrong answer rather than a missing
+ * one, and this app is read mid-battle.
+ */
+export function chartFor(id: Generation): GenerationChart {
+  return TYPE_CHARTS[id] ?? TYPE_CHARTS[DEFAULT_GENERATION]!;
+}
 
 /** Multiplier every attacking type deals to the given defending combination. */
 export function effectivenessAgainst(

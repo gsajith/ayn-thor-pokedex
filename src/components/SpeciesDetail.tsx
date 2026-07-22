@@ -6,7 +6,7 @@ import { ResolvedSpecies, clearOverride, setOverride } from "@/lib/overrides";
 import { PokemonType } from "@/lib/pokemonTypes";
 import { spriteUrl } from "@/lib/species";
 import { toggleType } from "@/lib/typeSelection";
-import { DEFAULT_GENERATION, TYPE_CHARTS, bucketize } from "@/lib/typeChart";
+import { DEFAULT_GENERATION, bucketize, chartFor } from "@/lib/typeChart";
 import { EffectivenessBuckets } from "./EffectivenessBuckets";
 import { TypeChip } from "./TypeChip";
 import { TypeGrid } from "./TypeGrid";
@@ -21,7 +21,7 @@ export function SpeciesDetail({ species, onBack }: Props) {
   const [draft, setDraft] = useState<PokemonType[] | null>(null);
   const editing = draft !== null;
 
-  const buckets = bucketize(species.types, TYPE_CHARTS[DEFAULT_GENERATION]);
+  const buckets = bucketize(species.types, chartFor(DEFAULT_GENERATION));
 
   const save = () => {
     if (draft && draft.length > 0) setOverride(species.id, draft);
