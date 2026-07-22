@@ -74,17 +74,23 @@
    *
    * Deliberately desaturated relative to the type chips, which are the loudest
    * element on screen and must stay the primary recognition signal.
+   *
+   * Six buckets get six distinct hues, walking red -> orange -> neutral ->
+   * teal -> green -> blue. ½x and ¼x previously shared one green, which made
+   * the two most commonly confused rows indistinguishable at a glance.
    */
   --sev-danger: #ff6b5b;
   --sev-danger-bg: rgba(255, 107, 91, 0.13);
   --sev-warn: #ffab63;
   --sev-warn-bg: rgba(255, 171, 99, 0.1);
-  --sev-flat: var(--muted);
-  --sev-flat-bg: transparent;
-  --sev-resist: #4ade80;
-  --sev-resist-bg: rgba(74, 222, 128, 0.09);
-  --sev-immune: #7dd3fc;
-  --sev-immune-bg: rgba(125, 211, 252, 0.11);
+  --sev-flat: var(--foreground);
+  --sev-flat-bg: rgba(255, 255, 255, 0.045);
+  --sev-resist: #4fd1c5;
+  --sev-resist-bg: rgba(79, 209, 197, 0.1);
+  --sev-resist-strong: #4ade80;
+  --sev-resist-strong-bg: rgba(74, 222, 128, 0.1);
+  --sev-immune: #6ba6ff;
+  --sev-immune-bg: rgba(107, 166, 255, 0.12);
 
   /* The "edited" badge marking a species corrected for the current hack. */
   --edited-bg: #3a2f10;
@@ -120,10 +126,13 @@
   --sev-danger-bg: rgba(209, 64, 47, 0.1);
   --sev-warn: #8a5309;
   --sev-warn-bg: rgba(176, 106, 17, 0.11);
-  --sev-resist: #0b6c30;
-  --sev-resist-bg: rgba(15, 138, 61, 0.1);
-  --sev-immune: #175f97;
-  --sev-immune-bg: rgba(28, 116, 184, 0.11);
+  --sev-flat-bg: rgba(0, 0, 0, 0.05);
+  --sev-resist: #0d7168;
+  --sev-resist-bg: rgba(13, 113, 104, 0.1);
+  --sev-resist-strong: #0b6c30;
+  --sev-resist-strong-bg: rgba(11, 108, 48, 0.1);
+  --sev-immune: #2059ad;
+  --sev-immune-bg: rgba(32, 89, 173, 0.11);
   --edited-bg: #fbeecb;
   --edited-ink: #7a5a10;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
