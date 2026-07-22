@@ -2,25 +2,21 @@
 
 import { useEffect, useSyncExternalStore } from "react";
 
-/**
- * `black` is the default deliberately: on the AMOLED panel this app targets,
- * true black switches pixels off, which saves battery and — more importantly —
- * stops the bottom screen glaring in peripheral vision while the maintainer is
- * looking at the game on the top screen.
- */
-export const THEME_MODES = ["black", "dark", "light"] as const;
+import {
+  DEFAULT_THEME,
+  STORAGE_KEY,
+  THEME_COLORS,
+  THEME_MODES,
+  type ThemeMode,
+} from "./themeConstants";
 
-export type ThemeMode = (typeof THEME_MODES)[number];
-
-export const DEFAULT_THEME: ThemeMode = "black";
-
-export const THEME_LABELS: Record<ThemeMode, string> = {
-  black: "Pure black",
-  dark: "Dark",
-  light: "Light",
-};
-
-export const STORAGE_KEY = "pokedex.theme.v1";
+export {
+  DEFAULT_THEME,
+  STORAGE_KEY,
+  THEME_LABELS,
+  THEME_MODES,
+  type ThemeMode,
+} from "./themeConstants";
 
 let cache: ThemeMode | null = null;
 const subscribers = new Set<() => void>();
@@ -46,13 +42,6 @@ function read(): ThemeMode {
   }
   return cache;
 }
-
-/** Background colour reported to the OS for browser chrome, per mode. */
-const THEME_COLORS: Record<ThemeMode, string> = {
-  black: "#000000",
-  dark: "#121212",
-  light: "#f4f4f5",
-};
 
 /** The attribute CSS keys off. Kept in sync on every write. */
 function applyToDocument(mode: ThemeMode) {

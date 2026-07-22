@@ -1,12 +1,3 @@
-/*
- * On a light background a chip's own colour can sit at 1.3:1 against the page
- * (Electric is the worst), so the chip edge needs help even though its text
- * contrast is fine. Dark modes need no such hint.
- */
-:root[data-theme="light"] .chip {
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.22);
-}
-
 .chip {
   display: flex;
   align-items: center;
@@ -20,6 +11,13 @@
   -webkit-tap-highlight-color: transparent;
   /* Avoids the double-tap-to-zoom delay on touch. */
   touch-action: manipulation;
+  /*
+   * Composed from a token rather than a per-theme selector. A
+   * `:root[data-theme=...] .chip` rule scores (0,3,0) and would outrank
+   * `.grid.selected` at (0,2,0), silently deleting the selection ring — the
+   * same specificity trap that already cost the opacity state once.
+   */
+  box-shadow: var(--chip-edge, none);
 }
 
 /*
@@ -57,6 +55,7 @@
 .grid.selected {
   opacity: 1;
   box-shadow:
+    var(--chip-edge, 0 0 0 0 transparent),
     0 0 0 2px var(--background),
     0 0 0 4px var(--foreground);
 }
