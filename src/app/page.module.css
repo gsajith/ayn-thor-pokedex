@@ -5,8 +5,14 @@
  */
 .page {
   display: grid;
-  /* 148px = three 44px touch rows plus two 8px gaps. */
-  grid-template-rows: auto 148px 1fr;
+  /*
+   * 148px = three 44px touch rows plus two 8px gaps, which is the floor at the
+   * 412px browser height. Any height above that goes into bigger touch targets
+   * rather than dead space — standalone install reclaims ~58px. Capped at
+   * 196px so the buckets always keep the ~180px their worst case needs (one
+   * row wrapping to two lines).
+   */
+  grid-template-rows: auto clamp(148px, calc(148px + 100dvh - 412px), 196px) 1fr;
   gap: 8px;
   flex: 1;
   min-height: 0;
@@ -50,7 +56,7 @@
   padding: 0 10px;
   border: 1px solid var(--line);
   border-radius: 6px;
-  background: #0d0d0d;
+  background: var(--surface);
   color: var(--foreground);
   font-family: inherit;
   /* Below 16px, mobile browsers zoom the viewport on focus. */
@@ -95,4 +101,37 @@
 .clear:disabled {
   color: var(--muted);
   cursor: default;
+}
+
+/*
+ * Interim control until the settings screen lands. Cycles the three modes so
+ * the feature is reachable rather than only reachable through storage.
+ */
+.theme {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--foreground);
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.theme:active {
+  background: var(--pressed);
+}
+
+.theme:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 2px;
+}
+
+.pageSearch .theme {
+  width: 44px;
+  height: 44px;
 }

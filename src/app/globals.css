@@ -1,10 +1,56 @@
-:root {
+/*
+ * Three brightness modes. Backgrounds stay neutral in all of them: the accent
+ * is applied as trim and an edge glow only, because the type chips are the
+ * fastest recognition signal in the app and a tinted background would compete
+ * with them for contrast on an already small screen.
+ */
+:root,
+:root[data-theme="black"] {
+  /* True black so AMOLED pixels are genuinely off. */
   --background: #000000;
+  --surface: #0d0d0d;
+  --pressed: #161616;
   --foreground: #ededed;
   --muted: #8a8a8a;
   --line: #242424;
   --accent: #46d17a;
+  --accent-ink: #06210f;
+  --chip-dim: 0.72;
   color-scheme: dark;
+}
+
+:root[data-theme="dark"] {
+  --background: #121212;
+  --surface: #1d1d1d;
+  --pressed: #262626;
+  --foreground: #ededed;
+  --muted: #9b9b9b;
+  --line: #2f2f2f;
+  --accent: #46d17a;
+  --accent-ink: #06210f;
+  --chip-dim: 0.72;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --background: #f4f4f5;
+  --surface: #ffffff;
+  --pressed: #e6e6e8;
+  --foreground: #16161a;
+  --muted: #5c5c66;
+  --line: #d5d5da;
+  --accent: #157f43;
+  --accent-ink: #ffffff;
+  /* Dimming fades chips toward the page; on light that moves them toward
+     their own light text, so light mode dims less. */
+  --chip-dim: 0.82;
+  /*
+   * A chip's own colour can sit at 1.3:1 against a light page (Electric is
+   * worst), so the edge needs to carry the boundary. The alpha is high because
+   * the inset border is inside the element and fades with its opacity too.
+   */
+  --chip-edge: inset 0 0 0 1px rgba(0, 0, 0, 0.44);
+  color-scheme: light;
 }
 
 * {
@@ -29,9 +75,10 @@ body {
  * never bounds it and inner scroll regions (the search results list) push the
  * whole page taller instead of scrolling within themselves.
  *
- * Deliberately no `overflow: hidden` here. That would also hide unintended
- * overflow, and the bucket layout relies on overflow surfacing as a real page
- * scroll so a regression is detectable rather than silently clipped.
+ * Deliberately no `overflow: hidden` here — that would clip unintended overflow
+ * outright. Note it still would not surface as a documentElement scroll: the
+ * `overflow-x: hidden` above makes <body> the scrolling box, so a regression
+ * check must read `document.body.scrollHeight`, not `documentElement`.
  */
 body {
   height: 100%;
@@ -47,4 +94,33 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+/*
+ * The accent, confined to a soft bloom along the bottom edge. Drawn on
+ * body::after so it sits behind <main>, which carries z-index 1. Backgrounds
+ * stay neutral: a full tint would cost the type chips their contrast.
+ */
+body::after {
+  content: "";
+  position: fixed;
+  inset: auto 0 0 0;
+  height: 72px;
+  background: var(--accent-glow, transparent);
+  -webkit-mask-image: linear-gradient(to top, #000, transparent);
+  mask-image: linear-gradient(to top, #000, transparent);
+  opacity: 0.22;
+  pointer-events: none;
+  z-index: 0;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::after {
+    transition: none;
+  }
 }

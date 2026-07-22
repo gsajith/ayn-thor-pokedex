@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { themeBootstrapScript } from "@/lib/themeConstants";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -32,6 +33,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        {/*
+          Runs before first paint so a light-mode user does not get a black
+          flash on every cold start. The static export prerenders without
+          data-theme, and every app chunk is async, so React applies the theme
+          far too late to avoid it.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: themeBootstrapScript(),
+          }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

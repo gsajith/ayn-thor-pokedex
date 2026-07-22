@@ -11,6 +11,13 @@
   -webkit-tap-highlight-color: transparent;
   /* Avoids the double-tap-to-zoom delay on touch. */
   touch-action: manipulation;
+  /*
+   * Composed from a token rather than a per-theme selector. A
+   * `:root[data-theme=...] .chip` rule scores (0,3,0) and would outrank
+   * `.grid.selected` at (0,2,0), silently deleting the selection ring — the
+   * same specificity trap that already cost the opacity state once.
+   */
+  box-shadow: var(--chip-edge, none);
 }
 
 /*
@@ -24,7 +31,16 @@
   min-height: 44px;
   font-size: 14px;
   cursor: pointer;
-  opacity: 0.5;
+  /*
+   * Dimmed to de-emphasise, not to hide. At 0.5 the worst unselected chip fell
+   * to 2.18:1 against the background, which is hard to scan when hunting for a
+   * type mid-battle. Selection is carried by the ring, so the dim is a hint.
+   *
+   * Driven by a token rather than a per-theme selector: `:root[data-theme] .grid`
+   * outranks `.grid.selected`, which silently disabled both the selected state
+   * and the press feedback in light mode.
+   */
+  opacity: var(--chip-dim);
   transition:
     opacity 90ms linear,
     box-shadow 90ms linear,
@@ -39,6 +55,7 @@
 .grid.selected {
   opacity: 1;
   box-shadow:
+    var(--chip-edge, 0 0 0 0 transparent),
     0 0 0 2px var(--background),
     0 0 0 4px var(--foreground);
 }
