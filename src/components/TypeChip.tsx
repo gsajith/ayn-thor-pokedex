@@ -10,7 +10,7 @@ import styles from "./TypeChip.module.css";
 
 type Props = {
   type: PokemonType;
-  size?: "grid" | "bucket";
+  size?: "grid" | "bucket" | "detail";
   selected?: boolean;
   onClick?: () => void;
 };
@@ -23,7 +23,7 @@ export function TypeChip({ type, size = "bucket", selected, onClick }: Props) {
   };
   const className = [
     styles.chip,
-    size === "grid" ? styles.grid : styles.bucket,
+    size === "grid" ? styles.grid : size === "detail" ? styles.detail : styles.bucket,
     selected ? styles.selected : "",
   ]
     .filter(Boolean)

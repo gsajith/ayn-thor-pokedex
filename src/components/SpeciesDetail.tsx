@@ -63,7 +63,7 @@ export function SpeciesDetail({ species, onBack }: Props) {
           aria-label={editing ? "Cancel editing types" : "Edit types"}
         >
           {species.types.map((type) => (
-            <TypeChip key={type} type={type} />
+            <TypeChip key={type} type={type} size="detail" />
           ))}
           <span className={styles.editHint} aria-hidden="true">
             {editing ? "✕" : "✎"}
@@ -104,7 +104,7 @@ export function SpeciesDetail({ species, onBack }: Props) {
           </div>
         </div>
       ) : (
-        <EffectivenessBuckets buckets={buckets} />
+        <EffectivenessBuckets buckets={buckets} fill />
       )}
     </div>
   );
