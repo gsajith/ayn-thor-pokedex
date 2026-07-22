@@ -50,11 +50,11 @@ export const TYPE_ORDER: readonly PokemonType[] = [
 export const TYPE_ABBREV: Record<PokemonType, string> = {
   normal: "NRM",
   fire: "FIR",
-  water: "WTR",
+  water: "WAT",
   electric: "ELE",
   grass: "GRS",
   ice: "ICE",
-  fighting: "FGT",
+  fighting: "FGH",
   poison: "PSN",
   ground: "GRN",
   flying: "FLY",
