@@ -50,16 +50,27 @@
   --rail-ink: var(--sev-warn);
 }
 
+/*
+ * Neutral is not "nothing". It gets a visible rail, a faint wash and full
+ * foreground ink so a populated 1x row cannot be mistaken for an empty one —
+ * which is exactly what happened when it shared the empty row's grey.
+ */
 .row[data-severity="flat"] {
-  --rail: var(--line);
+  --rail: var(--muted);
   --rail-bg: var(--sev-flat-bg);
-  --rail-ink: var(--muted);
+  --rail-ink: var(--foreground);
 }
 
 .row[data-severity="resist"] {
   --rail: var(--sev-resist);
   --rail-bg: var(--sev-resist-bg);
   --rail-ink: var(--sev-resist);
+}
+
+.row[data-severity="resist-strong"] {
+  --rail: var(--sev-resist-strong);
+  --rail-bg: var(--sev-resist-strong-bg);
+  --rail-ink: var(--sev-resist-strong);
 }
 
 .row[data-severity="immune"] {
@@ -72,11 +83,15 @@
  * An empty bucket is still information — "nothing resists this" is worth
  * seeing — but it should not compete with the rows that hold types. It keeps
  * its slot and recedes rather than disappearing, so row positions never move.
+ *
+ * It keeps its own hue at reduced strength rather than flattening to grey.
+ * Flattening cost the row its identity: an empty 4x and a populated 1x ended
+ * up wearing the same chrome, so the two extremes of the scale read alike.
  */
 .row[data-empty="true"] {
-  --rail: var(--line);
   --rail-bg: transparent;
   --rail-ink: var(--muted);
+  border-left-color: color-mix(in srgb, var(--rail) 40%, transparent);
 }
 
 .multiplier {

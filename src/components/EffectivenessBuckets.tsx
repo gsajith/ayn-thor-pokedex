@@ -12,22 +12,29 @@ type Props = {
   fill?: boolean;
 };
 
-type Severity = "danger" | "warn" | "flat" | "resist" | "immune";
+type Severity =
+  | "danger"
+  | "warn"
+  | "flat"
+  | "resist"
+  | "resist-strong"
+  | "immune";
 
 /**
  * Maps a multiplier onto the colour language defined in globals.css.
  *
- * Grouping ½x and ¼x under one severity is deliberate: the practical decision
- * they drive is the same ("this resists"), and the exact degree is already
- * carried by the multiplier itself. Splitting them into two greens would spend
- * a distinct colour on a distinction the player does not act on.
+ * Every bucket gets its own hue. An earlier version pooled ½x and ¼x into one
+ * green on the theory that both just mean "this resists" — but they sit
+ * adjacent, are the pair most easily confused, and halving versus quartering
+ * incoming damage is exactly the kind of thing being checked mid-battle.
  */
 function severityOf(multiplier: number): Severity {
   if (multiplier === 0) return "immune";
   if (multiplier > 2) return "danger";
   if (multiplier > 1) return "warn";
-  if (multiplier < 1) return "resist";
-  return "flat";
+  if (multiplier === 1) return "flat";
+  if (multiplier >= 0.5) return "resist";
+  return "resist-strong";
 }
 
 export function EffectivenessBuckets({ buckets, fill }: Props) {
