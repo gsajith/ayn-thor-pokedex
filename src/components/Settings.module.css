@@ -51,6 +51,13 @@
   min-height: 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  /*
+   * Reserves the scrollbar's width so it cannot sit on top of the right-aligned
+   * device readout. Chosen over a fixed padding because the gutter is zero on
+   * overlay-scrollbar platforms — which includes the Android browser this app
+   * actually runs on — so the space is only taken where it is needed.
+   */
+  scrollbar-gutter: stable;
   padding-right: 2px;
 }
 
