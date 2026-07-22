@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { useGeneration } from "@/lib/generation";
 import { ResolvedSpecies, clearOverride, setOverride } from "@/lib/overrides";
 import { PokemonType } from "@/lib/pokemonTypes";
 import { spriteUrl } from "@/lib/species";
 import { toggleType } from "@/lib/typeSelection";
-import { DEFAULT_GENERATION, bucketize, chartFor } from "@/lib/typeChart";
+import { bucketize, chartFor } from "@/lib/typeChart";
 import { EffectivenessBuckets } from "./EffectivenessBuckets";
 import { TypeChip } from "./TypeChip";
 import { TypeGrid } from "./TypeGrid";
@@ -20,8 +21,11 @@ type Props = {
 export function SpeciesDetail({ species, onBack }: Props) {
   const [draft, setDraft] = useState<PokemonType[] | null>(null);
   const editing = draft !== null;
+  const generation = useGeneration();
 
-  const buckets = bucketize(species.types, chartFor(DEFAULT_GENERATION));
+  // Reads the same store as the home screen, so a chart chosen in settings
+  // applies here too rather than this view quietly using the default.
+  const buckets = bucketize(species.types, chartFor(generation));
 
   const save = () => {
     if (draft && draft.length > 0) setOverride(species.id, draft);

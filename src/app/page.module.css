@@ -104,10 +104,10 @@
 }
 
 /*
- * Interim control until the settings screen lands. Cycles the three modes so
- * the feature is reachable rather than only reachable through storage.
+ * Sits in the search row so opening settings never moves the type grid. Stays
+ * compact here because the shared home row has only ~20px of headroom.
  */
-.theme {
+.settings {
   flex: 0 0 auto;
   width: 34px;
   height: 34px;
@@ -122,16 +122,16 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.theme:active {
+.settings:active {
   background: var(--pressed);
 }
 
-.theme:focus-visible {
+.settings:focus-visible {
   outline: 2px solid var(--foreground);
   outline-offset: 2px;
 }
 
-.pageSearch .theme {
+.pageSearch .settings {
   width: 44px;
   height: 44px;
 }
