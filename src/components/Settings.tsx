@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { KeyboardEvent, useMemo, useState } from "react";
 import { setGeneration, useGeneration } from "@/lib/generation";
 import {
   clearAllOverrides,
@@ -17,6 +17,39 @@ import styles from "./Settings.module.css";
 type Props = {
   onBack: () => void;
 };
+
+/**
+ * Arrow-key navigation for a radiogroup, with selection following focus.
+ *
+ * The ARIA authoring practices treat this as part of what `role="radiogroup"`
+ * means, not an enhancement on top of it: a screen reader announces a radio
+ * group and the user reaches for the arrow keys. Declaring the role without
+ * this was promising an interaction the component did not have.
+ *
+ * Disabled options are excluded from the query rather than skipped afterwards,
+ * so an unavailable generation can never be focused and then silently refused.
+ */
+function onRadioKeyDown(event: KeyboardEvent<HTMLDivElement>) {
+  const forward = event.key === "ArrowRight" || event.key === "ArrowDown";
+  const backward = event.key === "ArrowLeft" || event.key === "ArrowUp";
+  if (!forward && !backward) return;
+
+  const options = Array.from(
+    event.currentTarget.querySelectorAll<HTMLButtonElement>(
+      '[role="radio"]:not([disabled])',
+    ),
+  );
+  const current = options.indexOf(document.activeElement as HTMLButtonElement);
+  if (current === -1) return;
+
+  // Only claim the key once there is somewhere to go, so an arrow press that
+  // this group cannot act on still reaches the page.
+  event.preventDefault();
+  const next =
+    options[(current + (forward ? 1 : -1) + options.length) % options.length];
+  next.focus();
+  next.click();
+}
 
 export function Settings({ onBack }: Props) {
   const theme = useTheme();
@@ -53,13 +86,21 @@ export function Settings({ onBack }: Props) {
       <div className={styles.body}>
         <section className={styles.section}>
           <h2 className={styles.heading}>Appearance</h2>
-          <div className={styles.options} role="radiogroup" aria-label="Theme">
+          <div
+            className={styles.options}
+            role="radiogroup"
+            aria-label="Theme"
+            onKeyDown={onRadioKeyDown}
+          >
             {THEME_MODES.map((mode) => (
               <button
                 key={mode}
                 type="button"
                 role="radio"
                 aria-checked={theme === mode}
+                /* Roving tabindex: the group is one tab stop, and Tab moves
+                   past it rather than through every option. */
+                tabIndex={theme === mode ? 0 : -1}
                 className={
                   theme === mode
                     ? `${styles.option} ${styles.optionActive}`
@@ -83,6 +124,7 @@ export function Settings({ onBack }: Props) {
             className={styles.options}
             role="radiogroup"
             aria-label="Type chart generation"
+            onKeyDown={onRadioKeyDown}
           >
             {GENERATION_OPTIONS.map((option) => (
               <button
@@ -90,6 +132,7 @@ export function Settings({ onBack }: Props) {
                 type="button"
                 role="radio"
                 aria-checked={generation === option.id}
+                tabIndex={generation === option.id ? 0 : -1}
                 disabled={!option.available}
                 className={
                   generation === option.id

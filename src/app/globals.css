@@ -16,7 +16,7 @@
   --line: #242424;
   --accent: #46d17a;
   --accent-ink: #06210f;
-  --chip-dim: 0.72;
+  --chip-dim: 0.93;
   color-scheme: dark;
 }
 
@@ -30,7 +30,7 @@
   --line: #2f2f2f;
   --accent: #46d17a;
   --accent-ink: #06210f;
-  --chip-dim: 0.72;
+  --chip-dim: 0.93;
   color-scheme: dark;
 }
 
@@ -46,7 +46,7 @@
   --accent-ink: #ffffff;
   /* Dimming fades chips toward the page; on light that moves them toward
      their own light text, so light mode dims less. */
-  --chip-dim: 0.82;
+  --chip-dim: 0.96;
   /*
    * A chip's own colour can sit at 1.3:1 against a light page (Electric is
    * worst), so the edge needs to carry the boundary. The alpha is high because
@@ -103,9 +103,9 @@
    *
    * The alphas are capped, not chosen by eye. `readableTextOn` picks each
    * chip's ink against the flat fill, so any overlay erodes the contrast it
-   * computed. At 0.22/0.17 the worst chip (Poison) fell to 4.34:1 and broke
-   * AA; this keeps the floor at 4.65:1. Raising these without re-measuring
-   * would silently reintroduce that.
+   * computed. At 0.22/0.17 the worst chip fell to 4.34:1 and broke AA; this
+   * keeps the floor at 4.53:1. Raising these — or changing TYPE_COLOR —
+   * without re-measuring would silently reintroduce that.
    */
   --chip-sheen: linear-gradient(
     180deg,
