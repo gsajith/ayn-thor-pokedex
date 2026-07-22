@@ -77,17 +77,41 @@ export default function Home() {
     <main className={searching ? styles.pageSearch : styles.page}>
       <AccentGlow colors={glowColors} />
       <div className={styles.searchRow}>
-        <input
-          className={styles.search}
-          type="search"
-          placeholder="Search Pokémon…"
-          aria-label="Search Pokémon"
-          value={query}
-          onChange={(event) => setQuery(event.target.value)}
-          autoCorrect="off"
-          autoCapitalize="off"
-          spellCheck={false}
-        />
+        <div className={styles.searchField}>
+          {/* Inline rather than an icon font or emoji: one shape, no extra
+              request, and it inherits the muted colour in every theme. */}
+          <svg
+            className={styles.searchIcon}
+            viewBox="0 0 20 20"
+            fill="none"
+            aria-hidden="true"
+          >
+            <circle
+              cx="9"
+              cy="9"
+              r="5.25"
+              stroke="currentColor"
+              strokeWidth="1.7"
+            />
+            <path
+              d="M13.4 13.4 17 17"
+              stroke="currentColor"
+              strokeWidth="1.7"
+              strokeLinecap="round"
+            />
+          </svg>
+          <input
+            className={styles.search}
+            type="search"
+            placeholder="Search Pokémon…"
+            aria-label="Search Pokémon"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            autoCorrect="off"
+            autoCapitalize="off"
+            spellCheck={false}
+          />
+        </div>
         {searching ? (
           <button
             type="button"

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { CSSProperties, useState } from "react";
 import { useGeneration } from "@/lib/generation";
 import { ResolvedSpecies, clearOverride, setOverride } from "@/lib/overrides";
 import { PokemonType } from "@/lib/pokemonTypes";
@@ -43,14 +43,24 @@ export function SpeciesDetail({ species, onBack }: Props) {
         <button type="button" className={styles.back} onClick={onBack}>
           ← Back
         </button>
-        <Image
-          className={styles.sprite}
-          src={spriteUrl(species.id)}
-          alt=""
-          width={96}
-          height={96}
-          priority
-        />
+        {/*
+          The bloom is drawn in the species' own dominant sprite colour, which
+          is already computed at build time. It grounds the sprite instead of
+          leaving it floating on a flat field, and costs no extra data.
+        */}
+        <div
+          className={styles.spriteWrap}
+          style={{ "--sprite-accent": species.accent } as CSSProperties}
+        >
+          <Image
+            className={styles.sprite}
+            src={spriteUrl(species.id)}
+            alt=""
+            width={96}
+            height={96}
+            priority
+          />
+        </div>
         <div className={styles.naming}>
           <span className={styles.dex}>
             #{String(species.id).padStart(4, "0")}

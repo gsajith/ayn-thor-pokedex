@@ -49,22 +49,50 @@
   align-items: center;
 }
 
-.search {
+.searchField {
+  position: relative;
+  display: flex;
   flex: 1;
   min-width: 0;
-  height: 34px;
-  padding: 0 10px;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 11px;
+  width: 15px;
+  height: 15px;
+  color: var(--muted);
+  /* The input owns the interaction; the glyph is a label, not a control. */
+  pointer-events: none;
+}
+
+.search {
+  width: 100%;
+  min-width: 0;
+  height: 36px;
+  /* Left padding clears the glyph. */
+  padding: 0 12px 0 33px;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   background: var(--surface);
   color: var(--foreground);
   font-family: inherit;
   /* Below 16px, mobile browsers zoom the viewport on focus. */
   font-size: 16px;
+  transition:
+    border-color 120ms ease-out,
+    box-shadow 120ms ease-out;
 }
 
 .search::placeholder {
   color: var(--muted);
+}
+
+.search:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent);
 }
 
 /* The custom ✕ button already clears the query; two clear affordances confuse. */
@@ -82,25 +110,37 @@
   min-width: 44px;
 }
 
-.search:disabled {
-  opacity: 0.6;
-}
-
 .clear {
-  height: 34px;
+  height: 36px;
   padding: 0 12px;
   border: 1px solid var(--line);
-  border-radius: 6px;
-  background: transparent;
+  border-radius: var(--radius);
+  background: var(--surface);
   color: var(--foreground);
   font-family: inherit;
   font-size: 13px;
+  font-weight: 500;
   cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background 120ms ease-out,
+    transform 120ms ease-out;
+}
+
+.clear:active {
+  background: var(--pressed);
+  transform: scale(0.96);
 }
 
 .clear:disabled {
   color: var(--muted);
+  background: transparent;
   cursor: default;
+}
+
+.clear:disabled:active {
+  transform: none;
 }
 
 /*
@@ -108,25 +148,33 @@
  * compact here because the shared home row has only ~20px of headroom.
  */
 .settings {
+  display: flex;
   flex: 0 0 auto;
-  width: 34px;
-  height: 34px;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
   border: 1px solid var(--line);
-  border-radius: 6px;
-  background: transparent;
+  border-radius: var(--radius);
+  background: var(--surface);
   color: var(--foreground);
   font-size: 15px;
   line-height: 1;
   cursor: pointer;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
+  transition:
+    background 120ms ease-out,
+    transform 120ms ease-out;
 }
 
 .settings:active {
   background: var(--pressed);
+  transform: scale(0.94);
 }
 
-.settings:focus-visible {
+.settings:focus-visible,
+.clear:focus-visible {
   outline: 2px solid var(--foreground);
   outline-offset: 2px;
 }
@@ -134,4 +182,17 @@
 .pageSearch .settings {
   width: 44px;
   height: 44px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .search,
+  .clear,
+  .settings {
+    transition: none;
+  }
+
+  .clear:active,
+  .settings:active {
+    transform: none;
+  }
 }

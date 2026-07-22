@@ -1,10 +1,19 @@
 .list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
   list-style: none;
   overflow-y: auto;
   min-height: 0;
   -webkit-overflow-scrolling: touch;
+  scrollbar-gutter: stable;
 }
 
+/*
+ * A tinted surface per row rather than hairline dividers. Eight of these are
+ * on screen at once, and eight 1px rules read as a table; eight soft slabs
+ * read as a list you can hit with a thumb.
+ */
 .row {
   display: flex;
   align-items: center;
@@ -12,11 +21,10 @@
   width: 100%;
   /* 44px keeps each result a comfortable touch target. */
   min-height: 44px;
-  padding: 4px 6px;
+  padding: 4px 10px;
   border: none;
-  border-bottom: 1px solid var(--line);
-  border-radius: 6px;
-  background: transparent;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
   color: var(--foreground);
   font-family: inherit;
   font-size: 14px;
@@ -24,10 +32,14 @@
   cursor: pointer;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
+  transition:
+    background 120ms ease-out,
+    transform 120ms ease-out;
 }
 
 .row:active {
   background: var(--pressed);
+  transform: scale(0.99);
 }
 
 .row:focus-visible {
@@ -38,7 +50,9 @@
 .dex {
   flex: 0 0 auto;
   font-family: var(--font-geist-mono), ui-monospace, monospace;
-  font-size: 12px;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
   color: var(--muted);
 }
 
@@ -46,6 +60,7 @@
   flex: 1;
   min-width: 0;
   font-weight: 600;
+  letter-spacing: -0.01em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -68,12 +83,22 @@
 
 .edited {
   flex: 0 0 auto;
-  padding: 1px 5px;
-  border-radius: 4px;
-  background: #3a2f10;
-  color: #e0b64d;
-  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 5px;
+  background: var(--edited-bg);
+  color: var(--edited-ink);
+  font-size: 9px;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .row {
+    transition: none;
+  }
+
+  .row:active {
+    transform: none;
+  }
 }

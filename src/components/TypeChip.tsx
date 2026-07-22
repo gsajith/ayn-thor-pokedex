@@ -17,10 +17,17 @@ type Props = {
 
 export function TypeChip({ type, size = "bucket", selected, onClick }: Props) {
   const background = TYPE_COLOR[type];
+  /*
+   * `backgroundColor`, not the `background` shorthand: the shorthand resets
+   * background-image, which would wipe the sheen the stylesheet layers on top.
+   * `--chip-color` lets the selected state glow in the chip's own hue rather
+   * than a generic accent.
+   */
   const style: CSSProperties = {
-    background,
+    backgroundColor: background,
     color: readableTextOn(background),
-  };
+    "--chip-color": background,
+  } as CSSProperties;
   const className = [
     styles.chip,
     size === "grid" ? styles.grid : size === "detail" ? styles.detail : styles.bucket,

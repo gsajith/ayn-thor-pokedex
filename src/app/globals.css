@@ -9,7 +9,8 @@
   /* True black so AMOLED pixels are genuinely off. */
   --background: #000000;
   --surface: #0d0d0d;
-  --pressed: #161616;
+  --surface-raised: #161616;
+  --pressed: #1e1e1e;
   --foreground: #ededed;
   --muted: #8a8a8a;
   --line: #242424;
@@ -21,8 +22,9 @@
 
 :root[data-theme="dark"] {
   --background: #121212;
-  --surface: #1d1d1d;
-  --pressed: #262626;
+  --surface: #1c1c1e;
+  --surface-raised: #262629;
+  --pressed: #2e2e32;
   --foreground: #ededed;
   --muted: #9b9b9b;
   --line: #2f2f2f;
@@ -35,6 +37,7 @@
 :root[data-theme="light"] {
   --background: #f4f4f5;
   --surface: #ffffff;
+  --surface-raised: #ffffff;
   --pressed: #e6e6e8;
   --foreground: #16161a;
   --muted: #5c5c66;
@@ -51,6 +54,86 @@
    */
   --chip-edge: inset 0 0 0 1px rgba(0, 0, 0, 0.44);
   color-scheme: light;
+}
+
+/*
+ * Shape, depth and severity scales. Kept in one place so radii stay in
+ * proportion rather than drifting per component the way they had.
+ */
+:root {
+  --radius-sm: 7px;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.28);
+  --shadow-md: 0 4px 14px -4px rgba(0, 0, 0, 0.5);
+
+  /*
+   * Severity palette for the effectiveness buckets. Reading "what hurts this
+   * thing" is the app's entire job, so the answer is carried by colour and
+   * weight rather than left to be decoded from a monospace label.
+   *
+   * Deliberately desaturated relative to the type chips, which are the loudest
+   * element on screen and must stay the primary recognition signal.
+   */
+  --sev-danger: #ff6b5b;
+  --sev-danger-bg: rgba(255, 107, 91, 0.13);
+  --sev-warn: #ffab63;
+  --sev-warn-bg: rgba(255, 171, 99, 0.1);
+  --sev-flat: var(--muted);
+  --sev-flat-bg: transparent;
+  --sev-resist: #4ade80;
+  --sev-resist-bg: rgba(74, 222, 128, 0.09);
+  --sev-immune: #7dd3fc;
+  --sev-immune-bg: rgba(125, 211, 252, 0.11);
+
+  /* The "edited" badge marking a species corrected for the current hack. */
+  --edited-bg: #3a2f10;
+  --edited-ink: #e0b64d;
+
+  /*
+   * A single top-lit sheen laid over each chip's flat fill. Cheap, but it is
+   * what stops eighteen solid rectangles reading as swatches rather than
+   * objects. Applied as background-image so the fill can stay an inline colour.
+   *
+   * The alphas are capped, not chosen by eye. `readableTextOn` picks each
+   * chip's ink against the flat fill, so any overlay erodes the contrast it
+   * computed. At 0.22/0.17 the worst chip (Poison) fell to 4.34:1 and broke
+   * AA; this keeps the floor at 4.65:1. Raising these without re-measuring
+   * would silently reintroduce that.
+   */
+  --chip-sheen: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0) 52%,
+    rgba(0, 0, 0, 0.13)
+  );
+}
+
+:root[data-theme="light"] {
+  /*
+   * Darker than the dark-mode set, and not by taste: the multiplier is 13px
+   * bold, which is under the 18.66px bold that WCAG counts as large text, so
+   * these have to clear 4.5:1 against their own tinted row. The lighter hues
+   * that read well on black landed at 3.85–4.47:1 here.
+   */
+  --sev-danger: #b0322a;
+  --sev-danger-bg: rgba(209, 64, 47, 0.1);
+  --sev-warn: #8a5309;
+  --sev-warn-bg: rgba(176, 106, 17, 0.11);
+  --sev-resist: #0b6c30;
+  --sev-resist-bg: rgba(15, 138, 61, 0.1);
+  --sev-immune: #175f97;
+  --sev-immune-bg: rgba(28, 116, 184, 0.11);
+  --edited-bg: #fbeecb;
+  --edited-ink: #7a5a10;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 14px -4px rgba(0, 0, 0, 0.18);
+  --chip-sheen: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0) 52%,
+    rgba(0, 0, 0, 0.09)
+  );
 }
 
 * {
