@@ -18,12 +18,12 @@ const buildRevision = Date.now().toString(36);
 const withSerwist = withSerwistInit({
   swSrc: "src/app/sw.ts",
   swDest: "public/sw.js",
-  // "*" matches only direct children of public/, so the 1025 sprites under
-  // public/sprites/ are never precached — they are cached at runtime instead.
-  // This also sweeps in Serwist's generated swe-worker-*.js, one redundant
-  // entry with a stable hash; narrower patterns ("*.png", exact filenames) match
-  // nothing here, and node-glob ignores "!" negation inside a pattern array.
-  globPublicPatterns: ["*"],
+  // Nothing under public/ is auto-precached. The only public assets the app
+  // needs offline are listed explicitly below, and an empty glob makes it
+  // impossible for a future public/ file to sweep the 1025 sprites into the
+  // precache, which would turn install into a thousand-request operation that
+  // fails atomically. Sprites are cached at runtime instead.
+  globPublicPatterns: [],
   // The static export emits the shell as HTML and the icons live in public/,
   // neither of which the webpack manifest covers. Listed explicitly rather
   // than via globPublicPatterns, which does not reliably match them.
