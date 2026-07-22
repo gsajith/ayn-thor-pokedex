@@ -11,20 +11,23 @@ declare global {
 declare const self: ServiceWorkerGlobalScope;
 
 const serwist = new Serwist({
-  // The app shell and species data only. Sprites are excluded in next.config
-  // and handled below: precaching 1025 of them would mean 1025 install-time
-  // requests, and a single failure aborts the entire precache.
+  // Includes the app shell document, injected in next.config with a per-build
+  // revision. Precaching the shell rather than relying on a runtime copy is
+  // what makes offline launch deterministic: a runtime copy expires on a TTL
+  // and is never refreshed on redeploy, so it eventually serves a document
+  // pointing at chunk hashes that activation has already deleted.
   precacheEntries: self.__SW_MANIFEST,
   skipWaiting: true,
   clientsClaim: true,
-  // Deliberately off. Navigation preload is an online latency optimisation,
-  // and when the network is unreachable the preload promise rejects, which
-  // takes the navigation down with it. This app must open offline first.
+  // Navigation preload is an online latency optimisation. When the network is
+  // unreachable the preload promise rejects and takes the navigation with it.
   navigationPreload: false,
   runtimeCaching: [
     {
-      // Sprites are immutable — keyed by dex number and only ever regenerated
-      // wholesale — so cache-first with no revalidation is correct.
+      // Sprites are immutable — keyed by dex number, regenerated only wholesale
+      // — so cache-first with no revalidation is correct. Deliberately not
+      // precached: 1025 entries would make install a thousand-request atomic
+      // operation.
       matcher: ({ url, sameOrigin }) =>
         sameOrigin && url.pathname.startsWith("/sprites/"),
       handler: new CacheFirst({
@@ -40,6 +43,16 @@ const serwist = new Serwist({
     },
     ...defaultCache,
   ],
+  // Any navigation that cannot be satisfied falls back to the precached shell.
+  // The app is a single client-rendered page, so the shell is always correct.
+  fallbacks: {
+    entries: [
+      {
+        url: "/",
+        matcher: ({ request }) => request.mode === "navigate",
+      },
+    ],
+  },
 });
 
 serwist.addEventListeners();
