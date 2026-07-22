@@ -38,7 +38,17 @@ export function TypeChip({ type, size = "bucket", selected, onClick }: Props) {
 
   if (!onClick) {
     return (
-      <span className={className} style={style} title={TYPE_LABEL[type]}>
+      <span
+        className={className}
+        style={style}
+        title={TYPE_LABEL[type]}
+        /*
+         * Identity for the layout tests, which assert that a chip stays inside
+         * the multiplier row that labels it. Without it the containment check
+         * iterates an empty list and passes without checking anything.
+         */
+        data-type={type}
+      >
         {TYPE_ABBREV[type]}
       </span>
     );

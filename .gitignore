@@ -43,6 +43,12 @@ next-env.d.ts
 # playwright mcp scratch output
 /.playwright-mcp/
 
+# playwright test artefacts
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
 # transient sprite downloads
 public/sprites/*.tmp
 

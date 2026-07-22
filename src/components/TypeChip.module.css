@@ -37,9 +37,12 @@
   font-size: 14px;
   cursor: pointer;
   /*
-   * Dimmed to de-emphasise, not to hide. At 0.5 the worst unselected chip fell
-   * to 2.18:1 against the background, which is hard to scan when hunting for a
-   * type mid-battle. Selection is carried by the ring, so the dim is a hint.
+   * Dimmed to de-emphasise, not to hide, and only barely: the dim composites
+   * the whole chip over the page, so it erodes the text contrast along with
+   * the fill. At 0.72 the worst grid chip sat at 4.29:1, under AA, and the
+   * palette read washed out on a panel that is often glanced at rather than
+   * looked at. Selection is carried by the ring and bloom, so the dim only has
+   * to be a hint.
    *
    * Driven by a token rather than a per-theme selector: `:root[data-theme] .grid`
    * outranks `.grid.selected`, which silently disabled both the selected state

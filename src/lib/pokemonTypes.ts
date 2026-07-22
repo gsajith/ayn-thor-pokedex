@@ -89,25 +89,46 @@ export const TYPE_LABEL: Record<PokemonType, string> = {
   fairy: "Fairy",
 };
 
+/*
+ * Bolder and more separated than the canonical Pokemon palette this started
+ * from, which was tuned for large surfaces rather than 18 chips crowded onto a
+ * 537px-wide panel.
+ *
+ * Two constraints, both measured rather than eyeballed:
+ *
+ * 1. Perceptual separation. Ground and Electric were both yellows and read as
+ *    the same chip in use; they are now 43.6 apart in CIE Lab, up from 29.5.
+ *    The closest remaining pair is Water/Flying at 20.8, up from Ground/Rock
+ *    at 15.2.
+ * 2. Legibility. `readableTextOn` picks each chip's ink from this value, and
+ *    the sheen laid over the fill erodes that contrast, so every colour has to
+ *    clear 4.5:1 against its own sheened surface. Several bolder mid-tones
+ *    (Poison, Ghost, Fighting) had to move darker to get there — a colour
+ *    whose luminance sits mid-scale suits neither black nor white text. The
+ *    floor is currently 4.53:1 at Fighting.
+ *
+ * Changing any value here means re-checking both. `scripts/palette-check.mjs`
+ * does it.
+ */
 export const TYPE_COLOR: Record<PokemonType, string> = {
-  normal: "#A8A77A",
-  fire: "#EE8130",
-  water: "#6390F0",
-  electric: "#F7D02C",
-  grass: "#7AC74C",
-  ice: "#96D9D6",
-  fighting: "#C22E28",
-  poison: "#A33EA1",
-  ground: "#E2BF65",
-  flying: "#A98FF3",
-  psychic: "#F95587",
-  bug: "#A6B91A",
-  rock: "#B6A136",
-  ghost: "#735797",
-  dragon: "#6F35FC",
-  dark: "#705746",
-  steel: "#B7B7CE",
-  fairy: "#D685AD",
+  normal: "#B9B3A6",
+  fire: "#FF7A2F",
+  water: "#4E92F7",
+  electric: "#FFD119",
+  grass: "#5FC03A",
+  ice: "#6FD6DC",
+  fighting: "#CE2E24",
+  poison: "#9E2FB4",
+  ground: "#C97F2A",
+  flying: "#9C8BF5",
+  psychic: "#F94E76",
+  bug: "#9EC61A",
+  rock: "#C6B36A",
+  ghost: "#67479F",
+  dragon: "#6A3BF5",
+  dark: "#57473B",
+  steel: "#9FB0C9",
+  fairy: "#FF77C8",
 };
 
 export const CHIP_TEXT_DARK = "#101010";
