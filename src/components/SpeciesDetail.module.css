@@ -9,8 +9,8 @@
 .header {
   display: flex;
   align-items: center;
-  gap: 8px;
-  min-height: 44px;
+  gap: 10px;
+  min-height: 128px;
 }
 
 /* Primary navigation control, so it gets the full 44px touch target. */
@@ -45,8 +45,10 @@
  */
 .sprite {
   flex: 0 0 auto;
-  width: 56px;
-  height: 56px;
+  /* Rendered at the sprite's native 96px. The buckets size to their content,
+     so the header can take the space that was otherwise left empty. */
+  width: 128px;
+  height: 128px;
   image-rendering: pixelated;
 }
 
@@ -60,13 +62,13 @@
 
 .dex {
   font-family: var(--font-geist-mono), ui-monospace, monospace;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
 }
 
 .name {
   min-width: 0;
-  font-size: 17px;
+  font-size: 28px;
   font-weight: 700;
   overflow: hidden;
   text-overflow: ellipsis;

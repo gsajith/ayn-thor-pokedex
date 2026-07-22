@@ -54,3 +54,13 @@
   gap: 3px;
   min-width: 0;
 }
+
+/* Detail page only: rows share the leftover height instead of leaving a gap. */
+.fill .row {
+  flex: 1;
+  align-items: center;
+}
+
+.fill .multiplier {
+  font-size: 15px;
+}

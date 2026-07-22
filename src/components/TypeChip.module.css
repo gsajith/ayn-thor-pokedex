@@ -59,6 +59,14 @@
   line-height: 16px;
 }
 
+/* The detail header has room to spare, so its chips are sized to be read
+   at a glance rather than packed like the bucket rows. */
+.detail {
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .grid {
     transition: none;

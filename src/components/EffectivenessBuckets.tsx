@@ -2,11 +2,19 @@ import { Bucket } from "@/lib/typeChart";
 import { TypeChip } from "./TypeChip";
 import styles from "./EffectivenessBuckets.module.css";
 
-type Props = { buckets: Bucket[] };
+type Props = {
+  buckets: Bucket[];
+  /**
+   * Stretch rows to fill the available height. The home screen shares its
+   * space with the type grid and sizes rows to content; the detail page has
+   * spare room, so filling it makes the chart easier to read at a glance.
+   */
+  fill?: boolean;
+};
 
-export function EffectivenessBuckets({ buckets }: Props) {
+export function EffectivenessBuckets({ buckets, fill }: Props) {
   return (
-    <div className={styles.buckets}>
+    <div className={`${styles.buckets} ${fill ? styles.fill : ""}`}>
       {buckets.map((bucket) => (
         <div
           key={bucket.multiplier}
