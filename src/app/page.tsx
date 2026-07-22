@@ -1,14 +1,16 @@
 "use client";
 
 import { useCallback, useMemo, useState } from "react";
+import { AccentGlow } from "@/components/AccentGlow";
 import { EffectivenessBuckets } from "@/components/EffectivenessBuckets";
 import { SearchResults } from "@/components/SearchResults";
 import { SpeciesDetail } from "@/components/SpeciesDetail";
 import { TypeGrid } from "@/components/TypeGrid";
 import { resolveSpecies, useOverrides } from "@/lib/overrides";
-import { PokemonType } from "@/lib/pokemonTypes";
+import { PokemonType, TYPE_COLOR } from "@/lib/pokemonTypes";
 import { speciesById } from "@/lib/species";
 import { searchSpecies } from "@/lib/speciesSearch";
+import { THEME_LABELS, cycleTheme, setTheme, useTheme } from "@/lib/theme";
 import { toggleType } from "@/lib/typeSelection";
 import { DEFAULT_GENERATION, TYPE_CHARTS, bucketize } from "@/lib/typeChart";
 import styles from "./page.module.css";
@@ -19,6 +21,7 @@ export default function Home() {
   const [detailId, setDetailId] = useState<number | null>(null);
 
   const overrides = useOverrides();
+  const theme = useTheme();
 
   const toggle = useCallback((type: PokemonType) => {
     setSelected((current) => toggleType(current, type));
@@ -36,16 +39,24 @@ export default function Home() {
     [query, overrides],
   );
 
+  // Grid accent comes from the selected types, blending across a dual pick.
+  const glowColors = useMemo(
+    () => selected.map((type) => TYPE_COLOR[type]),
+    [selected],
+  );
+
   const searching = query.trim().length > 0;
 
   // Held as an id, not an object: a resolved species carries overridden types
   // in its `types` field, so storing one would survive a revert.
   const detailBase = detailId === null ? null : speciesById(detailId);
   if (detailBase) {
+    const detailSpecies = resolveSpecies(detailBase, overrides);
     return (
       <main className={styles.pageDetail}>
+        <AccentGlow colors={[detailSpecies.accent]} />
         <SpeciesDetail
-          species={resolveSpecies(detailBase, overrides)}
+          species={detailSpecies}
           onBack={() => setDetailId(null)}
         />
       </main>
@@ -54,6 +65,7 @@ export default function Home() {
 
   return (
     <main className={searching ? styles.pageSearch : styles.page}>
+      <AccentGlow colors={glowColors} />
       <div className={styles.searchRow}>
         <input
           className={styles.search}
@@ -85,6 +97,15 @@ export default function Home() {
             Clear
           </button>
         )}
+        <button
+          type="button"
+          className={styles.theme}
+          onClick={() => setTheme(cycleTheme(theme))}
+          aria-label={`Theme: ${THEME_LABELS[theme]}. Tap to change.`}
+          title={THEME_LABELS[theme]}
+        >
+          ◐
+        </button>
       </div>
 
       {searching ? (

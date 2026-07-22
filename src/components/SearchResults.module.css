@@ -27,7 +27,7 @@
 }
 
 .row:active {
-  background: #161616;
+  background: var(--pressed);
 }
 
 .row:focus-visible {

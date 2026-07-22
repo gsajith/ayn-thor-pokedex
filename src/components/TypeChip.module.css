@@ -24,7 +24,13 @@
   min-height: 44px;
   font-size: 14px;
   cursor: pointer;
-  opacity: 0.5;
+  /*
+   * Dimmed to de-emphasise, not to hide. At 0.5 the worst unselected chip fell
+   * to 2.18:1 against the background, which is hard to scan when you are
+   * hunting for a type mid-battle. Selection is carried by the ring, so the
+   * dim only needs to be a hint.
+   */
+  opacity: 0.72;
   transition:
     opacity 90ms linear,
     box-shadow 90ms linear,
@@ -36,6 +42,16 @@
  * dark on roughly half the types, and a dark ring is invisible against the
  * black background, leaving those chips with no selection affordance.
  */
+/*
+ * Dimming works against a dark background because it fades chips toward black,
+ * away from their light text. On a light background it fades them toward white
+ * instead, which collapses contrast for the white-text chips. Light mode keeps
+ * them closer to full strength and leans on the selection ring for state.
+ */
+:root[data-theme="light"] .grid {
+  opacity: 0.82;
+}
+
 .grid.selected {
   opacity: 1;
   box-shadow:

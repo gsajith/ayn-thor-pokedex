@@ -1,10 +1,45 @@
-:root {
+/*
+ * Three brightness modes. Backgrounds stay neutral in all of them: the accent
+ * is applied as trim and an edge glow only, because the type chips are the
+ * fastest recognition signal in the app and a tinted background would compete
+ * with them for contrast on an already small screen.
+ */
+:root,
+:root[data-theme="black"] {
+  /* True black so AMOLED pixels are genuinely off. */
   --background: #000000;
+  --surface: #0d0d0d;
+  --pressed: #161616;
   --foreground: #ededed;
   --muted: #8a8a8a;
   --line: #242424;
   --accent: #46d17a;
+  --accent-ink: #06210f;
   color-scheme: dark;
+}
+
+:root[data-theme="dark"] {
+  --background: #121212;
+  --surface: #1d1d1d;
+  --pressed: #262626;
+  --foreground: #ededed;
+  --muted: #9b9b9b;
+  --line: #2f2f2f;
+  --accent: #46d17a;
+  --accent-ink: #06210f;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --background: #f4f4f5;
+  --surface: #ffffff;
+  --pressed: #e6e6e8;
+  --foreground: #16161a;
+  --muted: #5c5c66;
+  --line: #d5d5da;
+  --accent: #157f43;
+  --accent-ink: #ffffff;
+  color-scheme: light;
 }
 
 * {
@@ -47,4 +82,33 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+/*
+ * The accent, confined to a soft bloom along the bottom edge. Drawn on
+ * body::after so it sits behind <main>, which carries z-index 1. Backgrounds
+ * stay neutral: a full tint would cost the type chips their contrast.
+ */
+body::after {
+  content: "";
+  position: fixed;
+  inset: auto 0 0 0;
+  height: 72px;
+  background: var(--accent-glow, transparent);
+  -webkit-mask-image: linear-gradient(to top, #000, transparent);
+  mask-image: linear-gradient(to top, #000, transparent);
+  opacity: 0.22;
+  pointer-events: none;
+  z-index: 0;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::after {
+    transition: none;
+  }
 }

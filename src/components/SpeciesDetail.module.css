@@ -30,7 +30,7 @@
 }
 
 .back:active {
-  background: #161616;
+  background: var(--pressed);
 }
 
 .back:focus-visible {
@@ -112,7 +112,7 @@
 }
 
 .typesButton:active {
-  background: #161616;
+  background: var(--pressed);
 }
 
 .typesButton:focus-visible {
@@ -169,7 +169,7 @@
 .primary {
   border: 1px solid var(--accent);
   background: var(--accent);
-  color: #06210f;
+  color: var(--accent-ink);
   font-weight: 600;
 }
 
