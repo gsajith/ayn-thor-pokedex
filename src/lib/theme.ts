@@ -1,6 +1,6 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 
 /**
  * `black` is the default deliberately: on the AMOLED panel this app targets,
@@ -47,11 +47,20 @@ function read(): ThemeMode {
   return cache;
 }
 
+/** Background colour reported to the OS for browser chrome, per mode. */
+const THEME_COLORS: Record<ThemeMode, string> = {
+  black: "#000000",
+  dark: "#121212",
+  light: "#f4f4f5",
+};
+
 /** The attribute CSS keys off. Kept in sync on every write. */
 function applyToDocument(mode: ThemeMode) {
-  if (typeof document !== "undefined") {
-    document.documentElement.dataset.theme = mode;
-  }
+  if (typeof document === "undefined") return;
+  document.documentElement.dataset.theme = mode;
+  // Otherwise the browser/OS chrome stays black while the app is in light mode.
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute("content", THEME_COLORS[mode]);
 }
 
 export function setTheme(mode: ThemeMode) {
@@ -86,9 +95,12 @@ function getServerSnapshot(): ThemeMode {
 
 export function useTheme(): ThemeMode {
   const mode = useSyncExternalStore(subscribe, read, getServerSnapshot);
-  // The prerendered HTML carries no data-theme, so the first client read has to
-  // push it onto the document.
-  applyToDocument(mode);
+  // The inline bootstrap in the layout already set the attribute before paint;
+  // this only reconciles it, and lives in an effect rather than in render so
+  // there is no side effect during rendering.
+  useEffect(() => {
+    applyToDocument(mode);
+  }, [mode]);
   return mode;
 }
 

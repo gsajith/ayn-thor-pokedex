@@ -1,3 +1,12 @@
+/*
+ * On a light background a chip's own colour can sit at 1.3:1 against the page
+ * (Electric is the worst), so the chip edge needs help even though its text
+ * contrast is fine. Dark modes need no such hint.
+ */
+:root[data-theme="light"] .chip {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.22);
+}
+
 .chip {
   display: flex;
   align-items: center;
@@ -26,11 +35,14 @@
   cursor: pointer;
   /*
    * Dimmed to de-emphasise, not to hide. At 0.5 the worst unselected chip fell
-   * to 2.18:1 against the background, which is hard to scan when you are
-   * hunting for a type mid-battle. Selection is carried by the ring, so the
-   * dim only needs to be a hint.
+   * to 2.18:1 against the background, which is hard to scan when hunting for a
+   * type mid-battle. Selection is carried by the ring, so the dim is a hint.
+   *
+   * Driven by a token rather than a per-theme selector: `:root[data-theme] .grid`
+   * outranks `.grid.selected`, which silently disabled both the selected state
+   * and the press feedback in light mode.
    */
-  opacity: 0.72;
+  opacity: var(--chip-dim);
   transition:
     opacity 90ms linear,
     box-shadow 90ms linear,
@@ -42,16 +54,6 @@
  * dark on roughly half the types, and a dark ring is invisible against the
  * black background, leaving those chips with no selection affordance.
  */
-/*
- * Dimming works against a dark background because it fades chips toward black,
- * away from their light text. On a light background it fades them toward white
- * instead, which collapses contrast for the white-text chips. Light mode keeps
- * them closer to full strength and leans on the selection ring for state.
- */
-:root[data-theme="light"] .grid {
-  opacity: 0.82;
-}
-
 .grid.selected {
   opacity: 1;
   box-shadow:

@@ -15,6 +15,7 @@
   --line: #242424;
   --accent: #46d17a;
   --accent-ink: #06210f;
+  --chip-dim: 0.72;
   color-scheme: dark;
 }
 
@@ -27,6 +28,7 @@
   --line: #2f2f2f;
   --accent: #46d17a;
   --accent-ink: #06210f;
+  --chip-dim: 0.72;
   color-scheme: dark;
 }
 
@@ -39,6 +41,9 @@
   --line: #d5d5da;
   --accent: #157f43;
   --accent-ink: #ffffff;
+  /* Dimming fades chips toward the page; on light that moves them toward
+     their own light text, so light mode dims less. */
+  --chip-dim: 0.82;
   color-scheme: light;
 }
 
@@ -64,9 +69,10 @@ body {
  * never bounds it and inner scroll regions (the search results list) push the
  * whole page taller instead of scrolling within themselves.
  *
- * Deliberately no `overflow: hidden` here. That would also hide unintended
- * overflow, and the bucket layout relies on overflow surfacing as a real page
- * scroll so a regression is detectable rather than silently clipped.
+ * Deliberately no `overflow: hidden` here — that would clip unintended overflow
+ * outright. Note it still would not surface as a documentElement scroll: the
+ * `overflow-x: hidden` above makes <body> the scrolling box, so a regression
+ * check must read `document.body.scrollHeight`, not `documentElement`.
  */
 body {
   height: 100%;

@@ -21,8 +21,18 @@ function installEnvironment(initial?: string) {
     },
   });
   const root = { dataset: {} as Record<string, string> };
-  vi.stubGlobal("document", { documentElement: root });
-  return { data, root };
+  const meta = {
+    content: "",
+    setAttribute(_name: string, value: string) {
+      this.content = value;
+    },
+  };
+  vi.stubGlobal("document", {
+    documentElement: root,
+    querySelector: (sel: string) =>
+      sel === 'meta[name="theme-color"]' ? meta : null,
+  });
+  return { data, root, meta };
 }
 
 beforeEach(() => {
@@ -85,6 +95,7 @@ describe("setTheme", () => {
   });
 
   it("keeps the choice in session even if storage refuses the write", () => {
+    installEnvironment();
     vi.stubGlobal("window", {
       localStorage: {
         getItem: () => null,
@@ -93,8 +104,25 @@ describe("setTheme", () => {
         },
       },
     });
-    vi.stubGlobal("document", { documentElement: { dataset: {} } });
     expect(() => setTheme("light")).not.toThrow();
+  });
+
+  it("keeps browser chrome colour in step with the mode", () => {
+    // Otherwise the OS chrome stays black while the app renders light.
+    const { meta } = installEnvironment();
+    setTheme("light");
+    expect(meta.content).toBe("#f4f4f5");
+    setTheme("black");
+    expect(meta.content).toBe("#000000");
+  });
+
+  it("does not throw when there is no theme-color meta tag", () => {
+    vi.stubGlobal("window", { localStorage: { getItem: () => null, setItem() {} } });
+    vi.stubGlobal("document", {
+      documentElement: { dataset: {} },
+      querySelector: () => null,
+    });
+    expect(() => setTheme("dark")).not.toThrow();
   });
 
   it("degrades to the default when storage throws on read", () => {
@@ -106,7 +134,10 @@ describe("setTheme", () => {
         setItem() {},
       },
     });
-    vi.stubGlobal("document", { documentElement: { dataset: {} } });
+    vi.stubGlobal("document", {
+      documentElement: { dataset: {} },
+      querySelector: () => null,
+    });
     expect(parseTheme(null)).toBe(DEFAULT_THEME);
   });
 });

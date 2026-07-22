@@ -16,18 +16,24 @@ type Props = {
  * fastest recognition signal on the screen.
  */
 export function AccentGlow({ colors }: Props) {
+  // Callers build a fresh array each render, so the effect keys on the joined
+  // value; depending on array identity would re-run it on every render.
+  const key = colors.join(",");
+
   useEffect(() => {
     const root = document.documentElement;
-    if (colors.length === 0) {
+    if (key === "") {
       root.style.removeProperty("--accent-glow");
       return;
     }
-    const value =
-      colors.length === 1
-        ? `linear-gradient(90deg, ${colors[0]}, ${colors[0]})`
-        : `linear-gradient(90deg, ${colors[0]}, ${colors[1]})`;
-    root.style.setProperty("--accent-glow", value);
-  }, [colors]);
+    const list = key.split(",");
+    const from = list[0];
+    const to = list[list.length - 1];
+    root.style.setProperty(
+      "--accent-glow",
+      `linear-gradient(90deg, ${from}, ${to})`,
+    );
+  }, [key]);
 
   return null;
 }
