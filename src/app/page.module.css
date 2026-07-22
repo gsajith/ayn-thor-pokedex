@@ -5,8 +5,14 @@
  */
 .page {
   display: grid;
-  /* 148px = three 44px touch rows plus two 8px gaps. */
-  grid-template-rows: auto 148px 1fr;
+  /*
+   * 148px = three 44px touch rows plus two 8px gaps, which is the floor at the
+   * 412px browser height. Any height above that goes into bigger touch targets
+   * rather than dead space — standalone install reclaims ~58px. Capped at
+   * 196px so the buckets always keep the ~180px their worst case needs (one
+   * row wrapping to two lines).
+   */
+  grid-template-rows: auto clamp(148px, calc(148px + 100dvh - 412px), 196px) 1fr;
   gap: 8px;
   flex: 1;
   min-height: 0;
