@@ -3,33 +3,35 @@
 import { useCallback, useMemo, useState } from "react";
 import { AccentGlow } from "@/components/AccentGlow";
 import { EffectivenessBuckets } from "@/components/EffectivenessBuckets";
+import { Settings } from "@/components/Settings";
 import { SearchResults } from "@/components/SearchResults";
 import { SpeciesDetail } from "@/components/SpeciesDetail";
 import { TypeGrid } from "@/components/TypeGrid";
+import { useGeneration } from "@/lib/generation";
 import { resolveSpecies, useOverrides } from "@/lib/overrides";
 import { PokemonType, TYPE_COLOR } from "@/lib/pokemonTypes";
 import { speciesById } from "@/lib/species";
 import { searchSpecies } from "@/lib/speciesSearch";
-import { THEME_LABELS, cycleTheme, setTheme, useTheme } from "@/lib/theme";
 import { toggleType } from "@/lib/typeSelection";
-import { DEFAULT_GENERATION, TYPE_CHARTS, bucketize } from "@/lib/typeChart";
+import { bucketize, chartFor } from "@/lib/typeChart";
 import styles from "./page.module.css";
 
 export default function Home() {
   const [selected, setSelected] = useState<PokemonType[]>([]);
   const [query, setQuery] = useState("");
   const [detailId, setDetailId] = useState<number | null>(null);
+  const [settingsOpen, setSettingsOpen] = useState(false);
 
   const overrides = useOverrides();
-  const theme = useTheme();
+  const generation = useGeneration();
 
   const toggle = useCallback((type: PokemonType) => {
     setSelected((current) => toggleType(current, type));
   }, []);
 
   const buckets = useMemo(
-    () => bucketize(selected, TYPE_CHARTS[DEFAULT_GENERATION]),
-    [selected],
+    () => bucketize(selected, chartFor(generation)),
+    [selected, generation],
   );
 
   // Resolving on every render rather than at selection time means a correction
@@ -46,6 +48,14 @@ export default function Home() {
   );
 
   const searching = query.trim().length > 0;
+
+  if (settingsOpen) {
+    return (
+      <main className={styles.pageDetail}>
+        <Settings onBack={() => setSettingsOpen(false)} />
+      </main>
+    );
+  }
 
   // Held as an id, not an object: a resolved species carries overridden types
   // in its `types` field, so storing one would survive a revert.
@@ -99,12 +109,12 @@ export default function Home() {
         )}
         <button
           type="button"
-          className={styles.theme}
-          onClick={() => setTheme(cycleTheme(theme))}
-          aria-label={`Theme: ${THEME_LABELS[theme]}. Tap to change.`}
-          title={THEME_LABELS[theme]}
+          className={styles.settings}
+          onClick={() => setSettingsOpen(true)}
+          aria-label="Settings"
+          title="Settings"
         >
-          ◐
+          ⚙
         </button>
       </div>
 
