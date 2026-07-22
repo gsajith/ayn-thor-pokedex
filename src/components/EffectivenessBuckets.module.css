@@ -20,6 +20,10 @@
  * This deliberately leaves dead space at the taller standalone height instead
  * of stretching to fill it: bucket positions then sit identically with and
  * without the browser address bar, which is what muscle memory depends on.
+ *
+ * The severity tint and rail are horizontal-only decoration by design — the
+ * vertical budget here is roughly 190px for six rows, so nothing may add
+ * height. Padding is asymmetric for that reason.
  */
 .row {
   display: flex;
@@ -27,25 +31,63 @@
   gap: 8px;
   flex: 0 0 auto;
   min-height: 24px;
-  padding: 2px 0;
-  border-bottom: 1px solid var(--line);
+  padding: 2px 8px 2px 9px;
+  border-left: 3px solid var(--rail);
+  border-radius: 3px var(--radius-sm) var(--radius-sm) 3px;
+  background: var(--rail-bg);
+  transition: background 140ms ease-out;
 }
 
-.row:last-child {
-  border-bottom: none;
+.row[data-severity="danger"] {
+  --rail: var(--sev-danger);
+  --rail-bg: var(--sev-danger-bg);
+  --rail-ink: var(--sev-danger);
+}
+
+.row[data-severity="warn"] {
+  --rail: var(--sev-warn);
+  --rail-bg: var(--sev-warn-bg);
+  --rail-ink: var(--sev-warn);
+}
+
+.row[data-severity="flat"] {
+  --rail: var(--line);
+  --rail-bg: var(--sev-flat-bg);
+  --rail-ink: var(--muted);
+}
+
+.row[data-severity="resist"] {
+  --rail: var(--sev-resist);
+  --rail-bg: var(--sev-resist-bg);
+  --rail-ink: var(--sev-resist);
+}
+
+.row[data-severity="immune"] {
+  --rail: var(--sev-immune);
+  --rail-bg: var(--sev-immune-bg);
+  --rail-ink: var(--sev-immune);
+}
+
+/*
+ * An empty bucket is still information — "nothing resists this" is worth
+ * seeing — but it should not compete with the rows that hold types. It keeps
+ * its slot and recedes rather than disappearing, so row positions never move.
+ */
+.row[data-empty="true"] {
+  --rail: var(--line);
+  --rail-bg: transparent;
+  --rail-ink: var(--muted);
 }
 
 .multiplier {
   flex: 0 0 26px;
-  font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 13px;
-  font-weight: 600;
-  line-height: 18px;
-  color: var(--muted);
-}
-
-.row[data-empty="false"] .multiplier {
-  color: var(--foreground);
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  /* Six multipliers stacked in a column must not jitter between widths. */
+  font-variant-numeric: tabular-nums;
+  color: var(--rail-ink);
 }
 
 .types {
@@ -63,4 +105,10 @@
 
 .fill .multiplier {
   font-size: 15px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .row {
+    transition: none;
+  }
 }

@@ -3,14 +3,19 @@
   align-items: center;
   justify-content: center;
   border: none;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   font-family: inherit;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.045em;
   text-align: center;
   -webkit-tap-highlight-color: transparent;
   /* Avoids the double-tap-to-zoom delay on touch. */
   touch-action: manipulation;
+  /*
+   * The fill arrives as an inline background-color; this lays a top-lit sheen
+   * over it so the chip reads as an object rather than a flat swatch.
+   */
+  background-image: var(--chip-sheen);
   /*
    * Composed from a token rather than a per-theme selector. A
    * `:root[data-theme=...] .chip` rule scores (0,3,0) and would outrank
@@ -42,26 +47,31 @@
    */
   opacity: var(--chip-dim);
   transition:
-    opacity 90ms linear,
-    box-shadow 90ms linear,
-    transform 90ms ease-out;
+    opacity 120ms ease-out,
+    box-shadow 120ms ease-out,
+    transform 120ms ease-out;
 }
 
 /*
- * The ring is a fixed light colour rather than currentColor: chip text is
+ * The ring stays a fixed light colour rather than currentColor: chip text is
  * dark on roughly half the types, and a dark ring is invisible against the
  * black background, leaving those chips with no selection affordance.
+ *
+ * Layered outward: a background-coloured gap, a crisp foreground ring, then a
+ * bloom in the chip's own hue. The bloom is what makes selection read
+ * peripherally while the game holds the player's actual attention.
  */
 .grid.selected {
   opacity: 1;
   box-shadow:
     var(--chip-edge, 0 0 0 0 transparent),
     0 0 0 2px var(--background),
-    0 0 0 4px var(--foreground);
+    0 0 0 3.5px var(--foreground),
+    0 0 16px -2px var(--chip-color, transparent);
 }
 
 .grid:active {
-  transform: scale(0.96);
+  transform: scale(0.95);
   opacity: 0.85;
 }
 
@@ -71,17 +81,24 @@
 }
 
 .bucket {
-  padding: 2px 6px;
+  padding: 2px 7px;
   font-size: 12px;
   line-height: 16px;
+  box-shadow:
+    var(--chip-edge, 0 0 0 0 transparent),
+    var(--shadow-sm);
 }
 
 /* The detail header has room to spare, so its chips are sized to be read
    at a glance rather than packed like the bucket rows. */
 .detail {
-  padding: 6px 12px;
+  padding: 6px 13px;
+  border-radius: var(--radius);
   font-size: 16px;
   line-height: 20px;
+  box-shadow:
+    var(--chip-edge, 0 0 0 0 transparent),
+    var(--shadow-sm);
 }
 
 @media (prefers-reduced-motion: reduce) {

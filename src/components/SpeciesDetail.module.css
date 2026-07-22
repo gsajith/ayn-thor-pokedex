@@ -19,7 +19,7 @@
   min-height: 44px;
   padding: 0 12px;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   background: transparent;
   color: var(--foreground);
   font-family: inherit;
@@ -39,14 +39,41 @@
 }
 
 /*
+ * Holds the bloom behind the sprite. The gradient is painted on a pseudo
+ * element so it cannot inherit `image-rendering: pixelated` from the sprite,
+ * which would band the gradient into visible steps.
+ */
+.spriteWrap {
+  position: relative;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  height: 128px;
+}
+
+.spriteWrap::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 50% 55%,
+    var(--sprite-accent, transparent),
+    transparent 68%
+  );
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/*
  * Pixel art at its native scale: `pixelated` stops the browser smoothing the
  * 96x96 source into mush, which is the whole reason this sprite set was chosen
  * over higher-resolution 3D renders.
  */
 .sprite {
-  flex: 0 0 auto;
-  /* Rendered at the sprite's native 96px. The buckets size to their content,
-     so the header can take the space that was otherwise left empty. */
+  position: relative;
   width: 128px;
   height: 128px;
   image-rendering: pixelated;
@@ -62,14 +89,17 @@
 
 .dex {
   font-family: var(--font-geist-mono), ui-monospace, monospace;
-  font-size: 14px;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
   color: var(--muted);
 }
 
 .name {
   min-width: 0;
-  font-size: 28px;
+  font-size: 29px;
   font-weight: 700;
+  letter-spacing: -0.02em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -85,9 +115,9 @@
 .badge {
   margin-left: 6px;
   padding: 1px 5px;
-  border-radius: 4px;
-  background: #3a2f10;
-  color: #e0b64d;
+  border-radius: 5px;
+  background: var(--edited-bg);
+  color: var(--edited-ink);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
   font-size: 10px;
   font-weight: 700;
@@ -104,7 +134,7 @@
   min-height: 44px;
   padding: 0 6px;
   border: 1px solid transparent;
-  border-radius: 6px;
+  border-radius: var(--radius);
   background: transparent;
   cursor: pointer;
   touch-action: manipulation;
@@ -153,7 +183,7 @@
 .primary {
   min-height: 44px;
   padding: 0 12px;
-  border-radius: 6px;
+  border-radius: var(--radius);
   font-family: inherit;
   font-size: 13px;
   cursor: pointer;

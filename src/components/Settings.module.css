@@ -19,7 +19,7 @@
   min-height: 44px;
   padding: 0 12px;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   background: transparent;
   color: var(--foreground);
   font-family: inherit;
@@ -34,8 +34,9 @@
 }
 
 .title {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 /*
@@ -104,7 +105,7 @@
   min-height: 44px;
   padding: 0 14px;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   background: transparent;
   color: var(--foreground);
   font-family: inherit;
@@ -171,7 +172,7 @@
 
 .pending {
   padding: 1px 5px;
-  border-radius: 4px;
+  border-radius: 5px;
   border: 1px solid var(--line);
   color: var(--muted);
   font-size: 9px;
@@ -191,9 +192,9 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 8px;
+  padding: 7px 9px;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   background: var(--surface);
 }
 
@@ -207,6 +208,8 @@
 .dex {
   font-family: var(--font-geist-mono), ui-monospace, monospace;
   font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
   color: var(--muted);
 }
 
@@ -246,7 +249,7 @@
   flex: 0 0 auto;
   min-height: 44px;
   padding: 0 12px;
-  border-radius: 6px;
+  border-radius: var(--radius);
   font-family: inherit;
   font-size: 13px;
   cursor: pointer;
@@ -315,4 +318,5 @@
 
 .readoutRow dd {
   font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
 }
